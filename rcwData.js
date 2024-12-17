@@ -9,7 +9,7 @@ var codes = {
         description: "Definitions to understand regarding culpability.",
         items: [
             { id: "9A.08.010", 
-              title: "Culpability",
+              title: "Culpability-a",
               description: "Defines levels of culpability: intent, knowledge, recklessness, and criminal negligence.",
               definition: [
                 {
