@@ -56,10 +56,33 @@ const pages = [
           <h5 class="card-title">Court Dates</h5>
           <p class="card-text"><span class=\"text-warning\">"Dates may not reflect admin changes for holidays or special occasions."</span></p>
         </div>
-          <ul id=\"courtDates\" class=\"list-group list-group-flush\" data-trigger=\"refreshCourtDates\">
-          </ul>
-        </div>
+          <ul id=\"courtDates\" class=\"list-group list-group-flush\" data-trigger=\"refreshCourtDates\"></ul>
       </div>
+    </div>
+
+
+        <div class=\"col\">
+          <div class=\"card mb-3\">
+            <div class="card-body">
+              <h5 class="card-title">Clearing Codes</h5>
+            </div>
+              <ul id=\"clearingCodes\" class=\"list-group list-group-flush\">
+                
+                <li class="list-group-item d-flex justify-content-between"><strong>0</strong> No pursuit</li>
+                <li class="list-group-item d-flex justify-content-between"><strong>2</strong> Mental Illness</li>
+                <li class="list-group-item d-flex justify-content-between"><strong>3</strong> Racers</li>
+                <li class="list-group-item d-flex justify-content-between"><strong>4</strong> Prostitution</li>
+                <li class="list-group-item d-flex justify-content-between"><strong>5</strong> Drug warning</li>
+                <li class="list-group-item d-flex justify-content-between"><strong>6</strong> Gang</li>
+                <li class="list-group-item d-flex justify-content-between"><strong>8</strong> Homeless</li>
+                <li class="list-group-item d-flex justify-content-between">strong>9</strong> Declined</li>
+
+              </ul>
+          </div>
+        </div>
+
+
+
     </div>
         
         
