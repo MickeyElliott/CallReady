@@ -58,11 +58,7 @@ const pages = [
         </div>
           <ul id=\"courtDates\" class=\"list-group list-group-flush\" data-trigger=\"refreshCourtDates\"></ul>
       </div>
-    </div>
-
-
-        <div class=\"col\">
-          <div class=\"card mb-3\">
+      <div class=\"card mb-3\">
             <div class="card-body">
               <h5 class="card-title">Clearing Codes</h5>
             </div>
@@ -75,11 +71,14 @@ const pages = [
                 <li class="list-group-item d-flex justify-content-between"><strong>5</strong> Drug warning</li>
                 <li class="list-group-item d-flex justify-content-between"><strong>6</strong> Gang</li>
                 <li class="list-group-item d-flex justify-content-between"><strong>8</strong> Homeless</li>
-                <li class="list-group-item d-flex justify-content-between">strong>9</strong> Declined</li>
+                <li class="list-group-item d-flex justify-content-between"><strong>9</strong> Declined</li>
 
               </ul>
           </div>
-        </div>
+    </div>
+
+
+      
 
 
 
