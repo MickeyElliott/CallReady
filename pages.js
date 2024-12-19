@@ -75,6 +75,21 @@ const pages = [
 
               </ul>
           </div>
+          <div class=\"card mb-3\">
+            <div class="card-body">
+              <h5 class="card-title">Dispatch Codes</h5>
+            </div>
+              <ul id=\"dispatchCodes\" class=\"list-group list-group-flush\">
+                
+                <li class="list-group-item d-flex justify-content-between">Valley Comm: Misdemeanor Warrant </li>
+                <li class="list-group-item d-flex justify-content-between">Valley Comm <strong>Frank</strong> Felony Warrant</li>
+                <li class="list-group-item d-flex justify-content-between">Valley Comm <strong>Charles</strong> Caution</li>
+                <li class="list-group-item d-flex justify-content-between">Valley Comm <strong>George</strong> Gang Relation</li>
+                <li class="list-group-item d-flex justify-content-between">Valley Comm <strong>Ocean</strong> Protection Order</li>
+                <li class="list-group-item d-flex justify-content-between">Valley Comm <strong>Victor</strong> Stolen Vehicle</li>
+
+              </ul>
+          </div>
     </div>
 
 
