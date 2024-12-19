@@ -52,16 +52,14 @@ const pages = [
 
     <div class=\"col\">
       <div class=\"card mb-3\">
-        <div class="card-body">
-          <h5 class="card-header">Court Dates</h5>
-          <p class="card-text"><span class=\"text-warning\">"Dates may not reflect admin changes for holidays or special occasions."</span></p>
-        </div>
+          <div class="card-header">Court Dates</div>
+          <p class="card-text mb-3"><span class=\"text-warning\">"Dates may not reflect admin changes for holidays or special occasions."</span></p>
           <ul id=\"courtDates\" class=\"list-group list-group-flush\" data-trigger=\"refreshCourtDates\"></ul>
       </div>
       <div class=\"card mb-3\">
-            <div class="card-body">
-              <h5 class="card-header">Clearing Codes</h5>
-            </div>
+          
+              <div class="card-header">Clearing Codes</div>
+            
               <ul id=\"clearingCodes\" class=\"list-group list-group-flush\">
                 
                 <li class="list-group-item d-flex justify-content-between"><strong>0</strong> No pursuit</li>
@@ -76,9 +74,8 @@ const pages = [
               </ul>
           </div>
           <div class=\"card mb-3\">
-            <div class="card-body">
-              <h5 class="card-title">Dispatch Codes</h5>
-            </div>
+              <div class="card-header">Dispatch Codes</div>
+            
               <ul id=\"dispatchCodes\" class=\"list-group list-group-flush\">
                 
                 <li class="list-group-item d-flex justify-content-between"><strong>Valley Comm</strong> Misd. Warrant </li>
