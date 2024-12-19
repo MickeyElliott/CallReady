@@ -24,7 +24,7 @@ const pages = [
           <a href="#"  class=\"text-decoration-none d-block py-1 px-2 focus-ring text-reset\"><span class=\"pe-3\">E.</span> Infraction/citation issued - no case report</a>
           <a href="#"  class=\"text-decoration-none d-block py-1 px-2 focus-ring text-reset\"><span class=\"pe-3\">F.</span> Follow-up activity</a>
           <a href="#"  class=\"text-decoration-none d-block py-1 px-2 focus-ring text-reset\"><span class=\"pe-3\">G.</span> Case report - felony, no arrest</a>
-          <a href="#"  class=\"text-decoration-none d-block py-1 px-2 focus-ring text-reset\"><span class=\"pe-3\">H.</span> Case report - misdemeanor, no arrest/cite</a>
+          <a href="#"  class=\"text-decoration-none d-block py-1 px-2 focus-ring text-reset\"><span class=\"pe-3\">H.</span> Case report - misd., no arrest/cite</a>
           <a href="#"  class=\"text-decoration-none d-block py-1 px-2 focus-ring text-reset\"><span class=\"pe-3\">I.</span> FIR completed</a>
           <a href="#"  class=\"text-decoration-none d-block py-1 px-2 focus-ring text-reset\"><span class=\"pe-3\">J.</span> Juvenile involved</a>
           <a href="#"  class=\"text-decoration-none d-block py-1 px-2 focus-ring text-reset\"><span class=\"pe-3\">K.</span> Cancelled by radio</a>
@@ -33,7 +33,7 @@ const pages = [
           <a href="#"  class=\"text-decoration-none d-block py-1 px-2 focus-ring text-reset\"><span class=\"pe-3\">N.</span> Case report - no crime</a>
           <a href="#"  class=\"text-decoration-none d-block py-1 px-2 focus-ring text-reset\"><span class=\"pe-3\">O.</span> Unable to locate suspect/vehicle</a>
           <a href="#"  class=\"text-decoration-none d-block py-1 px-2 focus-ring text-reset\"><span class=\"pe-3\">P.</span> False alarm, billable</a>
-          <a href="#"  class=\"text-decoration-none d-block py-1 px-2 focus-ring text-reset\"><span class=\"pe-3\">Q.</span> Case report - arrest - misdemeanor/released</a>
+          <a href="#"  class=\"text-decoration-none d-block py-1 px-2 focus-ring text-reset\"><span class=\"pe-3\">Q.</span> Case report - arrest - misd./released</a>
           <a href="#"  class=\"text-decoration-none d-block py-1 px-2 focus-ring text-reset\"><span class=\"pe-3\">R.</span> Referred to another agency</a>
           <a href="#"  class=\"text-decoration-none d-block py-1 px-2 focus-ring text-reset\"><span class=\"pe-3\">S.</span> Civil matter</a>
           <a href="#"  class=\"text-decoration-none d-block py-1 px-2 focus-ring text-reset\"><span class=\"pe-3\">T.</span> Assignment completed/settled by contact</a>
@@ -53,14 +53,14 @@ const pages = [
     <div class=\"col\">
       <div class=\"card mb-3\">
         <div class="card-body">
-          <h5 class="card-title">Court Dates</h5>
+          <h5 class="card-header">Court Dates</h5>
           <p class="card-text"><span class=\"text-warning\">"Dates may not reflect admin changes for holidays or special occasions."</span></p>
         </div>
           <ul id=\"courtDates\" class=\"list-group list-group-flush\" data-trigger=\"refreshCourtDates\"></ul>
       </div>
       <div class=\"card mb-3\">
             <div class="card-body">
-              <h5 class="card-title">Clearing Codes</h5>
+              <h5 class="card-header">Clearing Codes</h5>
             </div>
               <ul id=\"clearingCodes\" class=\"list-group list-group-flush\">
                 
@@ -81,7 +81,7 @@ const pages = [
             </div>
               <ul id=\"dispatchCodes\" class=\"list-group list-group-flush\">
                 
-                <li class="list-group-item d-flex justify-content-between">Valley Comm: Misdemeanor Warrant </li>
+                <li class="list-group-item d-flex justify-content-between">Valley Comm: Misd. Warrant </li>
                 <li class="list-group-item d-flex justify-content-between">Valley Comm <strong>Frank</strong> Felony Warrant</li>
                 <li class="list-group-item d-flex justify-content-between">Valley Comm <strong>Charles</strong> Caution</li>
                 <li class="list-group-item d-flex justify-content-between">Valley Comm <strong>George</strong> Gang Relation</li>
