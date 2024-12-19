@@ -83,7 +83,7 @@ const pages = [
                 
                 <li class="list-group-item d-flex justify-content-between"><strong>Valley Comm</strong> Misd. Warrant </li>
                 <li class="list-group-item d-flex justify-content-between"><strong>Valley Comm Frank</strong> Felony Warrant</li>
-                <li class="list-group-item d-flex justify-content-between"><strong>Valley Comm Charles</strong> Caution</li>
+                <li class="list-group-item d-flex justify-content-between"><strong>Valley Comm Charles</strong> <span class="badge text-bg-danger">Caution</span></li>
                 <li class="list-group-item d-flex justify-content-between"><strong>Valley Comm George</strong> Gang Relation</li>
                 <li class="list-group-item d-flex justify-content-between"><strong>Valley Comm Ocean</strong> Protection Order</li>
                 <li class="list-group-item d-flex justify-content-between"><strong>Valley Comm Victor</strong> Stolen Vehicle</li>
