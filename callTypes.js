@@ -569,6 +569,7 @@ var callTypeData = {
                 index: "<i class=\"bi bi-info-circle-fill text-primary fs-4\"></i>",
                 main: "<span class=\"text-primary\"><strong>Complete FW ITA Form</strong></span>",
                 subSections: [
+                  "<span class=\"text-primary\">Required only on Involuntary Committal.</span>",
                   "<span class=\"text-primary\">This form needs to be completed and given to medical facility or transport.</span>",
                   "<span class=\"text-primary\">Be sure to articulate the PC for the invol on the form.</span>"
                 ]
@@ -1030,6 +1031,55 @@ var callTypeData = {
             ],
             relatedCodes: [],
             relatedProcedures: [
+            ]
+          },
+          {
+            id: "12.0.2",
+            title: "K9 Calls",
+            description: "Working with K9 officers requires some key details and responsibilities from you to keep them safe.",
+            definition: [
+              {
+                index: "1",
+                main: "<strong>K9 Announcements:</strong> Log in CAD every 5 mins.",
+                subSections: [
+                  "(a) Attention in the area, this is the Federal Way Police Department.",
+                  "(b) Suspects [names], you are under arrest. ",
+                  "(c) This area is being searched by a police dog.",
+                  "(d) Surrender now or the dog may find you and bite you when he finds you.",
+                  "(e) Citizens, please stay inside your homes."
+                ]
+              },
+              {
+                index: "2",
+                main: "<strong>K9 Tracking</strong>",
+                subSections: [
+                  "(a) Details soon."
+                ]
+              }
+              
+            ],
+            link: "https://app.leg.wa.gov/RCW/default.aspx?cite=71.05.153",
+            offense: "Emergency Detention Procedure",
+            elementsOfPC: [
+              "Danger to self",
+                  "Danger to others",
+                  "Danger to property",
+                  "Gravely disabled"
+            ],
+            questions: [
+              "Does individual pose risk of serious harm?",
+              "Is individual gravely disabled?",
+              "What behaviors/statements indicate an emergency detention?",
+              "Do they have a plan for how they will harm self or others?"
+            ],
+            relatedCodes: [
+              "RCW 71.34.710 ITA for minors"
+            ],
+            relatedProcedures: [
+              "Document behaviors justifying detention.",
+              "Transport the individual to an appropriate facility.",
+              "Ensure communication with DCR or facility staff regarding the case.",
+              "Assist with veterans health referrals if applicable."
             ]
           }
         ]
