@@ -846,8 +846,9 @@ var callTypeData = {
             ], // Related RCWs
             relatedProcedures: [
               "SFST",
-              "Blood Warrant",
-              "Evidence Tow"
+              "BloodWarrant",
+              "EvidenceTow",
+              "IIICheck"
             ] // Related procedures
           }          
         ]
