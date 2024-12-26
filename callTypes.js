@@ -1045,7 +1045,7 @@ var callTypeData = {
                   "(a) Attention in the area, this is the Federal Way Police Department.",
                   "(b) Suspects [names], you are under arrest. ",
                   "(c) This area is being searched by a police dog.",
-                  "(d) Surrender now or the dog may find you and bite you when he finds you.",
+                  "(d) Surrender now or the dog may find you and bite you.",
                   "(e) Citizens, please stay inside your homes."
                 ]
               },
@@ -1058,29 +1058,17 @@ var callTypeData = {
               }
               
             ],
-            link: "https://app.leg.wa.gov/RCW/default.aspx?cite=71.05.153",
-            offense: "Emergency Detention Procedure",
-            elementsOfPC: [
-              "Danger to self",
-                  "Danger to others",
-                  "Danger to property",
-                  "Gravely disabled"
-            ],
+            link: "#",
+            offense: "",
+            elementsOfPC: [],
             questions: [
-              "Does individual pose risk of serious harm?",
-              "Is individual gravely disabled?",
-              "What behaviors/statements indicate an emergency detention?",
-              "Do they have a plan for how they will harm self or others?"
+              "Are you in a position where you can spot subjects?",
+              "Do you have a description of the suspect?",
+              "Do you know your navigational heading?",
+              "Do you know your location for call out?"
             ],
-            relatedCodes: [
-              "RCW 71.34.710 ITA for minors"
-            ],
-            relatedProcedures: [
-              "Document behaviors justifying detention.",
-              "Transport the individual to an appropriate facility.",
-              "Ensure communication with DCR or facility staff regarding the case.",
-              "Assist with veterans health referrals if applicable."
-            ]
+            relatedCodes: [],
+            relatedProcedures: []
           }
         ]
       },
