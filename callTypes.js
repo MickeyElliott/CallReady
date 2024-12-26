@@ -822,7 +822,7 @@ var callTypeData = {
                 main: "Warrants",
                 subSections: [
                   "Sometimes a blood warrant is required. Details soon. ",
-                  "Sometimes there's evidence insid a vehicle. You can do an evidence tow and create a search warrant to strengthen your PC on additional charges."
+                  "Sometimes there&apos;s evidence insid a vehicle. You can do an evidence tow and create a search warrant to strengthen your PC on additional charges."
                 ]
               }
             ],
