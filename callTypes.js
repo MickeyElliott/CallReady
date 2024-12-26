@@ -770,7 +770,66 @@ var callTypeData = {
             questions: [],
             relatedCodes: [],
             relatedProcedures: []
-          }
+          },
+          {
+            id: "6.0.4", // Unique identifier for the call type
+            title: "Driving Under the Influence (DUI)", // Title of the call type
+            description: "Steps for investigating and documenting Driving Under the Influence (DUI) incidents.",
+            definition: [
+              {
+                index: "1",
+                main: "Establish probable cause for DUI by observing indicators such as:",
+                subSections: [
+                  "Erratic driving behavior (swerving, speeding, failure to stop).",
+                  "Physical signs of impairment (odor of alcohol, slurred speech, red eyes)."
+                ]
+              },
+              {
+                index: "2",
+                main: "Conduct Field Sobriety Tests (FSTs):",
+                subSections: [
+                  "Horizontal Gaze Nystagmus (HGN): Look for involuntary eye movements at maximum deviation or before 45 degrees.",
+                  "Walk and Turn: Observe for balance issues, inability to follow instructions, or stepping off the line.",
+                  "One Leg Stand: Look for swaying, use of arms for balance, hopping, or putting the foot down."
+                ]
+              },
+              {
+                index: "3",
+                main: "Administer Portable Breath Test (PBT), if available, to establish preliminary results."
+              },
+              {
+                index: "4",
+                main: "If probable cause is established, arrest the suspect and transport them for a certified breathalyzer or blood test."
+              },
+              {
+                index: "5",
+                main: "Document all observations, test results, and suspect statements in the incident report."
+              }
+            ],
+            link: "", // Placeholder for potential reference links
+            offense: "Gross Misdemeanor / Class B Felony under specific conditions", // Offense classification
+            elementsOfPC: [
+              "Impaired driving behavior",
+              "Failed sobriety tests",
+              "Breath or blood test results over legal limit"
+            ], // Required elements for probable cause
+            questions: [
+              "What driving behavior indicated impairment?",
+              "What physical signs of impairment were observed?",
+              "What were the results of the field sobriety tests?",
+              "Did the suspect consent to a breath or blood test?",
+              "What were the final test results?"
+            ], // Key questions for investigation
+            relatedCodes: [
+              "RCW 46.61.502 Driving under the influence",
+              "RCW 46.61.504 Physical control of a vehicle under the influence"
+            ], // Related RCWs
+            relatedProcedures: [
+              "Perform and document all Field Sobriety Tests (FSTs).",
+              "Obtain consent for breath or blood tests as required.",
+              "Record all test results and observations in the report."
+            ] // Related procedures
+          }          
         ]
       },
       {
