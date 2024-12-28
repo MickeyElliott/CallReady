@@ -554,7 +554,7 @@ var callTypeData = {
                 subSections: [
                   "(a) Attempt to contact parent or guardian.",
                   "(b) For ages 13+ you can ITA. <strong>Note:</strong> Can tell parent/guardian that we put 12 hour hold on subject. Up to medical facility on when a parent/guardian can be with child.",
-                  "(c) For ages 12- <span class=\"text-danger\">Todo</span>"
+                  "(c) For ages 12- <span class=\"text-danger\">Typically not done unless exigency exists. Tri-Med will also decline if requested to transport without exigency.</span>"
                 ]
               },
               {
