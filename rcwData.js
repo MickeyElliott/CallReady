@@ -2659,7 +2659,56 @@ var trafficCodes = {
           ], // Related RCWs and FWRCs
           relatedProcedures: [
           ] // Related procedures
+        },
+        {
+          id: "46.61.525", // Unique identifier for the RCW
+          title: "Negligent Driving-Second Degree", // Title of the RCW
+          description: "Operating a motor vehicle in a negligent manner that endangers or is likely to endanger persons or property.",
+          definition: [
+            {
+              index: "1",
+              main: "A person is guilty of negligent driving in the second degree if, under circumstances not constituting negligent driving in the first degree, they operate a vehicle negligently and endanger or are likely to endanger persons or property.",
+              subSections: [
+                "(a) It is an affirmative defense that the driver was operating the vehicle on private property with the owner's consent and consistent with such consent.",
+                "(b) Negligent driving in the second degree is a traffic infraction subject to a penalty of $250."
+              ]
+            },
+            {
+              index: "2",
+              main: "Definition of 'negligent':",
+              subSections: [
+                "Failure to exercise ordinary care;",
+                "Doing something a reasonably careful person would not do under similar circumstances;",
+                "Failing to do something a reasonably careful person would do under similar circumstances."
+              ]
+            },
+            {
+              index: "3",
+              main: "Acts constituting negligent driving that also constitute crimes under other state laws may be prosecuted under those laws."
+            }
+          ],
+          link: "https://app.leg.wa.gov/RCW/default.aspx?cite=46.61.525", // Direct link to the RCW
+          offense: "Traffic Infraction", // Classification of the offense
+          elementsOfPC: [
+            "Negligent operation of a motor vehicle",
+            "Endangerment of persons or property"
+          ], // Required elements for probable cause
+          questions: [
+            "Was the driver operating the vehicle negligently?",
+            "Did the driver endanger or likely endanger persons or property?",
+            "Was the vehicle operated on private property with the owner&apos;s consent?"
+          ], // Key questions for investigation
+          relatedCodes: [
+            "RCW 46.61.5249 Negligent driving-First degree",
+            "RCW 46.61.500 Reckless driving"
+          ], // Related RCWs
+          relatedProcedures: [
+            "Document negligent driving behavior.",
+            "Determine if the circumstances meet the criteria for endangerment.",
+            "Issue citation for the infraction if probable cause is established."
+          ] // Related procedures
         }
+        
         
       ]
     }
