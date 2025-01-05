@@ -2662,20 +2662,20 @@ var trafficCodes = {
         },
         {
           id: "46.61.525", // Unique identifier for the RCW
-          title: "Negligent Driving-Second Degree", // Title of the RCW
+          title: "Negligent Driving 2", // Title of the RCW
           description: "Operating a motor vehicle in a negligent manner that endangers or is likely to endanger persons or property.",
           definition: [
             {
               index: "1",
               main: "A person is guilty of negligent driving in the second degree if, under circumstances not constituting negligent driving in the first degree, they operate a vehicle negligently and endanger or are likely to endanger persons or property.",
               subSections: [
-                "(a) It is an affirmative defense that the driver was operating the vehicle on private property with the owner's consent and consistent with such consent.",
+                "(a) It is an affirmative defense that the driver was operating the vehicle on private property with the owner&apos;s consent and consistent with such consent.",
                 "(b) Negligent driving in the second degree is a traffic infraction subject to a penalty of $250."
               ]
             },
             {
               index: "2",
-              main: "Definition of 'negligent':",
+              main: "Definition of &apos;negligent&apos;:",
               subSections: [
                 "Failure to exercise ordinary care;",
                 "Doing something a reasonably careful person would not do under similar circumstances;",
