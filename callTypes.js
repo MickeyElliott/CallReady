@@ -694,11 +694,12 @@ var callTypeData = {
                   "Positioning: Plan the positioning of your patrol vehicle for cover and safety.",
                   "Approach Path: Plan the safest approach to the vehicle."
                 ]
-
-               },
-              { index: "1", main: "Notify Dispatch of the traffic stop."  },
+              },
+              { index: "1", main: "Notify Dispatch of the traffic stop." },
               { index: "2", main: "Activate lights to signal driver." },
-              { index: "3", main: "Read the plate and provide location to Dispatch.",
+              { 
+                index: "3", 
+                main: "Read the plate and provide location to Dispatch.",
                 subSections: [
                   "(a) Stolen/Mismatched Plate:",
                   "(i) Double check no clerical error.",
@@ -706,7 +707,6 @@ var callTypeData = {
                 ]
               },
               {
-                
                 index: "<i class=\"bi bi-link-45deg\"></i>",
                 href: "#li-3.0.2",
                 main: "Stolen Vehicle (High-Risk)"
@@ -717,12 +717,31 @@ var callTypeData = {
               { index: "7", main: "Issue a Sector Citation or Warning as appropriate." }
             ],
             link: "",
-            offense: "",
-            elementsOfPC: [],
-            questions: [],
-            relatedCodes: [],
-            relatedProcedures: []
-          },
+            offense: "Traffic Infraction / Criminal Offense (if applicable)",
+            elementsOfPC: [
+              "Observed traffic violation or suspicious activity",
+              "Vehicle registration check",
+              "Driver identification and verification",
+              "Suspicious behavior during stop"
+            ],
+            questions: [
+              "What prompted the stop?",
+              "Was the vehicle's plate run prior to the stop?",
+              "Did the driver provide valid documentation?",
+              "Were there any signs of impairment or suspicious behavior?",
+              "Was backup needed for safety?"
+            ],
+            relatedCodes: [
+              "RCW 46.20.342 Driving While Suspended",
+              "RCW 46.61.400 Speeding",
+              "RCW 46.61.688 Seat Belt Use"
+            ],
+            relatedProcedures: [
+              "High-Risk Stop Procedure",
+              "DUI Detection Protocol",
+              "Issuing Sector Citations"
+            ]
+          },          
           {
             id: "6.0.2",
             title: "Traffic Collision",
