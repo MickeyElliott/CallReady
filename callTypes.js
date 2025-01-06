@@ -698,7 +698,13 @@ var callTypeData = {
                },
               { index: "1", main: "Notify Dispatch of the traffic stop."  },
               { index: "2", main: "Activate lights to signal driver." },
-              { index: "3", main: "Read the plate and provide location to Dispatch." },
+              { index: "3", main: "Read the plate and provide location to Dispatch.",
+                subSections: [
+                  "(a) Stolen/Mismatched Plate:",
+                  "(i) Double check no clerical error.",
+                  "(ii) <strong>Verify VIN.</strong> The vehicle could have been purchased/transferred and not registered yet."
+                ]
+              },
               { index: "4", main: "Approach and inform driver of body cam and reason for stop." },
               { index: "5", main: "Request license, registration, and insurance." },
               { index: "6", main: "Run driver&apos;s name through DOL and NCIC." },
