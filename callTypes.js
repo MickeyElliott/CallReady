@@ -726,7 +726,7 @@ var callTypeData = {
             ],
             questions: [
               "What prompted the stop?",
-              "Was the vehicle's plate run prior to the stop?",
+              "Was the vehicle&apos;s plate run prior to the stop?",
               "Did the driver provide valid documentation?",
               "Were there any signs of impairment or suspicious behavior?",
               "Was backup needed for safety?"
