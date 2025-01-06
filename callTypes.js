@@ -737,9 +737,8 @@ var callTypeData = {
               "RCW 46.61.688 Seat Belt Use"
             ],
             relatedProcedures: [
-              "High-Risk Stop Procedure",
-              "DUI Detection Protocol",
-              "Issuing Sector Citations"
+              "Code4",
+              "HighRiskStop"
             ]
           },          
           {
