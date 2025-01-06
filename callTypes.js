@@ -705,6 +705,12 @@ var callTypeData = {
                   "(ii) <strong>Verify VIN.</strong> The vehicle could have been purchased/transferred and not registered yet."
                 ]
               },
+              {
+                
+                index: "<i class=\"bi bi-link-45deg\"></i>",
+                href: "#li-3.0.2",
+                main: "Stolen Vehicle (High-Risk)"
+              },
               { index: "4", main: "Approach and inform driver of body cam and reason for stop." },
               { index: "5", main: "Request license, registration, and insurance." },
               { index: "6", main: "Run driver&apos;s name through DOL and NCIC." },
