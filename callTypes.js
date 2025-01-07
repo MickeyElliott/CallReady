@@ -996,12 +996,22 @@ var callTypeData = {
             description: "Steps for Transporting suspects.",
             definition: [
               
-              { index: "1", main: "Secure personal items and <strong>COPY OF CITATION</strong>" },
-              { index: "2", main: "<strong>Booking</strong>: Misdimeanors: Kent, or Score (call ahead)" },
+              { index: "1", main: "Secure personal items and <strong>COPY OF CITATION</strong>",
+                subSections: [
+                  "(A) Weapons & Drugs are not bookable."
+                ]
+              },
+              { index: "2", main: "<strong>Booking</strong>: Misdimeanors: Kent, or Score (call ahead)",
+                subSections: [
+                  "(a) SCORE: Has a cell with a phone in it for <i>compliant</i> subjects.",
+                  "(i) There are no hard and fast rules about subjects getting a phone call.",
+                  "(ii) SCORE: People can bail out before seeing a judge with a promise to appear."
+                ]
+               },
               { index: "3", main: "<strong>Booking</strong>: Felonies: King County Seattle (Super Form)" },
               { index: "4", main: "<strong>Booking</strong>: Juveniles: RJC (Super Form)" },
-              { index: "5", main: "Notify Dispatch of Transport or update CAD." },
-              { index: "6", main: "Firearms must be removed before entering booking area." },
+              { index: "5", main: "Notify Dispatch of Transport or Update CAD." },
+              { index: "6", main: "Firearms & weapons must be removed before entering booking area." },
               { index: "7", main: "BWC must turned off before entering booking area." }
             ],
             link: "",
@@ -1054,7 +1064,14 @@ var callTypeData = {
                   "(a) History of CAUTIONS, Warrants, Trespasses"
                 ]
                },
-               { index: "2", main: "<strong>Key Holder</strong>: Confirm the key holder wants to tresspass." },
+               { index: "2", main: "<strong>Key Holder</strong>: Confirm the key holder wants to tresspass.",
+                subSections: [
+                  "(a) Loss Prevention Officers (LPO): Larger businesses will call us WHEN they need help identifying someone.",
+                  "(i) IF Verify ID only: Complete a Suspect ID Form (case number) and facepage.",
+                  "(ii) IF Assist with ID/Apprehension + Warrant: Complete  Warrant Arrest Report (facepage). OSA/FW Warrant: Facepage only. Out-of-state warrants (fugitives): Felony filing required; full report needed.",
+                  "(iii) IF Significant Investigation: Interview suspects, issue citations, take statements, obtain video, and total stolen items. Complete case immediately."
+                ]
+                },
               { index: "3", main: "<strong>Contact Subject</strong>: Identify the individual (name, DOB)." },
               { index: "4", main: "<strong>Issue Trespass Warning/Arrest</strong>: Verify if they are already trespassed from the location.",
                 subSections: [
@@ -1062,6 +1079,10 @@ var callTypeData = {
                   "(b) <strong>Arrest</strong>: Arrest subject and issue citation if already trespassed. "
                 ]
                },
+               {
+                index: "<i class=\"bi bi-info-circle-fill text-info fs-4\"></i>",
+                main: "<span class=\"text-info\">Case #, A case # is taken when suspect has been identifed. Provide to business.</span>"
+              },
               { index: "5", main: "If non-compliant, Criminal Trespass and take enforcement action if necessary." },
               { index: "6", main: "Gather names and business details for report." }
               
