@@ -322,7 +322,7 @@ html[data-bs-theme="light"] .list-bullet {
 </nav>
 
     <!-- Toast -->
-    <div class="toast-container bottom-0 end-0 p-3">
+    <div ID="toast-container" class="bottom-0 end-0 p-3">
   
       <div class="toast text-bg-primary border-0" role="alert">
         <div class="toast-header">
@@ -411,15 +411,6 @@ function handleDynamicPageTriggers(container) {
 
         `;
 
-        // const custodyDT = scheduler.getDate("custody");
-        // const duiDT = scheduler.getDate("dui");
-        // const trafficDT = scheduler.getDate("traffic");
-        // const criminalDT = scheduler.getDate("criminal");
-
-        // console.log(custodyDT); // Next judicial day at 08:30
-        // console.log(duiDT); // Next judicial day at 14:30
-        // console.log(trafficDT); // 30 Days from now
-        // console.log(criminalDT);
     }
 
 
@@ -1213,52 +1204,94 @@ function offenseColor(offense) {
                 
             });
             
+        const RandomToast = {
+                data: [],
+
+                init(dataArray) {
+                    this.data = dataArray;
+                },
+
+                getRandomItem() {
+                    if (!this.data || this.data.length === 0) {
+                        console.warn("Data array is empty.");
+                        return null;
+                    }
+                    const randomIndex = Math.floor(Math.random() * this.data.length);
+                    return this.data[randomIndex];
+                },
+
+                showToast() {
+                const item = this.getRandomItem();
+                if (!item) return;
+
+                const toastId = `toast-${Date.now()}`;
+
+                // Create toast element
+                const toast = document.createElement("div");
+                toast.className = "toast align-items-center text-bg-primary border-0 show"; // 'show' class ensures it appears immediately
+                toast.id = toastId;
+                toast.role = "alert";
+                toast.ariaLive = "assertive";
+                toast.ariaAtomic = "true";
+
+                toast.innerHTML = `
+                    <div class="d-flex">
+                        <div class="toast-body">
+                            ${item.message || "No message provided"}
+                        </div>
+                        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                `;
+
+                // Append to toast container
+                const toastContainer = document.getElementById("toast-container");
+                toastContainer.appendChild(toast);
+
+                // Automatically remove toast after 5 seconds
+                setTimeout(() => {
+                    const bootstrapToast = bootstrap.Toast.getInstance(toast) || new bootstrap.Toast(toast);
+                    bootstrapToast.hide();
+                    toast.addEventListener("hidden.bs.toast", () => {
+                        toast.remove();
+                    });
+                }, 5000);
+            },
+                
+                getTipsFromPageObject(pageObject) {
+                    // Find the relevant card
+                    const card = pageObject.cards.find(card => card.id === "3.0.1");
+                    if (!card) {
+                        console.warn("Card with id '3.0.1' not found.");
+                        return [];
+                    }
+
+                    // Parse the content to extract the tips
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(card.content, "text/html");
+                    const items = doc.querySelectorAll("ol.list-group-numbered > li");
+
+                    // Map the list items into an array of objects
+                    return Array.from(items).map(item => {
+                        const title = item.querySelector(".fw-bold")?.textContent.trim() || "Untitled";
+                        const message = item.querySelector(".ms-2.me-auto")?.textContent.trim() || "No content available.";
+                        return { title, message };
+                    });
+                },
+            };
+
+// Example usage:
+document.addEventListener("DOMContentLoaded", () => {
+    // Initialize with data
+    const page = pages.find(p => p.id === "3.0");
+    var tips =  [{ message: "Tips coming soon." }];
+    if (page) {
+        tips = RandomToast.getTipsFromPageObject(page);
+    }
+    RandomToast.init(tips);
+});
 
 
     </script>
 
-    <!-- <script>
-// Function to extract content by ID
-function extractContentById(html, containerId) {
-    // Parse the HTML string into a DOM document
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(html, 'text/html');
-
-    // Find the container by ID
-    const container = doc.getElementById(containerId);
-
-    // Return the container's inner HTML or a message if not found
-    if (container) {
-        return container.innerHTML; // Extract inner content
-    } else {
-        return `No element with ID "${containerId}" found.`;
-    }
-}
-
-
-        var proxy = 'https://api.codetabs.com/v1/proxy?quest=';
-        fetch(proxy + 'https://app.leg.wa.gov/rcw/default.aspx?cite=9A.36.031')
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok');
-                    }
-                    // Handle the response, e.g., convert it to text or JSON
-                    return response.text();
-                })
-                .then(data => {
-                    // Do something with the data from the webpage
-                    //console.log(data);
-
-                    // Use the function
-const extractedContent = extractContentById(data, 'contentWrapper');
-
-document.getElementById('contentTest').innerHTML = extractedContent;
-console.log(extractedContent);
-                })
-                .catch(error => {
-                    // Handle any errors that occurred during the fetch
-                    console.error('There has been a problem with your fetch operation:', error);
-                });
-    </script> -->
 </body>
 </html>
