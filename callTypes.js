@@ -1205,7 +1205,7 @@ var callTypeData = {
       },
       {
         id: "13.0",
-        title: "Out Car",
+        title: "Off Duty",
         description: "Out Car types refer to Out of Service duties. Everything from Lunch to Off-Duty Work",
         items: [
           {
