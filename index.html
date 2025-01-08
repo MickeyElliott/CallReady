@@ -1284,6 +1284,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Initialize with data
     const page = pages.find(p => p.id === "3.0");
     var tips =  [{ message: "Tips coming soon." }];
+    console.log(page);
     if (page) {
         tips = RandomToast.getTipsFromPageObject(page);
     }
