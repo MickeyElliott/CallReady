@@ -1111,7 +1111,7 @@ function offenseColor(offense) {
                         const page = pages.find(p => p.id === pageid);
                         if (page) {
                             console.log(page);
-                            const cardData = JSON.parse(page.cards[0].data); // Assuming you want the `data` from the first card
+                            const cardData = page.cards[0].data; // Assuming you want the `data` from the first card
                             addPage(page, cardData);
                         } else {
                             console.error("Page not found!");
