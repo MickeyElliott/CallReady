@@ -1245,12 +1245,11 @@ function offenseColor(offense) {
 
                 // Create toast element
                 const toast = document.createElement("div");
-                toast.className = "toast align-items-center text-bg-primary border-0 show"; // 'show' class ensures it appears immediately
+                toast.className = "toast align-items-center text-bg-primary border-0 shadow-sm show"; // 'show' class ensures it appears immediately
                 toast.id = toastId;
                 toast.role = "alert";
 
                 toast.innerHTML = `
-                    <div class="toast text-bg-primary border-0 shadow-sm show" role="alert">
                         <div class="toast-header">
                             <i class="bi bi-info-circle me-2"></i>
                             <strong class="me-auto">TIP ${"#" + item.index || "No message provided"}</strong>
@@ -1259,7 +1258,6 @@ function offenseColor(offense) {
                         <div class="toast-body">
                             ${item.main || "No message provided"}
                         </div>
-                    </div>
                 `;
 
                 // Append to toast container
