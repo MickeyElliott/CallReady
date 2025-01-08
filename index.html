@@ -1016,7 +1016,7 @@ function offenseColor(offense) {
             var relatedCodes = generateSection('Related Codes', data.relatedCodes, formatListItem);
 
 
-            if(elemetsOfPC !== '' && reminders !== '' && questions !== '' && relatedCodes !== '') {
+            if(elemetsOfPC !== '' || reminders !== '' || questions !== '' || relatedCodes !== '') {
                 cardContent += `
                         <!-- Right Column -->
                         <div class="col-4 rounded-end-4 bg-light-subtle">
