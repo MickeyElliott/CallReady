@@ -943,13 +943,14 @@ function offenseColor(offense) {
 
 
         var data = items.map(formatter);
-        if (!data || data.length === 0){ return '';}
+        console.log(data);
+        // if (!data || data.length === 0){ return '';}
 
-        return `
-        <h5 class="mb-3">${title}</h5>
-        <ul class="${listClass} mb-4">
-            ${data.join('')}
-        </ul>`;
+        // return `
+        // <h5 class="mb-3">${title}</h5>
+        // <ul class="${listClass} mb-4">
+        //     ${data.join('')}
+        // </ul>`;
     }
 
     function formatListItem(item) {
