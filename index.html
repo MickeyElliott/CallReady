@@ -1111,8 +1111,8 @@ function offenseColor(offense) {
                         const page = pages.find(p => p.id === pageid);
                         if (page) {
                             console.log(page);
-                            const data = JSON.parse(page.cards[0].data); // Assuming you want the `data` from the first card
-                            addPage(page);
+                            const cardData = JSON.parse(page.cards[0].data); // Assuming you want the `data` from the first card
+                            addPage(page, cardData);
                         } else {
                             console.error("Page not found!");
                         }
@@ -1127,9 +1127,9 @@ function offenseColor(offense) {
 
 
                 // Function to add a card for RCW or FWRC
-        function addPage(data) {
-            //console.log('data page ********************************');
-            //console.log(data);
+        function addPage(data, cardData) {
+            console.log('cardData ********************************');
+            console.log(cardData);
 
             // Clear all cards
             document.getElementById('clearSelections').click();
