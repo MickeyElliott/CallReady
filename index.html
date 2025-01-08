@@ -945,7 +945,10 @@ function offenseColor(offense) {
         var data = items.map(formatter).join('');
         
         if (!data || data.length === 0){
-            data = items.join('');
+
+            // Default list
+            var str = '';
+            data = items.forEach(d => str += `<li class="list-group-item">${d}</li>`);
         }
 
         return `
