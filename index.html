@@ -942,13 +942,13 @@ function offenseColor(offense) {
         if (!items || items.length === 0){ return '';}
 
 
-        var data = items.map(formatter);
+        var data = items.map(formatter).join('');
         if (!data || data.length === 0){ return '';}
 
         return `
         <h5 class="mb-3">${title}</h5>
         <ul class="${listClass} mb-4">
-            ${data.join('')}
+            ${data}
         </ul>`;
     }
 
