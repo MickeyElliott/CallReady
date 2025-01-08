@@ -132,55 +132,7 @@ const pages = [
        }
     ]
   },
-  {
-    "id": "3.0",
-    "title": "Tips",
-    "description": "This page serves as a quick reference for tips.",
-    "cards": [
-        {
-            "id": "3.0.1",
-            "title": "Tips",
-            "description": "A Reference for tips. - updated 1/07/25",
-            "content": `
-              <div class="row">
-                <div class="col">
-                  <ol class="list-group list-group-numbered">
-                    <li class="list-group-item d-flex justify-content-between align-items-start">
-                      <div class="ms-2 me-auto">
-                        <div class="fw-bold">Know Your Sandbox</div>
-                        Always differentiate between a Social Stop, Terry Stop, and actions requiring Probable Cause.
-                      </div>
-                    </li>
-                  </ol>
-                </div>
-              </div>
-            `,
-            data: {
-              tips: [
-                { message: "Know Your Sandbox: Differentiate between a Social Stop, Terry Stop, and Probable Cause." },
-                { message: "Code-4 Scene: Always run names before declaring Code-4." },
-                { message: "Priority Calls: Ensure Priority 1 calls are resolved by the end of your shift." },
-                { message: "Serving Protection Orders: Verify identity and service date before leaving." },
-                { message: "Order Violation: Two prior convictions elevate the violation to a Class C Felony." },
-                { message: "Executing Warrants: Notify a supervisor for high-risk warrants." },
-                { message: "Vehicle Recovery: Match plate and VIN before proceeding." },
-                { message: "DV Elements: DV supplement may not be required if not classified as DV." },
-                { message: "Mental Health ITA: Focus on Danger to Self, Others, Property, or Gravely Disabled." },
-                { message: "Burglary Investigation: Establish containment and request backup resources." },
-                { message: "DUI Stop: Document PC thoroughly after field sobriety tests." },
-                { message: "Traffic Stops: Plan approach and verify plate and owner details." },
-                { message: "DOA Management: Notify a supervisor if suspicious circumstances arise." },
-                { message: "Trespassing: Confirm keyholder's intent to pursue action." },
-                { message: "Retail Theft: Complete ID and trespass forms when assisting loss prevention." },
-                { message: "Suicidal Subjects: Build rapport using 'It seems like...' or 'It sounds like...'" },
-                { message: "Booking: Remove firearms and turn off body-worn cameras before entering booking." },
-                { message: "Incident Command: Define roles such as staging, containment, and investigation." },
-                { message: "K9 Announcements: Log announcements in CAD every 5 minutes." }
-              ]
-            }
-        }
-    ]
-}
+  
 
   
   
