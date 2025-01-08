@@ -993,7 +993,9 @@ function offenseColor(offense) {
             var cardContent = `
                 <div class="card container border-1 border-${offenseColor(data.offense)} shadow-sm rounded-4">
                     <div class="row">
+            `;
 
+            cardContent += `
                         <!-- Left Column -->
                         <div class="col">
                             <div class="card-body p-5">
@@ -1007,21 +1009,35 @@ function offenseColor(offense) {
                                 ${parseDefinitions(data) || 'No description available.'}
                             </div>
                         </div>
+            `;
+            var elemetsOfPC = generateSection('Elements of PC', data.elementsOfPC, formatListItem);
+            var reminders = generateSection('Reminders', data.relatedProcedures, formatProcedure);
+            var questions = generateSection('Questions', data.questions, formatListItem, 'list-unstyled');
+            var relatedCodes = generateSection('Related Codes', data.relatedCodes, formatListItem);
 
+
+            if(elemetsOfPC !== '' && reminders !== '' && questions !== '' && relatedCodes !== '') {
+                cardContent += `
                         <!-- Right Column -->
                         <div class="col-4 rounded-end-4 bg-light-subtle">
                             <div class="card-body p-4">
-                                ${generateSection('Elements of PC', data.elementsOfPC, formatListItem)}
-
-
-                                ${generateSection('Reminders', data.relatedProcedures, formatProcedure)}
-                                ${generateSection('Questions', data.questions, formatListItem, 'list-unstyled')}
-                                ${generateSection('Related Codes', data.relatedCodes, formatListItem)}
+                                ${elemetsOfPC}
+                                ${reminders}
+                                ${questions}
+                                ${relatedCodes}
                             </div>
                         </div>
+            `;
+            }
+            
 
+            cardContent += `
                     </div>
-                </div>`;
+                </div>
+            `;
+
+
+          
             // Assign HTML to the card element
             card.innerHTML = cardContent;
 
