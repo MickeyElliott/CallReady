@@ -939,11 +939,16 @@ function offenseColor(offense) {
 
     // Helper Functions
     function generateSection(title, items, formatter, listClass = 'list-group list-group-flush') {
-        if (!items || items.length === 0) return '';
+        if (!items || items.length === 0){ return '';}
+
+
+        var data = items.map(formatter);
+        if (!data || data.length === 0){ return '';}
+
         return `
         <h5 class="mb-3">${title}</h5>
         <ul class="${listClass} mb-4">
-            ${items.map(formatter).join('')}
+            ${data.join('')}
         </ul>`;
     }
 
@@ -986,7 +991,7 @@ function offenseColor(offense) {
                     <div class="row">
 
                         <!-- Left Column -->
-                        <div class="col-8">
+                        <div class="col">
                             <div class="card-body p-5">
                                 ${data.offense ? `<span class="offense-badge badge text-bg-${offenseColor(data.offense)} float-end"> ${data.offense} </span>` : ''}
                                 <h4 class="mb-3">
@@ -1003,7 +1008,9 @@ function offenseColor(offense) {
                         <div class="col-4 rounded-end-4 bg-light-subtle">
                             <div class="card-body p-4">
                                 ${generateSection('Elements of PC', data.elementsOfPC, formatListItem)}
-                                ${data.relatedProcedures.length ? generateSection('Procedures', data.relatedProcedures, formatProcedure):''}
+
+
+                                ${generateSection('Procedures', data.relatedProcedures, formatProcedure)}
                                 ${generateSection('Questions', data.questions, formatListItem, 'list-unstyled')}
                                 ${generateSection('Related Codes', data.relatedCodes, formatListItem)}
                             </div>
