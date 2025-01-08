@@ -944,12 +944,7 @@ function offenseColor(offense) {
 
         var data = items.map(formatter).join('');
         
-        if (!data || data.length === 0){
-
-            // Default list
-            var str = '';
-            data = items.forEach(d => str += `<li class="list-group-item">${d}</li>`);
-        }
+        if (!data || data.length === 0){ return '';}
 
         return `
         <h5 class="mb-3">${title}</h5>
@@ -965,18 +960,21 @@ function offenseColor(offense) {
     function formatProcedure(procedureId, index) {
         console.log('*******formatProcedure');
         console.log(procedureId);
-        if(procedureId !== ''){
-            const procedure = procedures[procedureId];
-        if (!procedure) return '';
-            return `
-        <li class="list-group-item" data-bs-toggle="collapse" data-bs-target="#collapse-relatedproc-${index}">
-            ${procedure.title}
-            <div class="collapse" id="collapse-relatedproc-${index}">
-                <div class="card card-body border-0">
-                    ${procedure.description}
-                </div>
-            </div>
-        </li>`;
+        if(procedureId !== '') {
+            var procedure = procedures[procedureId];
+            if (procedure) {
+                return `
+                <li class="list-group-item" data-bs-toggle="collapse" data-bs-target="#collapse-relatedproc-${index}">
+                    ${procedure.title}
+                    <div class="collapse" id="collapse-relatedproc-${index}">
+                        <div class="card card-body border-0">
+                            ${procedure.description}
+                        </div>
+                    </div>
+                </li>`;
+            } else {
+                return `<li class="list-group-item">${procedureId}</li>`;
+            }
         }
         
     }
