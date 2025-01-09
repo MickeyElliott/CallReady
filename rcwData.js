@@ -2663,7 +2663,7 @@ var trafficCodes = {
         {
           id: "46.61.502",
           title: "Driving Under the Influence (DUI)",
-          description: "Handling DUI stops and procedures based on RCW 46.61.502.",
+          description: "Operating a vehicle under the influence of intoxicating liquor, cannabis, or any drug.",
           definition: [
             {
               index: "1",
@@ -2671,12 +2671,20 @@ var trafficCodes = {
               subSections: [
                 "(a) Alcohol concentration of 0.08 or higher within two hours of driving.",
                 "(b) THC concentration of 5.00 or higher within two hours of driving.",
-                "(c) Under the influence of intoxicating liquor, cannabis, or any drug.",
+                "(c) Driving under the influence of intoxicating liquor, cannabis, or any drug.",
                 "(d) Combined influence of intoxicating liquor, cannabis, and any drug."
               ]
             },
             {
               index: "2",
+              main: "Testing Evidence:",
+              subSections: [
+                "(a) Breath/Blood analysis >2 hours after driving can still be evidence.",
+                "(b) Alcohol/THC above 0.00 may indicate impairment."
+              ]
+            },
+            {
+              index: "3",
               main: "Affirmative Defenses:",
               subSections: [
                 "(a) Consumption of alcohol after driving but before analysis.",
@@ -2685,47 +2693,34 @@ var trafficCodes = {
               ]
             },
             {
-              index: "3",
-              main: "Testing Evidence:",
-              subSections: [
-                "(a) Blood/Breath analysis > 2 hours after driving can be used as evidence of DUI.",
-                "(b) Alcohol/THC above 0.00 may indicate impairment."
-              ]
-            },
-            {
               index: "4",
               main: "Penalties:",
               subSections: [
-                "<span class=\"text-warning\"><strong>Gross Misdemeanor:</strong> Default penalty for DUI.</span>",
+                "<span class=\"text-warning\"><strong>Gross Misdemeanor:</strong> Default DUI penalty.</span>",
                 "<span class=\"text-danger\"><strong>Class B Felony:</strong> Applies if:</span>",
                 "(a) 3+ prior offenses within 10 years.",
-                "(b) Prior conviction of vehicular homicide or assault under the influence.",
-                "(c) Comparable out-of-state offense or previous felony DUI conviction."
+                "(b) Prior conviction for vehicular homicide/assault under the influence.",
+                "(c) Comparable out-of-state felony DUI convictions."
               ]
             }
           ],
           link: "https://app.leg.wa.gov/RCW/default.aspx?cite=46.61.502",
           offense: "Gross Misdemeanor / Class B Felony under specific conditions",
           elementsOfPC: [
-            "Observed impairment (e.g., slurred speech, odor of alcohol/cannabis).",
-            "Failure of field sobriety tests (Nystagmus, Walk-and-Turn, One-Leg Stand).",
-            "Positive results from breath or blood tests.",
-            "Admission of alcohol or drug use."
+            "Driving behavior indicating impairment (e.g., swerving, speeding).",
+            "Physical signs of intoxication (e.g., odor, slurred speech).",
+            "Failure of field sobriety tests (e.g., HGN, Walk-and-Turn, One-Leg Stand).",
+            "Breath or blood test results confirming BAC or THC levels above legal limits."
           ],
           questions: [
-            "Did the driver exhibit signs of impairment?",
-            "Were field sobriety tests administered and results documented?",
-            "Was breath/blood test conducted within two hours of driving?",
-            "Any prior DUI-related offenses on record?"
+            "Did the driver show signs of impairment?",
+            "Was a field sobriety test administered and documented?",
+            "What was the BAC or THC level from testing?",
+            "Does the driver have prior DUI offenses?"
           ],
           relatedCodes: [
             "RCW 46.61.503 Minor Operating After Consuming Alcohol",
             "RCW 46.61.504 Physical Control of Vehicle While Intoxicated"
-          ],
-          relatedProcedures: [
-            "Field Sobriety Testing Procedure",
-            "Breathalyzer/Blood Test Documentation",
-            "Arrest and Booking for DUI"
           ]
         },        
         {
