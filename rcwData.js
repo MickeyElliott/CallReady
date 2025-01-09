@@ -2661,68 +2661,64 @@ var trafficCodes = {
           ] // Related procedures
         },
         {
-          id: "46.61.502",
-          title: "Driving Under the Influence (DUI)",
-          description: "Operating a vehicle under the influence of intoxicating liquor, cannabis, or any drug.",
+          id: "46.61.502", // Unique identifier for the RCW
+          title: "Driving Under the Influence (DUI)", // Title of the RCW
+          description: "Operating a vehicle under the influence of intoxicating liquor, cannabis, or any drug.", // Brief description
           definition: [
             {
               index: "1",
-              main: "Criteria for DUI:",
+              main: "A person is guilty of driving while under the influence if they drive a vehicle within this state:",
               subSections: [
-                "(a) Alcohol concentration of 0.08 or higher within two hours of driving.",
-                "(b) THC concentration of 5.00 or higher within two hours of driving.",
-                "(c) Driving under the influence of intoxicating liquor, cannabis, or any drug.",
-                "(d) Combined influence of intoxicating liquor, cannabis, and any drug."
+                "(a) Within two hours of driving, has an alcohol concentration of 0.08 or higher as shown by analysis of breath or blood.",
+                "(b) Within two hours of driving, has a THC concentration of 5.00 or higher as shown by analysis of blood.",
+                "(c) While under the influence of or affected by intoxicating liquor, cannabis, or any drug.",
+                "(d) While under the combined influence of or affected by intoxicating liquor, cannabis, and any drug."
               ]
             },
             {
               index: "2",
-              main: "Testing Evidence:",
+              main: "Affirmative Defenses:",
               subSections: [
-                "(a) Breath/Blood analysis >2 hours after driving can still be evidence.",
-                "(b) Alcohol/THC above 0.00 may indicate impairment."
+                "(a) Evidence must show consumption of intoxicants after driving but before testing.",
+                "(b) Defendant must notify prosecution before pretrial of intent to assert this defense."
               ]
             },
             {
               index: "3",
-              main: "Affirmative Defenses:",
-              subSections: [
-                "(a) Consumption of alcohol after driving but before analysis.",
-                "(b) Consumption of cannabis after driving but before analysis.",
-                "<i class=\"text-warning\">Must notify prosecution prior to pretrial hearing.</i>"
-              ]
-            },
-            {
-              index: "4",
               main: "Penalties:",
               subSections: [
-                "<span class=\"text-warning\"><strong>Gross Misdemeanor:</strong> Default DUI penalty.</span>",
-                "<span class=\"text-danger\"><strong>Class B Felony:</strong> Applies if:</span>",
-                "(a) 3+ prior offenses within 10 years.",
-                "(b) Prior conviction for vehicular homicide/assault under the influence.",
-                "(c) Comparable out-of-state felony DUI convictions."
+                "<span class='text-warning'><strong>Gross Misdemeanor:</strong> Default DUI penalty.</span>",
+                "<span class='text-danger'><strong>Class B Felony:</strong> Applies if:</span>",
+                "(a) 3+ prior DUI-related offenses within 10 years.",
+                "(b) Prior conviction for vehicular homicide or assault while under the influence.",
+                "(c) Comparable out-of-state felony DUI offenses."
               ]
             }
           ],
-          link: "https://app.leg.wa.gov/RCW/default.aspx?cite=46.61.502",
-          offense: "Gross Misdemeanor / Class B Felony under specific conditions",
+          link: "https://app.leg.wa.gov/RCW/default.aspx?cite=46.61.502", // Direct link to the RCW
+          offense: "Gross Misdemeanor / Class B Felony under specific conditions", // Classification of the offense
           elementsOfPC: [
-            "Driving behavior indicating impairment (e.g., swerving, speeding).",
-            "Physical signs of intoxication (e.g., odor, slurred speech).",
-            "Failure of field sobriety tests (e.g., HGN, Walk-and-Turn, One-Leg Stand).",
+            "Observations of impaired driving or physical signs of intoxication.",
+            "Failure of standardized field sobriety tests.",
             "Breath or blood test results confirming BAC or THC levels above legal limits."
-          ],
+          ], // Required elements for probable cause
           questions: [
-            "Did the driver show signs of impairment?",
-            "Was a field sobriety test administered and documented?",
-            "What was the BAC or THC level from testing?",
-            "Does the driver have prior DUI offenses?"
-          ],
+            "What indicators of impairment were observed?",
+            "Were field sobriety tests administered, and what were the results?",
+            "What were the BAC or THC levels from chemical tests?",
+            "Does the driver have any prior DUI-related offenses?"
+          ], // Key questions for investigation
           relatedCodes: [
-            "RCW 46.61.503 Minor Operating After Consuming Alcohol",
-            "RCW 46.61.504 Physical Control of Vehicle While Intoxicated"
-          ]
-        },        
+            "RCW 46.61.504 Physical Control of Vehicle While Intoxicated",
+            "RCW 46.61.503 Minor Operating After Consuming Alcohol"
+          ], // Related RCWs
+          relatedProcedures: [
+            "Administering field sobriety tests.",
+            "Handling chemical testing procedures.",
+            "Documenting probable cause for DUI."
+          ] // Related procedures
+        }
+        ,        
         {
           id: "46.61.525", // Unique identifier for the RCW
           title: "Negligent Driving 2", // Title of the RCW
