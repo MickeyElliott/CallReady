@@ -2687,8 +2687,8 @@ var trafficCodes = {
               index: "3",
               main: "Penalties:",
               subSections: [
-                "<span class='text-warning'><strong>Gross Misdemeanor:</strong> Default DUI penalty.</span>",
-                "<span class='text-danger'><strong>Class B Felony:</strong> Applies if:</span>",
+                "<span class=\"text-warning\"><strong>Gross Misdemeanor:</strong> Default DUI penalty.</span>",
+                "<span class=\"text-danger\"><strong>Class B Felony:</strong> Applies if:</span>",
                 "(a) 3+ prior DUI-related offenses within 10 years.",
                 "(b) Prior conviction for vehicular homicide or assault while under the influence.",
                 "(c) Comparable out-of-state felony DUI offenses."
@@ -2717,8 +2717,7 @@ var trafficCodes = {
             "Handling chemical testing procedures.",
             "Documenting probable cause for DUI."
           ] // Related procedures
-        }
-        ,        
+        },        
         {
           id: "46.61.525", // Unique identifier for the RCW
           title: "Negligent Driving 2", // Title of the RCW
