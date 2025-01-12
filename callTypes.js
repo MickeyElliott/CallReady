@@ -1102,6 +1102,87 @@ var callTypeData = {
       },
       {
         id: "11.0",
+        title: "Suspicious Circumstances",
+        description: "Guidelines for suspicious circumstances.",
+        items: [
+          {
+            id: "11.0.1", // Unique identifier for the call type
+            title: "Drive By Shooting", // Title of the call type
+            description: "Steps for responding to and investigating a drive-by shooting incident.", // Brief description
+            definition: [
+              {
+                index: "1",
+                main: "Scene Safety:",
+                subSections: [
+                  "Secure the scene.",
+                  "Identify ongoing threats.",
+                  "Stage resources"
+                ]
+              },
+              {
+                index: "2",
+                main: "Render Aid:",
+                subSections: [
+                  "Identify victims and witnesses.",
+                  "Provide aid until EMS arrives.",
+                  "Air suspect vehicle description and direction of travel."
+                ]
+              },
+              {
+                index: "3",
+                main: "Evidence:",
+                subSections: [
+                  "Protect scene/evidence.",
+                  "Identify and mark shell casings, bullet holes, property damage.",
+                  "Photograph the scene.",
+                  "Document vehicle tire tracks, debris, or other relevant details."
+                ]
+              },
+              {
+                index: "4",
+                main: "Witness Statements:",
+                subSections: [
+                  "Interview witnesses for descriptions of suspects and vehicles.",
+                  "Document any observed license plates or unique vehicle identifiers.",
+                  "Record statements regarding suspect behavior or conversations."
+                ]
+              },
+              {
+                index: "5",
+                main: "Notification and Coordination:",
+                subSections: [
+                  "Request OSA help if needed.",
+                  "Notify a supervisor and CIS if required.",
+                  "Send BOLO info of suspects, vehicles, and occupants."
+                ]
+              }
+            ],
+            link: "",
+            offense: "Felony", // Classification of the offense
+            elementsOfPC: [
+              "Suspect fired from a moving vehicle.",
+              "Intent to harm or endanger another person."
+            ], // Required elements for probable cause
+            questions: [
+              "Did witnesses see the vehicle's make, model, or license plate?",
+              "Were shots fired toward individuals or structures?",
+              "Did you observe any bullet casings, damage, or injuries?",
+              "What direction did the vehicle flee?"
+            ], // Key questions for investigation
+            relatedCodes: [
+              "RCW 9A.36.045 Drive-By Shooting",
+              "RCW 9.41.040 Unlawful Possession of a Firearm"
+            ], // Related RCWs
+            relatedProcedures: [
+              "Processing shell casings and ballistics evidence.",
+              "OSA investigations.",
+              "Securing a crime scene."
+            ] // Related procedures
+          }
+        ]
+      },  
+      {
+        id: "12.0",
         title: "CPS & Children",
         description: "Guidelines for investigating referrals child related calls.",
         items: [
@@ -1135,7 +1216,7 @@ var callTypeData = {
         ]
       },
       {
-        id: "12.0",
+        id: "13.0",
         title: "Incident Command",
         description: "Guidelines for joining an incident command team.",
         items: [
@@ -1201,8 +1282,8 @@ var callTypeData = {
         ]
       },
       {
-        id: "13.0",
-        title: "Off Duty",
+        id: "14.0",
+        title: "Extra Duty",
         description: "Out Car types refer to Out of Service duties. Everything from Lunch to Off-Duty Work",
         items: [
           {
