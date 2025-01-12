@@ -1048,7 +1048,7 @@ var callTypeData = {
       },
       {
         id: "10.0",
-        title: "Suspicious Subjects",
+        title: "Sus Subjects",
         description: "Guidelines for suspicious subjects.",
         items: [
           {
@@ -1102,7 +1102,7 @@ var callTypeData = {
       },
       {
         id: "11.0",
-        title: "Suspicious Circumstances",
+        title: "Sus Circumstances",
         description: "Guidelines for suspicious circumstances.",
         items: [
           {
