@@ -677,7 +677,7 @@ var callTypeData = {
         items: [
           {
             id: "6.0.1",
-            title: "Traffic Stop Procedure",
+            title: "Traffic Stop",
             description: "Call out traffic stop prior. Eliminate multi-tasking.",
             definition: [
               { 
@@ -784,7 +784,7 @@ var callTypeData = {
           },
           {
             id: "6.0.3",
-            title: "Blocking Disabled Vehicle Procedure",
+            title: "Blocking Disabled",
             description: "Steps for assisting a disabled vehicle while ensuring officer safety.",
             definition: [
               { index: "1", main: "Treat this as a traffic stop; maintain awareness." },
