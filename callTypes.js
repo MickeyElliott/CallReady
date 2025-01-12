@@ -1164,7 +1164,7 @@ var callTypeData = {
               "Intent to harm or endanger another person."
             ], // Required elements for probable cause
             questions: [
-              "Did witnesses see the vehicle's make, model, or license plate?",
+              "Did witnesses see the vehicle&apos;s make, model, or license plate?",
               "Were shots fired toward individuals or structures?",
               "Did you observe any bullet casings, damage, or injuries?",
               "What direction did the vehicle flee?"
