@@ -1098,7 +1098,68 @@ var callTypeData = {
             relatedCodes: [],
             relatedProcedures: [
             ]
-          }
+          },
+          {
+            id: "10.0.3", // Unique identifier for the call type
+            title: "Sex Offender", // Title of the call type
+            description: "Guidelines for interacting with sex offenders.", // Brief description
+            definition: [
+              {
+                index: "1",
+                main: "Initial Contact:",
+                subSections: [
+                  "Confirm identity.",
+                  "Check for confirmed warrant.",
+                  "Document interaction as a social stop unless separate violation exist."
+                ]
+              },
+              {
+                index: "2",
+                main: "Questions to Ask (If Unregistered):",
+                subSections: [
+                  "Where are you currently staying?",
+                  "How long have you been residing at this location?",
+                  "Are there other places you frequent or stay overnight?"
+                ]
+              },
+              {
+                index: "3",
+                main: "Documentation and Reporting:",
+                subSections: [
+                  "Complete a Field Interview (FI) report with the provided information.",
+                  "Email the collected data to CIS for follow-up.",
+                  "Ensure any evidence of non-compliance is properly documented."
+                ]
+              },
+              {
+                index: "4",
+                main: "Traffic Stops:",
+                subSections: [
+                  "Do not initiate a traffic stop solely based on sex offender registration status.",
+                  "Traffic infractions must be legitimate and not used as pretext."
+                ]
+              }
+            ],
+            link: "",
+            offense: "",
+            elementsOfPC: [
+              "Clear evidence of unregistered status.",
+              "Failure to provide an updated address or living arrangements when required."
+            ], // Required elements for probable cause
+            questions: [
+              "Where are you currently residing?",
+              "How long have you been staying at this address?",
+              "Do you have a registered address on file?"
+            ], // Key questions for investigation
+            relatedCodes: [
+              "RCW 9A.44.130 Registration of Sex Offenders",
+              "RCW 9A.44.132 Failure to Register as a Sex Offender"
+            ], // Related RCWs
+            relatedProcedures: [
+              "Submitting FI reports and notifying CIS.",
+              "Documenting non-compliance without pretextual stops."
+            ] // Related procedures
+          }          
         ]
       },
       {
