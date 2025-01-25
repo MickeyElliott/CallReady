@@ -1188,7 +1188,7 @@ var callTypeData = {
         description: "Guidelines for investigating referrals child related calls.",
         items: [
           {
-            id: "11.0.1",
+            id: "12.0.1",
             title: "CPS Referral Investigation",
             description: "Guidelines for investigating referrals received from Child Protective Services (CPS) regarding potential child abuse, neglect, or endangerment.",
             definition: [
@@ -1213,6 +1213,30 @@ var callTypeData = {
             relatedCodes: [],
             relatedProcedures: [
             ]
+          },
+          {
+            id: "12.0.2",
+            title: "Juvenile Runaway",
+            description: "Guidelines for investigating a juvenile runaway.",
+            definition: [
+              { index: "1", main: "<strong>Missing Person</strong>: Determine if the juvenile is a <strong>Missing Person</strong>. Requires Missing Person Form.", subSections: [
+                "(a) Yu can take a juvenile into Protective Custody but it cannot be with force."
+              ] },
+              { index: "2", main: "<strong>Record Entry</strong>: Submit Missing Person Form to records department. Don&apos;t forget photo." },
+              { index: "3", main: "<strong>Conduct Welfare Check</strong>: Observe home environment, determine any medical conditions. Autism cases should notify supervisors and perform area checks." },
+              { index: "4", main: "<strong>Follow Up if Found</strong>: Check on juvenile in person. Remove from Missing Persons via records department." }
+            ],
+            link: "",
+            offense: "",
+            elementsOfPC: [],
+            questions: [
+              "Where was the child last seen?",
+              "Does the child know how to get to friends or family locations?",
+              "Do you have a photo copy of the child?"
+            ],
+            relatedCodes: [],
+            relatedProcedures: [
+            ]
           }
         ]
       },
@@ -1222,7 +1246,7 @@ var callTypeData = {
         description: "Guidelines for joining an incident command team.",
         items: [
           {
-            id: "12.0.1",
+            id: "13.0.1",
             title: "Incident Command Areas",
             description: "C2 architecture is the temporary, ad hoc organizational structure of response personnel, showing their tasks.  ",
             definition: [
@@ -1244,7 +1268,7 @@ var callTypeData = {
             ]
           },
           {
-            id: "12.0.2",
+            id: "13.0.2",
             title: "K9 Calls",
             description: "Working with K9 officers requires some key details and responsibilities from you to keep them safe.",
             definition: [
@@ -1288,7 +1312,7 @@ var callTypeData = {
         description: "Out Car types refer to Out of Service duties. Everything from Lunch to Off-Duty Work",
         items: [
           {
-            id: "13.0.1",
+            id: "14.0.1",
             title: "Off Duty - Transit Center",
             description: "Transit Center ",
             definition: [
