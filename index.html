@@ -3,147 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CallReady - On duty officers</title>
+    <title>CallReady - On Duty Law Enforcement</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- https://bootstrappretty.dev/palettes/dracula/ -->
     <link rel="stylesheet" href="dracula-theme.css">
-    <style>
-        
-
-        body {
-            display: flex;
-            height: 100vh;
-        }
-       
-
-        #sidebar {
-            width: 100%;
-            max-width: 300px;
-            min-width: 300px;
-            padding: 0;
-            overflow-y: auto;
-            
-        }
-        #sidebar.border-end  {
-            border:none!important;
-            border-color: var(--bs-light-bg-subtle)!important;
-        }
-        #content {
-            flex-grow: 1;
-            padding: 1rem;
-            
-            overflow-y: auto;
-        }
-        #accordion-menu {
-            padding:10px;
-            
-        }
-        #accordion-menu > .accordion-item:first-of-type .accordion-button {
-            border-top-left-radius: var(--bs-accordion-inner-border-radius);
-            border-top-right-radius: var(--bs-accordion-inner-border-radius);
-                      
-        }
-
-        #accordion-menu .accordion-button,
-        #accordion-menu .accordion-button:focus,
-        #accordion-menu .accordion-button:hover,
-        #accordion-menu.accordion-button.collapsed,
-        #accordion-menu.accordion-button:not(.collapsed) {
-            box-shadow: none !important;
-        }
-        #accordion-menu > .accordion-item  .accordion-button.collapsed{
-            background-color: var(--bs-light-bg-subtle);
-            border:0;
-            
-        }
-
-        .accordion-item {
-            border: 0;
-            margin-bottom: 1px;
-               
-            
-        }
-        
-        
-        
-
-        
-
-        #accordion-menu .accordion-item .accordion-item .accordion-button {
-            background-color: var(--bs-light-bg-subtle);
-            border:0;
-            border-radius: 0;
-
-        }
-        #sidebar .list-group-item {
-            
-            background-color: rgba(0,0,0,.05);
-        }
-
-        #sidebar .list-group-item {
-            word-wrap: break-word;
-            white-space: normal;
-            background-color: none;
-            padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
-            font-size: 1rem;
-            color: var(--bs-accordion-btn-color);
-        }
-        .rcw-num, .dir-num, .nav-item-num {
-            margin-right: 0.5rem;
-        }
-
-        .accordion-header.checked-header .accordion-button, .accordion-header.checked-header .accordion-button-page  {
-            font-weight: bold;
-            color: var(--bs-danger); 
-        }
-
-    
-html[data-bs-theme="dark"] ::-webkit-scrollbar { width: 10px; }
-html[data-bs-theme="dark"] ::-webkit-scrollbar-track { background: var(--bs-dark); }
-html[data-bs-theme="dark"] ::-webkit-scrollbar-thumb { background: var(--bs-primary-border-subtle); }
-html[data-bs-theme="dark"] ::-webkit-scrollbar-thumb:hover { background: var(--bs-dark-border-subtle); }
-
-
-
-.accordion-button-page {
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
-    font-size: 1rem;
-    color: var(--bs-accordion-btn-color);
-    text-align: left;
-    background-color: var(--bs-light-bg-subtle);
-    border: 0;
-    border-radius: 0;
-    overflow-anchor: none;
-    transition: var(--bs-accordion-transition);
-}
-
-
-.list-bullet {
-    width: 32px; 
-    height: 32px; 
-    font-weight: bold;
-}
-html[data-bs-theme="light"] .list-bullet {
-    color: var(--bs-secondary);
-    background-color: rgba(var(--bs-light-rgb)) !important;
-}
-
-
-
-    </style>
-        
-
+    <link rel="stylesheet" href="custom.css">
 </head>
 <body>
 
     
   
-    <!-- Sidebar -->
     <!-- Sidebar -->
 <nav id="sidebar" class="border-end">
   <h4 id="logo" class="p-3 mb-0"><i class="bi bi-emoji-dizzy"></i> CallReady
