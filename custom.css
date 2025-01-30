@@ -22,3 +22,4 @@ html[data-bs-theme="dark"] ::-webkit-scrollbar-track { background: var(--bs-dark
 html[data-bs-theme="dark"] ::-webkit-scrollbar-thumb { background: var(--bs-primary-border-subtle); }
 html[data-bs-theme="dark"] ::-webkit-scrollbar-thumb:hover { background: var(--bs-dark-border-subtle); }
 html[data-bs-theme="light"] .list-bullet { color: var(--bs-secondary); background-color: rgba(var(--bs-light-rgb)) !important; }
+
