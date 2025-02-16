@@ -46,10 +46,152 @@ function refreshCourtDates() {
             <li class=\"list-group-item d-flex justify-content-between\"><strong>In Custody DUI</strong> ${scheduler.getDate("dui")}</li>
             <li class=\"list-group-item d-flex justify-content-between\"><strong>Criminal Citation</strong> ${scheduler.getDate("traffic")}</li>
             <li class=\"list-group-item d-flex justify-content-between\"><strong>Traffic Infracion</strong> ${scheduler.getDate("criminal")}</li>
-
         `;
-
 }
+
+var gpsRoadInstance = null;
+    function refreshGPSRoad() {
+        if (gpsRoadInstance) return; // Prevent multiple instances
+
+        gpsRoadInstance = {
+            vars: {
+                isLoad: true,
+                map: null,
+                lastCoords: null,
+                marker: null,
+                locationIqApiKey: 'pk.e37eac686843d008b047d14c0c04abfd',
+                requestInterval: 5000, // 5 seconds
+                spinner: document.getElementById('spinner'),
+                intervalId: null // Store interval ID for cleanup
+            },
+            utils: {
+                toRad: function (degree) {
+                    return degree * (Math.PI / 180);
+                },
+                getDirection: function (lat1, lon1, lat2, lon2) {
+                    const y = Math.sin(gpsRoadInstance.utils.toRad(lon2 - lon1)) * Math.cos(gpsRoadInstance.utils.toRad(lat2));
+                    const x = Math.cos(gpsRoadInstance.utils.toRad(lat1)) * Math.sin(gpsRoadInstance.utils.toRad(lat2)) -
+                              Math.sin(gpsRoadInstance.utils.toRad(lat1)) * Math.cos(gpsRoadInstance.utils.toRad(lat2)) * Math.cos(gpsRoadInstance.utils.toRad(lon2 - lon1));
+                    const brng = Math.atan2(y, x) * (180 / Math.PI);
+                    const compassDirection = (brng + 360) % 360;
+
+                    if (compassDirection >= 337.5 || compassDirection < 22.5) return 'N';
+                    if (compassDirection >= 22.5 && compassDirection < 67.5) return 'NE';
+                    if (compassDirection >= 67.5 && compassDirection < 112.5) return 'E';
+                    if (compassDirection >= 112.5 && compassDirection < 157.5) return 'SE';
+                    if (compassDirection >= 157.5 && compassDirection < 202.5) return 'S';
+                    if (compassDirection >= 202.5 && compassDirection < 247.5) return 'SW';
+                    if (compassDirection >= 247.5 && compassDirection < 292.5) return 'W';
+                    if (compassDirection >= 292.5 && compassDirection < 337.5) return 'NW';
+                },
+                fetchRoadInfo: function (latitude, longitude) {
+                    gpsRoadInstance.vars.spinner.classList.remove('d-none');
+                    axios.get(`https://us1.locationiq.com/v1/reverse.php?key=${gpsRoadInstance.vars.locationIqApiKey}&lat=${latitude}&lon=${longitude}&format=json`)
+                        .then(response => {
+                            const data = response.data.address;
+                            const road = data.road || "Unknown Road";
+
+                            const houseNumber = data.house_number ? `, ${data.house_number}` : "";
+                            const neighbourhood = data.neighbourhood ? `, ${data.neighbourhood}` : "";
+                            const suburb = data.suburb ? `, ${data.suburb}` : "";
+
+                            document.getElementById('road').textContent = `${road}${houseNumber}${neighbourhood}${suburb}`;
+                        })
+                        .catch(error => {
+                            console.error('Error fetching the road information:', error);
+                            document.getElementById('road').textContent = "Unable to retrieve road name";
+                        })
+                        .finally(() => {
+                            gpsRoadInstance.vars.spinner.classList.add('d-none');
+                        });
+                }
+            },
+            functions: {
+                success: function (position) {
+                    const { latitude, longitude } = position.coords;
+                    if (gpsRoadInstance.vars.lastCoords) {
+                        const direction = gpsRoadInstance.utils.getDirection(gpsRoadInstance.vars.lastCoords.latitude, gpsRoadInstance.vars.lastCoords.longitude, latitude, longitude);
+                        document.getElementById('direction').textContent = direction;
+                    }
+                    gpsRoadInstance.vars.lastCoords = { latitude, longitude };
+                    gpsRoadInstance.utils.fetchRoadInfo(latitude, longitude);
+                    gpsRoadInstance.functions.updateMap(latitude, longitude);
+                },
+                error: function (err) {
+                    console.warn(`ERROR(${err.code}): ${err.message}`);
+                    if (err.code === 1) {
+                        alert("Please enable location services.");
+                    }
+                },
+                updateMap: function (latitude, longitude) {
+                    if (gpsRoadInstance.vars.marker) {
+                        gpsRoadInstance.vars.marker.setLatLng([latitude, longitude]);
+                    } else {
+                        gpsRoadInstance.vars.marker = L.marker([latitude, longitude]).addTo(gpsRoadInstance.vars.map);
+                    }
+                    gpsRoadInstance.vars.map.setView([latitude, longitude], 16);
+                },
+                initMap: function () {
+                    gpsRoadInstance.vars.map = L.map('map').setView([0, 0], 2);
+                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                    }).addTo(gpsRoadInstance.vars.map);
+                },
+                requestLocationPermission: function () {
+                    navigator.geolocation.getCurrentPosition(
+                        function (position) {
+                            gpsRoadInstance.functions.success(position);
+                        },
+                        function (error) {
+                            gpsRoadInstance.functions.error(error);
+                        },
+                        { enableHighAccuracy: true }
+                    );
+                },
+                init: function () {
+                    if ("geolocation" in navigator) {
+                        gpsRoadInstance.functions.initMap();
+                        gpsRoadInstance.functions.requestLocationPermission();
+                        gpsRoadInstance.vars.intervalId = setInterval(() => {
+                            gpsRoadInstance.functions.requestLocationPermission();
+                        }, gpsRoadInstance.vars.requestInterval);
+                        document.getElementById('refreshButton').addEventListener('click', gpsRoadInstance.functions.requestLocationPermission);
+                    } else {
+                        alert("Geolocation is not supported by this browser.");
+                    }
+                }
+            },
+            stop: function () {
+                if (!gpsRoadInstance) return;
+
+                // Clear interval
+                if (gpsRoadInstance.vars.intervalId) {
+                    clearInterval(gpsRoadInstance.vars.intervalId);
+                }
+
+                // Remove event listener
+                document.getElementById('refreshButton').removeEventListener('click', gpsRoadInstance.functions.requestLocationPermission);
+
+                // Remove map
+                if (gpsRoadInstance.vars.map) {
+                    gpsRoadInstance.vars.map.remove();
+                    gpsRoadInstance.vars.map = null;
+                }
+
+                // Reset variables
+                gpsRoadInstance = null;
+                console.log("App stopped.");
+            }
+        };
+
+        gpsRoadInstance.functions.init();
+        console.log("App started.");
+    }
+
+   
+
+// <button onclick="startApp()">Start App</button>
+// <button onclick="stopApp()">Stop App</button>
 
 
 
@@ -153,6 +295,9 @@ function keyExists(obj, key) {
 
 
 function clearPages() {
+
+    if (gpsRoadInstance) { gpsRoadInstance.stop(); }
+
     const rcwPages = rcwCards.querySelectorAll('.rcw-page');
 
     // Remove each element with the class "rcw-page"

@@ -146,7 +146,22 @@ const pages = [
           <div class="position-absolute top-50 start-50 translate-middle">
             <div class="row">
               <div class="col">
-                Coming soon...
+                <div class=\"\" data-trigger=\"refreshGPSRoad\">
+                  <h1 id="direction" class="fw-bold mt-1"></h1>
+                  <p id="road" class="fw-light mt-2"></p>
+                    <div id="nearby" class="mt-2 d-flex justify-content-center">
+                      <div class="card bg-dark mt-5" style="width: 20rem;">
+                        <div class="card-header bg-secondary">
+                          <b>Nearby</b> <small></small>
+                        </div>
+                        <ul class="list-group list-group-flush bg-dark">
+                            <li class="list-group-item bg-dark">Celebration Lutheran Church</li>
+                        </ul>
+                      </div>
+                    </div>
+                  <button id="refreshButton" class="btn btn-outline-secondary mt-3 px-4 py-2"><i class="bi bi-repeat"></i></button>
+                  <div id="map" class="d-none"></div>
+                </div>
               </div>
             </div>
           </div>
