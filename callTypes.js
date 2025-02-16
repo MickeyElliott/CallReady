@@ -1333,7 +1333,7 @@ var callTypeData = {
                },
               { index: "4", main: "<strong>Suspect GOA</strong>: AIR DESCRIPTION OF SUSPECT",
                 subSections: [
-                  "(a) Send units to Area Check or Set perimeter for K9.",
+                  "(a) Send units to Area Check or Set perimeter for K9. (WHO's IC?)",
                   "(b) Send units to Set perimeter for K9. (Protect starting point)",
                   "(c) Send OSA request through dispatch.",
                   "(d) Major crime: Request Guardian 1 for assistance."
