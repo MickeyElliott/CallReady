@@ -140,15 +140,13 @@ const pages = [
       { 
         "id":"3.0.1", 
         "title": "GPS Road", 
-        "description": "Navigational heading.",
+        "description": "",
         "content":`
-        <div class=\"position-relative\">
-          <div class=\"position-absolute top-50 start-50 translate-middle\">
             <div class=\"row\">
               <div class=\"col\">
                 <div data-trigger=\"refreshGPSRoad\">
                   <div class=\"spinner-border text-secondary d-none\" role=\"status\" id=\"spinner\"></div>
-                  <h1 id=\"direction\" class=\"fw-bold mt-1 text-center"\" style=\"font-size: 10vw !important;\"></h1>
+                  <h1 id=\"direction\" class=\"fw-bold mt-1 text-center"\" style=\"font-size: 10vw !important; line-height:1; \"></h1>
                   <p id=\"road\" class=\"fw-light mt-2 text-center"\" style=\"font-size: 2vw !important;\"></p>
                     <div id=\"nearby\" class=\"mt-2 d-flex justify-content-center\">
                       <div class=\"card bg-dark mt-5\" style=\"width: 20rem;\">
@@ -164,8 +162,7 @@ const pages = [
                   <div id=\"map\" class=\"d-none\"></div>
                 </div>
               </div>
-            </div>
-          </div>
+        
         </div>
         `,
         "data":"{}"
