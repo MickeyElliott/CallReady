@@ -139,14 +139,14 @@ const pages = [
     "cards": [
       { 
         "id":"3.0.1", 
-        "title": "Evidence Guide", 
-        "description": "A Referance guide for submitting evidence. - updated 2/10/25",
+        "title": "GPS Road", 
+        "description": "Navigational heading.",
         "content":`
         <div class="position-relative">
           <div class="position-absolute top-50 start-50 translate-middle">
             <div class="row">
               <div class="col">
-                My content
+                Coming soon...
               </div>
             </div>
           </div>
