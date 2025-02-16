@@ -1303,12 +1303,12 @@ var callTypeData = {
       },
       {
         id: "13.0",
-        title: "Domestic",
+        title: "Domestic Violance",
         description: "Guidelines for handling domestic violance.",
         items: [
           {
             id: "13.0.1",
-            title: "Domestic Dispute",
+            title: "Physical Domestic",
             description: "Domestic Violance is a lable that can be added to most crimes given the criteria is met.",
             definition: [
               { index: "1", main: "<strong>PRE CONTACT</strong>: Does subject/address have known history or priors?",
