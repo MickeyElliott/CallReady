@@ -147,6 +147,9 @@ const pages = [
             <div class="row">
               <div class="col">
                 <div class=\"\" data-trigger=\"refreshGPSRoad\">
+                  <div class="spinner-border text-secondary d-none" role="status" id="spinner">
+                      <span class="sr-only">Loading...</span>
+                  </div>
                   <h1 id="direction" class="fw-bold mt-1"></h1>
                   <p id="road" class="fw-light mt-2"></p>
                     <div id="nearby" class="mt-2 d-flex justify-content-center">
