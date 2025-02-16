@@ -104,7 +104,37 @@ var gpsRoadInstance = null;
                         .finally(() => {
                             gpsRoadInstance.vars.spinner.classList.add('d-none');
                         });
+                },
+                fetchNearbyInfo: function (latitude, longitude) {
+                    axios.get(`https://us1.locationiq.com/v1/nearby.php?key=${app.vars.locationIqApiKey}&lat=${latitude}&lon=${longitude}&tag=all&radius=1000&format=json`)
+                        .then(response => {
+                            if (response.data[0] != undefined) {
+                                console.log(response.data[0]);
+                                const distance = (response.data[0].distance * 3.28084).toFixed(2) + ' feet';
+                                const name = response.data[0].name;
+                                const rtype = response.data[0].type;
+
+                                const nearbyPlace = `
+                                <div class="card bg-dark mt-5" style="width: 20rem;">
+                                    <div class="card-header bg-secondary">
+                                        <b>Nearby</b> <small>${distance}</small>
+                                    </div>
+                                    <ul class="list-group list-group-flush bg-dark">
+                                        <li class="list-group-item bg-dark">${name}</li>
+                                    </ul>
+                                </div>
+                                `;
+                                document.getElementById('nearby').innerHTML = `${nearbyPlace}`;
+                            } else {
+                                console.log(response.data);
+                            }
+                        })
+                        .catch(error => {
+                            console.error('Error fetching nearby places:', error);
+                            document.getElementById('nearby').textContent = "No nearby";
+                        });
                 }
+            
             },
             functions: {
                 success: function (position) {
@@ -115,6 +145,7 @@ var gpsRoadInstance = null;
                     }
                     gpsRoadInstance.vars.lastCoords = { latitude, longitude };
                     gpsRoadInstance.utils.fetchRoadInfo(latitude, longitude);
+                    gpsRoadInstance.utils.fetchNearbyInfo(latitude, longitude);
                     gpsRoadInstance.functions.updateMap(latitude, longitude);
                 },
                 error: function (err) {
