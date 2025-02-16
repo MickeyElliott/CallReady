@@ -106,7 +106,7 @@ var gpsRoadInstance = null;
                         });
                 },
                 fetchNearbyInfo: function (latitude, longitude) {
-                    axios.get(`https://us1.locationiq.com/v1/nearby.php?key=${app.vars.locationIqApiKey}&lat=${latitude}&lon=${longitude}&tag=all&radius=1000&format=json`)
+                    axios.get(`https://us1.locationiq.com/v1/nearby.php?key=${gpsRoadInstance.vars.locationIqApiKey}&lat=${latitude}&lon=${longitude}&tag=all&radius=1000&format=json`)
                         .then(response => {
                             if (response.data[0] != undefined) {
                                 console.log(response.data[0]);
