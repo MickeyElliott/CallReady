@@ -1331,7 +1331,7 @@ var callTypeData = {
                   "(iii) Assault with injury, or caused reasonable fear of imminent serious bodily injury or death."
                 ]
                },
-              { index: "4", main: "<strong>Suspect GOA</strong>: AIR DESCRIPTION OF SUSPECT",
+              { index: "4", main: "<strong>Suspect GOA</strong>: Air Description of Suspect",
                 subSections: [
                   "(a) Area Checks",
                   "(b) Set IC and perimeter for K9. (Protect starting point)",
