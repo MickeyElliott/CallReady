@@ -1324,8 +1324,8 @@ var callTypeData = {
                },
               { index: "3", main: "<strong>Establish PC</strong>: Quickly determine what crime (if any) has happened and air it.",
                 subSections: [
-                  "(a) IS DV IF: Blood Related, Intimate Partners, Household",
-                  "(b) DV MANDATORY ARREST IF:",
+                  "(a) DV Label: Blood related, Intimate partners, Household",
+                  "(b) MANDATORY ARREST IF:",
                   "(i) Suspect is 18 or older, AND",
                   "(ii) Within past 4 hours, AND",
                   "(iii) Assault with injury, or caused reasonable fear of imminent serious bodily injury or death"
