@@ -1314,13 +1314,12 @@ var callTypeData = {
               { index: "1", main: "<strong>PRE CONTACT</strong>: Does subject/address have known history or priors?",
                 subSections: [
                   "(a) History of CAUTIONS or ORDER VIOLATIONS",
-                  "(b) Confirm victim and suspects are separated."
+                  "(b) Seporate parties. (Primary on report usually takes victim)"
                 ]
                },
-               { index: "2", main: "<strong>Separate Parties</strong>: Primary on report usually takes victim."},
-               { index: "3", main: "<strong>Render Aid</strong>: Code-4 Scene for Fire if nessessary.",
+               { index: "3", main: "<strong>Secure Scene & Render Aid</strong>: Code-4 scene if fire staged.",
                 subSections: [
-                  "(a) If victim admits to being strangalation medical eval required."
+                  "(a) If victim strangled medical eval required."
                 ]
                },
               { index: "3", main: "<strong>Establish PC</strong>: Quickly determine what crime (if any) has happened and air it.",
