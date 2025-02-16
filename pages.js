@@ -148,8 +148,8 @@ const pages = [
               <div class=\"col\">
                 <div data-trigger=\"refreshGPSRoad\">
                   <div class=\"spinner-border text-secondary d-none\" role=\"status\" id=\"spinner\"></div>
-                  <h1 id=\"direction\" class=\"fw-bold mt-1\"></h1>
-                  <p id=\"road\" class=\"fw-light mt-2\"></p>
+                  <h1 id=\"direction\" class=\"fw-bold mt-1\" style=\"font-size: 20vw !important;\"></h1>
+                  <p id=\"road\" class=\"fw-light mt-2\" style=\"font-size: 7vw !important;\"></p>
                     <div id=\"nearby\" class=\"mt-2 d-flex justify-content-center\">
                       <div class=\"card bg-dark mt-5\" style=\"width: 20rem;\">
                         <div class=\"card-header bg-secondary\">
