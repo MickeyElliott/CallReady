@@ -145,7 +145,7 @@ const pages = [
             <div class=\"row\">
               <div class=\"col\">
                 <div data-trigger=\"refreshGPSRoad\">
-                  <div class=\"spinner-border text-secondary d-none\" role=\"status\" id=\"spinner\"></div>
+                  <div class=\"spinner-border text-secondary d-none position-absolute\" role=\"status\" id=\"spinner\"></div>
                   <h1 id=\"direction\" class=\"fw-bold mt-1 text-center"\" style=\"font-size: 10vw !important; line-height:1; \"></h1>
                   <p id=\"road\" class=\"fw-light mt-2 text-center"\" style=\"font-size: 2vw !important;\"></p>
                     <div id=\"nearby\" class=\"mt-2 d-flex justify-content-center\"></div>
