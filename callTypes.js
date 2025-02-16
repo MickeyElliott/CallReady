@@ -1303,11 +1303,74 @@ var callTypeData = {
       },
       {
         id: "13.0",
+        title: "Domestic",
+        description: "Guidelines for handling domestic violance.",
+        items: [
+          {
+            id: "13.0.1",
+            title: "Domestic Dispute",
+            description: "Domestic Violance is a lable that can be added to most crimes given the criteria is met.",
+            definition: [
+              { index: "1", main: "<strong>PRE CONTACT</strong>: Does subject/address have known history or priors?",
+                subSections: [
+                  "(a) History of CAUTIONS or ORDER VIOLATIONS",
+                  "(b) Confirm victim and suspects are separated."
+                ]
+               },
+               { index: "2", main: "<strong>Separate Parties</strong>: Primary on report usually takes victim."},
+               { index: "3", main: "<strong>Render Aid</strong>: Code-4 Scene for Fire if nessessary.",
+                subSections: [
+                  "(a) If victim admits to being strangalation medical eval required."
+                ]
+               },
+              { index: "3", main: "<strong>Establish PC</strong>: Quickly determine what crime (if any) has happened and air it.",
+                subSections: [
+                  "(a) IS DV IF: Blood Related, Intimate Partners, Household",
+                  "(b) DV MANDATORY ARREST IF:",
+                  "(i) Suspect is 18 or older, AND",
+                  "(ii) Within past 4 hours, AND",
+                  "(iii) Assault with injury, or caused reasonable fear of imminent serious bodily injury or death"
+                ]
+               },
+              { index: "4", main: "<strong>Suspect GOA</strong>: AIR DESCRIPTION OF SUSPECT",
+                subSections: [
+                  "(a) Send units to Area Check or Set perimeter for K9.",
+                  "(b) Send units to Set perimeter for K9. (Protect starting point)",
+                  "(c) Send OSA request through dispatch.",
+                  "(d) Major crime: Request Guardian 1 for assistance."
+                ]
+               },
+              { index: "5", main: "<strong>Investigation</strong>: After scene is secure and assignments set.",
+                subSections: [
+                  "(a) DV Supplemental Form",
+                  "(b) DV Strangalation Form",
+                  "(c) Medical Waiver signed (Voluntary)",
+                  "(d) Recorded Statements (Voluntary)",
+                  "(e) Smith Affidavit (Voluntary)",
+                  "(f) Dangerous Weapons in Plain View",
+                  "(g) Criminal History Check (III)"
+                ]
+               }
+            ],
+            link: "",
+            offense: "",
+            elementsOfPC: [],
+            questions: [
+            ],
+            relatedCodes: [],
+            relatedProcedures: [
+            ]
+          }
+          
+        ]
+      },
+      {
+        id: "14.0",
         title: "Incident Command",
         description: "Guidelines for joining an incident command team.",
         items: [
           {
-            id: "13.0.1",
+            id: "14.0.1",
             title: "Incident Command Areas",
             description: "C2 architecture is the temporary, ad hoc organizational structure of response personnel, showing their tasks.  ",
             definition: [
@@ -1329,7 +1392,7 @@ var callTypeData = {
             ]
           },
           {
-            id: "13.0.2",
+            id: "14.0.2",
             title: "K9 Calls",
             description: "Working with K9 officers requires some key details and responsibilities from you to keep them safe.",
             definition: [
@@ -1368,12 +1431,12 @@ var callTypeData = {
         ]
       },
       {
-        id: "14.0",
+        id: "15.0",
         title: "Extra Duty",
         description: "Out Car types refer to Out of Service duties. Everything from Lunch to Off-Duty Work",
         items: [
           {
-            id: "14.0.1",
+            id: "15.0.1",
             title: "Off Duty - Transit Center",
             description: "Transit Center ",
             definition: [
