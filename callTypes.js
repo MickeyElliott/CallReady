@@ -1328,15 +1328,15 @@ var callTypeData = {
                   "(b) MANDATORY ARREST IF:",
                   "(i) Suspect is 18 or older, AND",
                   "(ii) Within past 4 hours, AND",
-                  "(iii) Assault with injury, or caused reasonable fear of imminent serious bodily injury or death"
+                  "(iii) Assault with injury, or caused reasonable fear of imminent serious bodily injury or death."
                 ]
                },
               { index: "4", main: "<strong>Suspect GOA</strong>: AIR DESCRIPTION OF SUSPECT",
                 subSections: [
-                  "(a) Send units to Area Check or Set perimeter for K9. (WHO's IC?)",
-                  "(b) Send units to Set perimeter for K9. (Protect starting point)",
-                  "(c) Send OSA request through dispatch.",
-                  "(d) Major crime: Request Guardian 1 for assistance."
+                  "(a) Area Checks",
+                  "(b) Set IC and perimeter for K9. (Protect starting point)",
+                  "(c) OSA Request",
+                  "(d) Major crime: Request Guardian 1"
                 ]
                },
               { index: "5", main: "<strong>Investigation</strong>: After scene is secure and assignments set.",
