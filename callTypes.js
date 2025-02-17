@@ -1309,7 +1309,7 @@ var callTypeData = {
           {
             id: "13.0.1",
             title: "Physical Domestic",
-            description: "Domestic Violance is a lable that can be added to most crimes given the criteria is met.",
+            description: "Domestic Violance is a lable that can be added to most crimes given the criteria (10.99.020) is met.",
             definition: [
               { index: "1", main: "<strong>PRE CONTACT</strong>: Does subject/address have known history or priors?",
                 subSections: [
@@ -1351,9 +1351,13 @@ var callTypeData = {
                 ]
                }
             ],
-            link: "",
+            link: "https://app.leg.wa.gov/rcw/default.aspx?cite=10.99.020",
             offense: "",
-            elementsOfPC: [],
+            elementsOfPC: [
+              "18 or older",
+              "Within past 4 Hours",
+              "Assault 4 or Higher"
+            ],
             questions: [
             ],
             relatedCodes: [],
