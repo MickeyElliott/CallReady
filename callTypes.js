@@ -1314,7 +1314,7 @@ var callTypeData = {
               { index: "1", main: "<strong>PRE CONTACT</strong>: Does subject/address have known history or priors?",
                 subSections: [
                   "(a) History of CAUTIONS or ORDER VIOLATIONS",
-                  "(b) Seporate parties. (Primary on report usually takes victim)"
+                  "(b) Separate parties. (Primary on report usually takes victim)"
                 ]
                },
                { index: "3", main: "<strong>Secure Scene & Render Aid</strong>: Code-4 scene if fire staged.",
