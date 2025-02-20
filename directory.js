@@ -117,7 +117,9 @@ const directory = [
       "contacts": [
         { "id":"9.0.1",  "name": "FW Code Enforcement", "phone": "253-835-2631 / 2632" },
         { "id":"9.0.2",  "name": "Public Works", "phone": "253-835-2700" },
-        { "id":"9.0.3",  "name": "King County Animal Control", "phone": "206-296-3946" }
+        { "id":"9.0.3",  "name": "King County Animal Control", "phone": "206-296-3946" },
+        { "id":"9.0.4",  "name": "Blue Pearl Tukwila (Animal ER 24/7)", "phone": "425-496-1000" },
+        { "id":"9.0.5",  "name": "Burien Cares (Animal Care)", "phone": "206-812-2737" }
       ]
     },
     {
