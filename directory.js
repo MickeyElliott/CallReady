@@ -113,7 +113,7 @@ const directory = [
     },
     {
       "id":9.0,
-      "category": "City and County Services",
+      "category": "City Services",
       "contacts": [
         { "id":"9.0.1",  "name": "FW Code Enforcement", "phone": "253-835-2631 / 2632" },
         { "id":"9.0.2",  "name": "Public Works", "phone": "253-835-2700" },
