@@ -1043,8 +1043,74 @@ var callTypeData = {
             questions: [],
             relatedCodes: [],
             relatedProcedures: []
+          },
+          {
+            id: "9.0.2",
+            title: "Robbery",
+            description: "Procedures for responding to and investigating robbery incidents.",
+            definition: [
+              {
+                index: "1",
+                main: "Pre-Arrival:",
+                subSections: [
+                  "Request backup.",
+                  "Suspect Description, Weapons, and Direction of Travel.",
+                  "Plan safe approach.",
+                  "Perimeter Setup"
+                ]
+              },
+              {
+                index: "2",
+                main: "Establish PC:",
+                subSections: [
+                  "Secure Scene.",
+                  "Locate victims, witnesses, and suspects.",
+                  "Broadcast suspect information, vehicle description, and last known Direction of Travel."
+                ]
+              },
+              {
+                index: "3",
+                main: "Investigation:",
+                subSections: [
+                  "Obtain statements.",
+                  "Collect and preserve physical evidence (e.g., fingerprints, surveillance footage, shell casings).",
+                  "Check Cameras and request footage."
+                ]
+              },
+              {
+                index: "4",
+                main: "Suspect Apprehension (if applicable):",
+                subSections: [
+                  "Ensure probable cause exists for arrest.",
+                  "Safe City BOLO."
+                ]
+              }
+            ],
+            link: "https://app.leg.wa.gov/rcw/default.aspx?cite=9A.56.200",
+            offense: "Felony",
+            elementsOfPC: [
+              "Theft of property or money.",
+              "Use or threat of force against a person.",
+              "Intent to permanently deprive the victim of property."
+            ],
+            questions: [
+              "What was taken?",
+              "Did the suspect display or imply a weapon?",
+              "Were there any injuries?",
+              "Can you describe the suspect and vehicle?",
+              "Which direction did the suspect flee?"
+            ],
+            relatedCodes: [
+              "RCW 9A.56.200 Robbery 1st Degree",
+              "RCW 9A.56.210 Robbery 2nd Degree",
+              "RCW 9A.36.011 Assault 1st Degree",
+              "RCW 9A.36.021 Assault 2nd Degree"
+            ],
+            relatedProcedures: [
+              "Perimeter setup",
+              "Request Resources  (K9, SWAT, Guardian 1)"
+            ]
           }
-          
         ]
       },
       {
