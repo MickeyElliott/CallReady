@@ -158,6 +158,10 @@ var callTypeData = {
                 index: "<i class=\"bi bi-info-circle-fill text-info fs-4\"></i>",
                 main: "<span class=\"text-info\">If a citation was issued with the warrant, then a 10-liner is required in Spillman. The OCA is the warrant id.</span>"
               },
+              {
+                index: "<i class=\"bi bi-info-circle-fill text-info fs-4\"></i>",
+                main: "<span class=\"text-info\">If Release from Custody/Promise to Appear, then facepage in Spillman. Keep the Warrrant confirmed.</span>"
+              },
             ],
             "link": "",
             "offense": "",
