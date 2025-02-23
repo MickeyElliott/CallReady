@@ -1053,36 +1053,36 @@ var callTypeData = {
                 index: "1",
                 main: "Pre-Arrival:",
                 subSections: [
-                  "Request backup.",
-                  "Suspect Description, Weapons, and Direction of Travel.",
-                  "Plan safe approach.",
-                  "Perimeter Setup"
+                  "(a) Request backup.",
+                  "(b) Suspect Description, Weapons, and Direction of Travel.",
+                  "(c) Plan safe approach.",
+                  "(i) Perimeter Setup"
                 ]
               },
               {
                 index: "2",
                 main: "Establish PC:",
                 subSections: [
-                  "Secure Scene.",
-                  "Locate victims, witnesses, and suspects.",
-                  "Broadcast suspect information, vehicle description, and last known Direction of Travel."
+                  "(a) Secure Scene.",
+                  "(b) Locate victims, witnesses, and suspects.",
+                  "(c) Broadcast suspect information, vehicle description, and last known Direction of Travel."
                 ]
               },
               {
                 index: "3",
                 main: "Investigation:",
                 subSections: [
-                  "Obtain statements.",
-                  "Collect and preserve physical evidence (e.g., fingerprints, surveillance footage, shell casings).",
-                  "Check Cameras and request footage."
+                  "(a) Obtain statements.",
+                  "(b) Collect and preserve physical evidence (e.g., fingerprints, surveillance footage, shell casings).",
+                  "(c) Check Cameras and request footage."
                 ]
               },
               {
                 index: "4",
                 main: "Suspect Apprehension (if applicable):",
                 subSections: [
-                  "Ensure probable cause exists for arrest.",
-                  "Safe City BOLO."
+                  "(a) Ensure probable cause exists for arrest.",
+                  "(b) Safe City BOLO."
                 ]
               }
             ],
