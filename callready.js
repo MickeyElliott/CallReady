@@ -745,6 +745,7 @@ function offenseColor(offense) {
         case 'Class A Felony':
         case 'Class B Felony':
         case 'Class C Felony':
+        case 'Felony':
             color = 'danger';
             break;
         case 'Gross Misdemeanor':
