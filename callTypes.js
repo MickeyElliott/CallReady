@@ -716,7 +716,9 @@ var callTypeData = {
               { index: "4", main: "Approach and inform driver of body cam and reason for stop." },
               { index: "5", main: "Request license, registration, and insurance." },
               { index: "6", main: "Run driver&apos;s name through DOL and NCIC." },
-              { index: "7", main: "Issue a Sector Citation or Warning as appropriate." }
+              { index: "7", main: "Issue a Sector Citation or Warning as appropriate.", subSections: [
+                "(a) If citation is criminal, add case# to SECTOR. "
+              ] }
             ],
             link: "",
             offense: "Traffic Infraction / Criminal Offense (if applicable)",
