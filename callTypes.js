@@ -416,6 +416,31 @@ var callTypeData = {
             relatedCodes: [],
             relatedProcedures: []
           },
+          {
+            id: "3.0.7",
+            title: "Blocking Disabled",
+            description: "Steps for towing a vehicle.",
+            definition: [
+              { index: "1", main: "Secure Scene", subSections: [
+                "(a) Check roadway and nearby for injured parties.",
+                "(b) Match VIN to Veh and confirm not Stolen."
+              ] },
+              { index: "2", main: "Attempt to contact RO.", subSections: [
+                "(a) Provide reasonable time for RO to pickup vehicle.",
+                "(b) Optionally visit RO\'s home if local."
+              ] },
+              { index: "3", main: "Impound Vehicle", subSections: [
+                "(a) Call tow company if parked illegally or abandoned.",
+                "(b) Complete tow form for Towing company."
+              ] }
+            ],
+            link: "",
+            offense: "",
+            elementsOfPC: [],
+            questions: [],
+            relatedCodes: [],
+            relatedProcedures: []
+          }
         ]
       },
       
