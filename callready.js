@@ -731,7 +731,7 @@ function wrapAlphabeticalTags(input) {
     if (!input) return input; // Return unchanged if input is empty or undefined.
 
     return input.replace(/\((?:[a-z]+|i{1,3}|iv|v|vi{0,3}|ix|x{0,3})\)/g, function (match) {
-        return `<strong class=\"opacity-100 text-primary float-start\"><p class=\"ms-3 ps-3 mb-0\">${match}</p></strong>`;
+        return `<strong class=\"opacity-100 text-primary float-start me-3\"><p class=\"ms-3 ps-3 mb-0\">${match}</p></strong>`;
     });
 }
 
