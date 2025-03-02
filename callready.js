@@ -632,7 +632,7 @@ function parseDefinitions(item) {
 
             // Check if there are subsections and add them as a nested list
             if (def.subSections && Array.isArray(def.subSections) && def.subSections.length > 0) {
-                str += `<ul class="mt-2">`; // Indent the list for subsections
+                str += `<ul class="list-unstyled mt-2">`; // Indent the list for subsections
                 def.subSections.forEach(subSec => {
                     str += `<li class="opacity-75">${wrapAlphabeticalTags(subSec)}</li>`;
                 });
@@ -731,7 +731,7 @@ function wrapAlphabeticalTags(input) {
     if (!input) return input; // Return unchanged if input is empty or undefined.
 
     return input.replace(/\((?:[a-z]+|i{1,3}|iv|v|vi{0,3}|ix|x{0,3})\)/g, function (match) {
-        return `<strong class=\"text-primary\">${match}</strong>`;
+        return `<strong class=\"opacity-100 text-primary float-start\"><p class=\"ms-3 ps-3\">${match}</p></strong>`;
     });
 }
 
