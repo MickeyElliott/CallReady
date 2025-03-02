@@ -82,7 +82,8 @@ const directory = [
         { "id":"6.0.6",  "name": "Highline Hospital", "phone": "206-244-9970" },
         { "id":"6.0.7",  "name": "St. Francis Hospital", "phone": "253-835-8100", "notes":"<strong>Address:</strong> 34515 9th Ave S, Federal Way, WA 98003<br /><strong>ER Door Code:</strong> 333" },
         { "id":"6.0.8",  "name": "Tacoma Hospital", "phone": "253-927-9700" },
-        { "id":"6.0.9",  "name": "Valley General Hospital", "phone": "206-228-3450" }
+        { "id":"6.0.9",  "name": "Valley General Hospital", "phone": "206-228-3450" },
+        { "id":"6.0.10",  "name": "Yahn & Son Funeral Home", "phone": "253-833-8877", "notes":"<strong>Address:</strong> 55 W Valley Hwy S, Auburn, WA 98001<br /><strong>Open 24 hours</strong>" }
       ]
     },
     {
@@ -134,13 +135,13 @@ const directory = [
       "id":11.0,
       "category": "Fire Departments",
       "contacts": [
-        { "id":"11.0.1",  "name": "Federal Way Fire Station 1", "phone": "253-927-1624" },
-        { "id":"11.0.2",  "name": "Federal Way Fire Station 2", "phone": "253-839-4621" },
-        { "id":"11.0.3",  "name": "Federal Way Fire Station 3", "phone": "253-838-6904" },
-        { "id":"11.0.4",  "name": "Federal Way Fire Station 4", "phone": "253-839-4040" },
-        { "id":"11.0.5",  "name": "Federal Way Fire Station 5", "phone": "253-839-3335" },
-        { "id":"11.0.6",  "name": "Federal Way Fire Station 6", "phone": "253-839-4060" },
-        { "id":"11.0.7",  "name": "Federal Way Fire Station 8 (Training)", "phone": "253-529-7209" }
+        { "id":"11.0.1",  "name": "Federal Way Fire Station 1", "phone": "253-927-1624", "notes":"<strong>Address:</strong> 3203 S 360th, Auburn, WA 98001<br /><strong>XXXXXXX</strong>" },
+        { "id":"11.0.2",  "name": "Federal Way Fire Station 2", "phone": "253-839-4621", "notes":"<strong>Address:</strong> XXXXXXXXX, Federal Way, WA 98003<br /><strong>XXXXXXX</strong>" },
+        { "id":"11.0.3",  "name": "Federal Way Fire Station 3", "phone": "253-838-6904", "notes":"<strong>Address:</strong> XXXXXXXXX, Federal Way, WA 98003<br /><strong>XXXXXXX</strong>" },
+        { "id":"11.0.4",  "name": "Federal Way Fire Station 4", "phone": "253-839-4040", "notes":"<strong>Address:</strong> XXXXXXXXX, Federal Way, WA 98003<br /><strong>XXXXXXX</strong>" },
+        { "id":"11.0.5",  "name": "Federal Way Fire Station 5", "phone": "253-839-3335", "notes":"<strong>Address:</strong> XXXXXXXXX, Federal Way, WA 98003<br /><strong>XXXXXXX</strong>" },
+        { "id":"11.0.6",  "name": "Federal Way Fire Station 6", "phone": "253-839-4060", "notes":"<strong>Address:</strong> XXXXXXXXX, Federal Way, WA 98003<br /><strong>XXXXXXX</strong>" },
+        { "id":"11.0.7",  "name": "Federal Way Fire Station 8 (Training)", "phone": "253-529-7209", "notes":"<strong>Address:</strong> XXXXXXXXX, Federal Way, WA 98003<br /><strong>XXXXXXX</strong>" }
       ]
     }
   ]
