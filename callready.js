@@ -742,7 +742,7 @@ function wrapAlphabeticalTags(input) {
         /^(\((?:[a-z]+|i{1,3}|iv|v|vi{0,3}|ix|x{0,3})\))\s*(.*)$/i,
         (match, tag, text) => 
             `<strong class="text-primary float-start me-1">${tag}</strong>` +
-            (text ? `<p class="ms-5 mb-0">${text}</p>` : "")
+            (text ? `<p class="ms-p mb-0">${text}</p>` : "")
     );
 }
 

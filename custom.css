@@ -23,3 +23,7 @@ html[data-bs-theme="dark"] ::-webkit-scrollbar-thumb { background: var(--bs-prim
 html[data-bs-theme="dark"] ::-webkit-scrollbar-thumb:hover { background: var(--bs-dark-border-subtle); }
 html[data-bs-theme="light"] .list-bullet { color: var(--bs-secondary); background-color: rgba(var(--bs-light-rgb)) !important; }
 
+.ms-p {
+    margin-left: 2.5rem !important;
+    
+}
