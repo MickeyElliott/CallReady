@@ -735,16 +735,30 @@ var procedures = {
 //     });
 // }
 
+// function wrapAlphabeticalTags(input) {
+//     if (!input) return input; // Return unchanged if input is empty or undefined.
+
+//     return input.replace(
+//         /^(\((?:[a-z]+|i{1,3}|iv|v|vi{0,3}|ix|x{0,3})\))\s*(.*)$/i,
+//         (match, tag, text) => 
+//             `<strong class="text-primary float-start ps-2 pe-1">${tag}</strong>` +
+//             (text ? `<p class="ms-p mb-0">${text}</p>` : "")
+//     );
+// }
+
 function wrapAlphabeticalTags(input) {
     if (!input) return input; // Return unchanged if input is empty or undefined.
 
     return input.replace(
-        /^(\((?:[a-z]+|i{1,3}|iv|v|vi{0,3}|ix|x{0,3})\))\s*(.*)$/i,
+        /^(\((?:[a-z]+|i{1,3}|iv|v|vi{0,3}|ix|x{0,3})\))\s*(.*)?$/i,
         (match, tag, text) => 
-            `<strong class="text-primary float-start ps-2 pe-1">${tag}</strong>` +
+            (tag 
+                ? `<strong class="text-primary float-start ps-2 pe-1">${tag}</strong>` 
+                : `<i class="bi bi-caret-right-fill"></i>`) +
             (text ? `<p class="ms-p mb-0">${text}</p>` : "")
     );
 }
+
 
 
 
