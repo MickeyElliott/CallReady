@@ -754,7 +754,7 @@ function wrapAlphabeticalTags(input) {
         (match, tag, text) => 
             `<strong class="text-primary float-start ps-2 pe-1">${tag}</strong>` +
             (text ? `<p class="ms-p mb-0">${text}</p>` : "")
-    ).replace(/^([^<].*)$/, `<i class="bi bi-caret-right-fill"></i> $1`);
+    ).replace(/^([^<].*)$/, `<i class="bi bi-caret-right-fill text-primary float-start ps-2 pe-1"></i> <p class="ms-p mb-0">$1</p>`);
 }
 
 
