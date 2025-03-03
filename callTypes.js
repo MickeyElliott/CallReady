@@ -32,7 +32,8 @@ var callTypeData = {
               { "index": "17", "main": "<strong>Booking:</strong> Remove firearms and turn off body-worn cameras before entering booking." },
               { "index": "18", "main": "<strong>Incident Command:</strong> Define roles such as staging, containment, and investigation." },
               { "index": "19", "main": "<strong>K9 Announcements:</strong> Log announcements in CAD every 5 minutes." },
-              { "index": "20", "main": "<strong>Assault 4:</strong> Doesn&apos;t become felony after the 3rd unless it&apos;s between intimate partners." }
+              { "index": "20", "main": "<strong>Assault 4:</strong> Doesn&apos;t become felony after the 3rd unless it&apos;s between intimate partners." },
+              { "index": "21", "main": "<strong>Valid ID:</strong> A physical driver&apos;s license doesn&apos;t mean someone&apos;s licensed in the system." }
           
           
             ],
