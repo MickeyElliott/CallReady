@@ -1553,7 +1553,80 @@ var callTypeData = {
             relatedCodes: [],
             relatedProcedures: [
             ]
+          },
+          {
+            id: "15.0.2", // Unique identifier for the call type
+            title: "Walmart Security", // Title of the call type
+            description: "Procedures for extra duty security assignments at Walmart.", // Brief description
+            definition: [
+              { index: "1", main: "Pre-Shift: Check in with LPO." },
+              {
+                index: "2",
+                main: "General Duties:",
+                subSections: [
+                  "Maintain visible presence.",
+                  "Assist LPO's with detaining shoplifters.",
+                  "Monitor entrances."
+                ]
+              },
+              {
+                index: "3",
+                main: "Shoplifters: ",
+                subSections: [
+                  "LP must witness the theft and initiate apprehension.",
+                  "Verify Suspect ID and use Suspect ID Form.",
+                  "If Assist with ID/Apprehension or Warrant: FACEPAGE.",
+                  "If you Investigate/Cite/Obtain Evidence: Full Report"
+              },
+              {
+                
+                index: "<i class=\"bi bi-link-45deg\"></i>",
+                href: "#li-10.0.1",
+                main: "Move Along & Tresspass"
+              },
+              {
+                index: "5",
+                main: "Dealing with Disorderly Conduct:",
+                subSections: [
+                  "De-escalate if possible.",
+                  "Remove individuals refusing to comply."
+                ]
+              },
+              {
+                index: "6",
+                main: "End of Shift Responsibilities:",
+                subSections: [
+                  "Check out with Walmart management.",
+                  "Complete required reports."
+                ]
+              }
+            ],
+            link: "", // No specific link, but can be added if needed
+            offense: "Misdemeanor", // Possible offenses encountered
+            elementsOfPC: [
+              "Observed shoplifting by LP or officer.",
+              "Subject violating a trespass warning.",
+              "Disorderly conduct causing public alarm or disturbance."
+            ], // Required elements for probable cause
+            questions: [
+              "Did LP witness the theft and detain the suspect?",
+              "Has this subject been trespassed before?",
+              "Is the subject refusing to leave after being asked?",
+              "What actions did the subject take to create a disturbance?",
+              "Were any crimes committed requiring arrest?"
+            ], // Key questions for investigation
+            relatedCodes: [
+              "RCW 9A.56.050 Theft in the Third Degree",
+              "FWRC 6.35.020 Menacing",
+              "FWRC 6.35.070 Trespassing"
+            ], // Related ordinances and RCWs
+            relatedProcedures: [
+              "Shoplifting response and arrests.",
+              "Trespass warning issuance and enforcement.",
+              "Handling disorderly conduct within private businesses."
+            ] // Related procedures
           }
+          
         ]
       }
       
