@@ -1577,6 +1577,7 @@ var callTypeData = {
                   "Verify Suspect ID and use Suspect ID Form.",
                   "If Assist with ID/Apprehension or Warrant: FACEPAGE.",
                   "If you Investigate/Cite/Obtain Evidence: Full Report"
+                ]
               },
               {
                 
