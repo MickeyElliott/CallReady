@@ -428,7 +428,7 @@ var callTypeData = {
               ] },
               { index: "2", main: "Attempt to contact RO.", subSections: [
                 "(a) Provide reasonable time for RO to pickup vehicle.",
-                "(b) Optionally visit RO\'s home if local."
+                "(b) Optionally visit RO&apos;s home if local."
               ] },
               { index: "3", main: "Impound Vehicle", subSections: [
                 "(a) Call tow company if parked illegally or abandoned.",
@@ -1565,7 +1565,7 @@ var callTypeData = {
                 main: "General Duties:",
                 subSections: [
                   "Maintain visible presence.",
-                  "Assist LPO's with detaining shoplifters.",
+                  "Assist LPO&apos;s with detaining shoplifters.",
                   "Monitor entrances."
                 ]
               },
