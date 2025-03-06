@@ -1576,7 +1576,7 @@ var callTypeData = {
                   "LP must witness the theft and initiate apprehension.",
                   "Verify Suspect ID and use Suspect ID Form.",
                   "If Assist with ID/Apprehension or Warrant: FACEPAGE.",
-                  "If you Investigate/Cite/Obtain Evidence: Full Report"
+                  "If you Investigate/Cite/Obtain Evidence: FULL REPORT."
                 ]
               },
               {
