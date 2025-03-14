@@ -147,7 +147,7 @@ const pages = [
       { 
         "id":"3.0.1", 
         "title": "GPS Road", 
-        "description": "",
+        "description": "GPS is buggy. Refresh page after use.",
         "content":`
             <div class=\"row\">
               <div class=\"col\">
