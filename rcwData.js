@@ -2696,7 +2696,7 @@ var trafficCodes = {
             }
           ],
           link: "https://app.leg.wa.gov/RCW/default.aspx?cite=46.61.502", // Direct link to the RCW
-          offense: "Gross Misdemeanor / Class B Felony under specific conditions", // Classification of the offense
+          offense: "Gross Misdemeanor", // Classification of the offense
           elementsOfPC: [
             "Observations of impaired driving or physical signs of intoxication.",
             "Failure of standardized field sobriety tests.",
