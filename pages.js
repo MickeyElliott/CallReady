@@ -116,11 +116,16 @@ const pages = [
         "content":`
           <div class="row">
             <div class="col">
+
+            <div class="alert alert-primary" role="alert">
+              Blood kits and other evidence that belongs in a fridge are not stored in the lockers across the street. They are stored in the fridge across the street. The fridge is located through the MAIN entrance. (Not the door in the garage)
+            </div>
+
               <ol class="list-group list-group-numbered">
                 <li class="list-group-item d-flex justify-content-between align-items-start">
                   <div class="ms-2 me-auto">
                     <div class="fw-bold">Returns for Correction</div>
-                    Blood kits and other evidence that belongs in a fridge are not stored in the lockers across the street. They are stored in the fridge acrose the street. The fridge is located through the MAIN entrance. (Not the door in the garage)
+                    Blood kits and other evidence that belongs in a fridge are not stored in the lockers across the street. They are stored in the fridge across the street. The fridge is located through the MAIN entrance. (Not the door in the garage)
                   </div>
                 </li>
                 
