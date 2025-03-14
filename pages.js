@@ -52,9 +52,11 @@ const pages = [
 
     <div class=\"col\">
       <div class=\"card mb-3\">
-          <div class="card-header">Court Dates</div>
+          <div class="card-header">
+            Court Dates
+            <p class="mb-0 small">Dates may not reflect admin changes for holidays or special occasions.</p>
+          </div>
           <ul id=\"courtDates\" class=\"list-group list-group-flush\" data-trigger=\"refreshCourtDates\"></ul>
-          <p class="card-text p-3 mb-0"><small class=\"text-warning\">"Dates may not reflect admin changes for holidays or special occasions."</small></p>
       </div>
       <div class=\"card mb-3\">
           
