@@ -779,6 +779,8 @@ function offenseColor(offense) {
             color = 'warning';
             break;
         case 'Misdemeanor':
+        case 'Traffic Infraction':
+        case 'Infraction':
             color = 'secondary';
             break;
         default:

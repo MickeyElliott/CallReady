@@ -2850,7 +2850,7 @@ var trafficCodes = {
             }
           ],
           link: "https://app.leg.wa.gov/RCW/default.aspx?cite=46.61.530", // Direct link to the RCW
-          offense: "Reckless Driving - Misdemeanor", // Classification of the offense
+          offense: "Misdemeanor", // Classification of the offense
           elementsOfPC: [
             "Willfully engaged in race/speed contest",
             "Operated vehicle in a manner comparing speed/power",
@@ -2907,7 +2907,7 @@ var trafficCodes = {
             }
           ],
           link: "https://app.leg.wa.gov/RCW/default.aspx?cite=46.64.048", // Direct link to the RCW
-          offense: "Same classification as the primary offense", // Classification of the offense
+          offense: "Same as the Primary Offense", // Classification of the offense
           elementsOfPC: [
             "Committed, attempted, or conspired to commit a traffic offense",
             "Assisted or encouraged another person in violating traffic laws",
