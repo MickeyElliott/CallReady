@@ -2630,7 +2630,7 @@ var trafficCodes = {
     {
       id: "46.61",
       title: "Rules of the Road",
-      description: "This chapter is coming soon. ",
+      description: "Obedience to traffic laws and more.",
       link: "https://app.leg.wa.gov/rcw/default.aspx?cite=9.61",
       items: [
         {
@@ -2765,10 +2765,117 @@ var trafficCodes = {
             "Determine if the circumstances meet the criteria for endangerment.",
             "Issue citation for the infraction if probable cause is established."
           ] // Related procedures
-        }
-        
-        
+        },
+        {
+          id: "46.61.530", // Unique identifier for the RCW
+          title: "Racing on Highways", // Title of the RCW
+          description: "Unlawful racing or contesting speed on public highways or off-street facilities.", // Brief description
+          definition: [
+            {
+              index: "1",
+              main: "A person is guilty of racing if they willfully:",
+              subSections: [
+                "(a) Compare or contest relative speeds by operating one or more motor vehicles;",
+                "(b) Demonstrate, exhibit, or compare speed, maneuverability, or power of a vehicle;",
+                "(c) Engage in &apos;drifting&apos; or similar reckless driving behaviors."
+              ]
+            },
+            {
+              index: "2",
+              main: "Racing constitutes reckless driving under RCW 46.61.500, regardless of speed."
+            },
+            {
+              index: "3",
+              main: "Any person who aids or abets racing may be charged as an accomplice under RCW 46.64.048."
+            },
+            {
+              index: "4",
+              main: "The offense may be charged either from the location where it was initiated or where the violation was completed."
+            }
+          ],
+          link: "https://app.leg.wa.gov/RCW/default.aspx?cite=46.61.530", // Direct link to the RCW
+          offense: "Reckless Driving - Misdemeanor", // Classification of the offense
+          elementsOfPC: [
+            "Willfully engaged in race/speed contest",
+            "Operated vehicle in a manner comparing speed/power",
+            "Drifting"
+          ], // Required elements for probable cause
+          questions: [
+            "Were two or more vehicles involved in a speed contest?",
+            "Did the driver demonstrate excessive acceleration, weaving, or drifting?",
+            "Did the driver attempt to compare vehicle performance?",
+            "Were there spectators or others aiding the race?"
+          ], // Key questions for investigation
+          relatedCodes: [
+            "RCW 46.61.500 Reckless Driving",
+            "RCW 46.64.048 Aiding and Abetting Racing",
+            "RCW 46.61.465 Exceeding Maximum Speed"
+          ], // Related RCWs for cross-reference
+          relatedProcedures: [
+            "Traffic stop for reckless driving.",
+            "Citing or arresting for racing violations.",
+            "Investigating and documenting accomplices."
+          ] // Related procedures
+        },
+
       ]
+    },
+    {
+      id: "46.64",
+      title: "Enforcement",
+      description: "Traffic citations, aiding, abetting, committing violations, and more.",
+      link: "https://app.leg.wa.gov/rcw/default.aspx?cite=9.64",
+      items: [
+
+        {
+          id: "46.64.048", // Unique identifier for the RCW
+          title: "Aiding and Abetting Traffic Violations", // Title of the RCW
+          description: "Committing, attempting, conspiring, aiding, or coercing traffic violations.", // Brief description
+          definition: [
+            {
+              index: "1",
+              main: "A person is guilty of a traffic offense if they:",
+              subSections: [
+                "(a) Commit, attempt, or conspire to commit a traffic infraction or crime;",
+                "(b) Aid, abet, or assist another person in committing a traffic offense;",
+                "(c) Induce, cause, coerce, or require another person to commit a traffic offense."
+              ]
+            },
+            {
+              index: "2",
+              main: "This applies whether the person acts individually, in connection with others, or as a principal, agent, or accessory."
+            },
+            {
+              index: "3",
+              main: "A person who knowingly permits or directs another person to violate traffic laws is also guilty of the offense."
+            }
+          ],
+          link: "https://app.leg.wa.gov/RCW/default.aspx?cite=46.64.048", // Direct link to the RCW
+          offense: "Same classification as the primary offense", // Classification of the offense
+          elementsOfPC: [
+            "Committed, attempted, or conspired to commit a traffic offense",
+            "Assisted or encouraged another person in violating traffic laws",
+            "Coerced or directed another person to commit a violation"
+          ], // Required elements for probable cause
+          questions: [
+            "Did the suspect participate in or assist in the offense?",
+            "Did they encourage, direct, or coerce another person?",
+            "Was the suspect acting as a principal, agent, or accessory?",
+            "Did the suspect knowingly allow a traffic violation to occur?"
+          ], // Key questions for investigation
+          relatedCodes: [
+            "RCW 46.61.530 Racing on Highways",
+            "RCW 46.61.500 Reckless Driving",
+            "RCW 46.61.022 Failure to Obey Lawful Order"
+          ], // Related RCWs for cross-reference
+          relatedProcedures: [
+            "Document statements and evidence of aiding or abetting.",
+            "Determine if coercion or conspiracy was involved.",
+            "Charge based on the classification of the primary offense."
+          ] // Related procedures
+        }
+      ]
+      
     }
   ]
 };
