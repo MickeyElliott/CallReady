@@ -2661,6 +2661,62 @@ var trafficCodes = {
           ] // Related procedures
         },
         {
+          id: "46.61.500", // Unique identifier for the RCW
+          title: "Reckless Driving", // Title of the RCW
+          description: "Operating a vehicle with willful or wanton disregard for the safety of persons or property.", // Brief description
+          definition: [
+            {
+              index: "1",
+              main: "A person is guilty of reckless driving if they drive any vehicle with willful or wanton disregard for safety."
+            },
+            {
+              index: "2",
+              main: "Reckless driving is a gross misdemeanor punishable by up to 364 days in jail and a fine up to $5,000."
+            },
+            {
+              index: "3",
+              main: "Driver&apos;s license suspension:",
+              subSections: [
+                "(a) Minimum 30-day suspension.",
+                "(b) If the conviction originated from a DUI charge (RCW 46.61.502 or 46.61.504), any prior suspension time served will be credited."
+              ]
+            },
+            {
+              index: "4",
+              main: "Ignition interlock requirement:",
+              subSections: [
+                "(a) Required if there is a prior offense within 7 years and the reckless driving charge was originally filed as a DUI or physical control offense.",
+                "(b) Required if the reckless driving conviction originated from a vehicular homicide (RCW 46.61.520) or vehicular assault (RCW 46.61.522) involving intoxication."
+              ]
+            }
+          ],
+          link: "https://app.leg.wa.gov/RCW/default.aspx?cite=46.61.500", // Direct link to the RCW
+          offense: "Gross Misdemeanor", // Classification of the offense
+          elementsOfPC: [
+            "Driving with willful disregard for safety",
+            "Endangered persons or property",
+            "Intentional or reckless driving behavior"
+          ], // Required elements for probable cause
+          questions: [
+            "What specific actions demonstrated reckless driving?",
+            "Were other vehicles or pedestrians put at risk?",
+            "Was the driver speeding, swerving, or ignoring traffic signals?",
+            "Did the driver attempt to evade law enforcement?",
+            "Was alcohol or drug impairment involved?"
+          ], // Key questions for investigation
+          relatedCodes: [
+            "RCW 46.61.530 Racing on Highways",
+            "RCW 46.64.048 Aiding and Abetting Traffic Violations",
+            "RCW 46.61.502 DUI"
+          ], // Related RCWs for cross-reference
+          relatedProcedures: [
+            "Verify driving behavior meets the legal standard for recklessness.",
+            "Document statements, witness accounts, and dashcam footage.",
+            "Check for prior reckless driving or DUI-related offenses.",
+            "Confirm if an ignition interlock requirement applies."
+          ] // Related procedures
+        },        
+        {
           id: "46.61.502", // Unique identifier for the RCW
           title: "Driving Under the Influence (DUI)", // Title of the RCW
           description: "Operating a vehicle under the influence of intoxicating liquor, cannabis, or any drug.", // Brief description
