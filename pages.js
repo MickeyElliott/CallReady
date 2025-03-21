@@ -153,82 +153,157 @@ const pages = [
               <div class=\"col\">
                 
               
-                <table class="table">
-                  <thead>
+                <table class="table table-bordered table-hover table-striped">
+                  <thead class="thead-dark">
                     <tr>
-                      <th scope="col">Case</th>
-                      <th scope="col">Summary</th>
-                      <th scope="col">Link</th>
+                      <th>Category</th>
+                      <th>Case</th>
+                      <th>What It Allows Officers to Do</th>
+                      <th>Link</th>
                     </tr>
                   </thead>
                   <tbody>
+                    <!-- STOP & DETAIN / TERRY STOPS -->
                     <tr>
-                      <th scope="row">Terry v. Ohio, 392 U.S. 1 (1968)</th>
-                      <td>Established that police can stop and frisk individuals based on reasonable suspicion of criminal activity.</td>
-                      <td><a href="#">Case Details</a></td>
+                      <td rowspan="5"><strong>Stop & Detain</strong></td>
+                      <td>Terry v. Ohio (1968)</td>
+                      <td>Allows officers to stop and frisk a person based on reasonable suspicion that they&apos;re involved in criminal activity and may be armed.</td>
+                      <td><a href="" target="_blank">View</a></td>
                     </tr>
                     <tr>
-                      <th scope="row">Graham v. Connor, 490 U.S. 386 (1989)</th>
-                      <td>Held that claims of excessive force by law enforcement should be analyzed under the Fourth Amendment's "objective reasonableness" standard.</td>
-                      <td><a href="#">Case Details</a></td>
+                      <td>State v. Arreola (2012)</td>
+                      <td>Allows brief detention for investigation; continued detention must be supported by developing reasonable suspicion.</td>
+                      <td><a href="" target="_blank">View</a></td>
                     </tr>
                     <tr>
-                      <th scope="row">Arizona v. Gant, 556 U.S. 332 (2009)</th>
-                      <td>Limited the scope of vehicle searches incident to arrest, allowing them only if the arrestee is unsecured and within reaching distance of the vehicle or if it is reasonable to believe evidence of the offense might be found.</td>
-                      <td><a href="#">Case Details</a></td>
+                      <td>State v. Doughty (2010)</td>
+                      <td>Disallows Terry stops based solely on anonymous tips unless the tip is corroborated with observed facts.</td>
+                      <td><a href="" target="_blank">View</a></td>
                     </tr>
                     <tr>
-                      <th scope="row">Tennessee v. Garner, 471 U.S. 1 (1985)</th>
-                      <td>Ruled that deadly force may not be used against a fleeing suspect unless the officer has probable cause to believe the suspect poses a significant threat of death or serious physical injury to the officer or others.</td>
-                      <td><a href="#">Case Details</a></td>
+                      <td>State v. Glossbrener (2008)</td>
+                      <td>Allows a frisk if the officer can articulate specific reasons the suspect may be armed and presently dangerous.</td>
+                      <td><a href="" target="_blank">View</a></td>
                     </tr>
                     <tr>
-                      <th scope="row">State v. Ferrier, 136 Wn.2d 103 (1998)</th>
-                      <td>Required that officers obtain informed consent before conducting a "knock and talk" search, including informing individuals of their right to refuse consent, limit the scope of the search, and withdraw consent at any time.</td>
-                      <td><a href="#">Case Details</a></td>
+                      <td>State v. Goucher (2004)</td>
+                      <td>Allows a stop when gunshots are heard nearby and circumstances link a person to the incident.</td>
+                      <td><a href="" target="_blank">View</a></td>
+                    </tr>
+
+                    <!-- SEARCH & SEIZURE -->
+                    <tr>
+                      <td rowspan="5"><strong>Search & Seizure</strong></td>
+                      <td>Arizona v. Gant (2009)</td>
+                      <td>Limits vehicle searches incident to arrest; allows only if arrestee can access vehicle or evidence is reasonably believed to be inside.</td>
+                      <td><a href="" target="_blank">View</a></td>
                     </tr>
                     <tr>
-                      <th scope="row">Brigham City v. Stuart, 547 U.S. 398 (2006)</th>
-                      <td>Affirmed that police may enter a home without a warrant when they have an objectively reasonable basis to believe that an occupant is seriously injured or imminently threatened with such injury.</td>
-                      <td><a href="#">Case Details</a></td>
+                      <td>State v. Snapp (2012)</td>
+                      <td>Disallows broad vehicle searches post-arrest; reinforces WA&apos;s stronger privacy protections under state constitution.</td>
+                      <td><a href="" target="_blank">View</a></td>
                     </tr>
                     <tr>
-                      <th scope="row">State v. Arreola, 176 Wn.2d 284 (2012)</th>
-                      <td>Clarified the limitations on the scope of Terry stops in Washington State, emphasizing that extended detentions must be justified by evolving suspicion.</td>
-                      <td><a href="#">Case Details</a></td>
+                      <td>State v. Ferrier (1998)</td>
+                      <td>Requires Ferrier warnings before entering a residence for consent-based searches: right to refuse, limit, and revoke consent.</td>
+                      <td><a href="" target="_blank">View</a></td>
                     </tr>
                     <tr>
-                      <th scope="row">State v. Snapp, 174 Wn.2d 177 (2012)</th>
-                      <td>Reinforced that Article I, Section 7 of the Washington State Constitution provides greater privacy protections than the Fourth Amendment, particularly concerning vehicle searches incident to arrest.</td>
-                      <td><a href="#">Case Details</a></td>
+                      <td>Michigan v. Fisher (2009)</td>
+                      <td>Allows warrantless entry into a home if officers reasonably believe someone inside needs immediate medical aid.</td>
+                      <td><a href="" target="_blank">View</a></td>
                     </tr>
                     <tr>
-                      <th scope="row">State v. Kinzy, 141 Wn.2d 373 (2000)</th>
-                      <td>Addressed the community caretaking function of police, holding that such actions must be totally divorced from the detection, investigation, or acquisition of evidence relating to the violation of a criminal statute.</td>
-                      <td><a href="#">Case Details</a></td>
+                      <td>State v. Leffler (2007)</td>
+                      <td>Allows entry without a warrant to prevent imminent destruction of evidence if based on articulable facts.</td>
+                      <td><a href="" target="_blank">View</a></td>
+                    </tr>
+
+                    <!-- PLAIN VIEW -->
+                    <tr>
+                      <td rowspan="2"><strong>Plain View / Open View</strong></td>
+                      <td>Horton v. California (1990)</td>
+                      <td>Allows seizure of evidence in plain view if legally present and its criminal nature is immediately apparent.</td>
+                      <td><a href="" target="_blank">View</a></td>
                     </tr>
                     <tr>
-                      <th scope="row">State v. Heritage, 152 Wn.2d 210 (2004)</th>
-                      <td>Clarified the definition of "custody" in the context of juvenile interrogations, impacting when Miranda warnings are required.</td>
-                      <td><a href="#">Case Details</a></td>
+                      <td>State v. Seagull (1981)</td>
+                      <td>Allows observation and action on contraband visible from a lawful location (e.g., sidewalk, porch).</td>
+                      <td><a href="" target="_blank">View</a></td>
+                    </tr>
+
+                    <!-- COMMUNITY CARETAKING -->
+                    <tr>
+                      <td rowspan="4"><strong>Community Caretaking</strong></td>
+                      <td>Cady v. Dombrowski (1973)</td>
+                      <td>Allows entry/search when acting to protect public safety (e.g., securing weapon in a vehicle), not for criminal evidence.</td>
+                      <td><a href="" target="_blank">View</a></td>
                     </tr>
                     <tr>
-                      <th scope="row">XXXXXXXXXXXXXXXXXXX</th>
-                      <td>XXXXXXXXXXXXXXXXXXX</td>
-                      <td><a href="#">Case Details</a></td>
+                      <td>State v. Kinzy (2000)</td>
+                      <td>Allows caretaking actions in WA only when totally divorced from investigative motives; entry must be strictly to help.</td>
+                      <td><a href="" target="_blank">View</a></td>
                     </tr>
                     <tr>
-                      <th scope="row">XXXXXXXXXXXXXXXXXXX</th>
-                      <td>XXXXXXXXXXXXXXXXXXX</td>
-                      <td><a href="#">Case Details</a></td>
+                      <td>State v. Duncan (2002)</td>
+                      <td>Allows stopping a vehicle under caretaking if the driver appears unwell or in need of help-no suspicion of crime needed.</td>
+                      <td><a href="" target="_blank">View</a></td>
                     </tr>
                     <tr>
-                      <th scope="row">XXXXXXXXXXXXXXXXXXX</th>
-                      <td>XXXXXXXXXXXXXXXXXXX</td>
-                      <td><a href="#">Case Details</a></td>
+                      <td>State v. Sadler (2008)</td>
+                      <td>Allows warrantless home entry under caretaking when there&apos;s a legitimate concern for safety or medical emergency.</td>
+                      <td><a href="" target="_blank">View</a></td>
+                    </tr>
+
+                    <!-- USE OF FORCE -->
+                    <tr>
+                      <td rowspan="2"><strong>Use of Force</strong></td>
+                      <td>Graham v. Connor (1989)</td>
+                      <td>Establishes that force must be objectively reasonable based on totality of the circumstances, judged from the officer&apos;s POV at the time.</td>
+                      <td><a href="" target="_blank">View</a></td>
+                    </tr>
+                    <tr>
+                      <td>Tennessee v. Garner (1985)</td>
+                      <td>Allows deadly force on a fleeing suspect only if they pose an immediate threat of death or serious injury to others.</td>
+                      <td><a href="" target="_blank">View</a></td>
+                    </tr>
+
+                    <!-- INVENTORY SEARCH -->
+                    <tr>
+                      <td rowspan="2"><strong>Inventory / Impound</strong></td>
+                      <td>South Dakota v. Opperman (1976)</td>
+                      <td>Allows inventory search of lawfully impounded vehicles if done per policy and not as a pretext for investigation.</td>
+                      <td><a href="" target="_blank">View</a></td>
+                    </tr>
+                    <tr>
+                      <td>State v. White (1998)</td>
+                      <td>Allows inventory searches in WA only if conducted under written department policy without investigatory motive.</td>
+                      <td><a href="" target="_blank">View</a></td>
+                    </tr>
+
+                    <!-- MIRANDA -->
+                    <tr>
+                      <td rowspan="2"><strong>Miranda / Custody</strong></td>
+                      <td>Miranda v. Arizona (1966)</td>
+                      <td>Requires officers to give Miranda warnings before custodial interrogation; otherwise, statements are inadmissible.</td>
+                      <td><a href="" target="_blank">View</a></td>
+                    </tr>
+                    <tr>
+                      <td>State v. Heritage (2004)</td>
+                      <td>Requires Miranda for juveniles when in custody as judged from a juvenile&apos;s perspective; more protective standard than adults.</td>
+                      <td><a href="" target="_blank">View</a></td>
+                    </tr>
+
+                    <!-- SENSORY-BASED PC -->
+                    <tr>
+                      <td><strong>Sensory-Based PC</strong></td>
+                      <td>State v. Grande (2008)</td>
+                      <td>Allows probable cause based on strong odor of marijuana when combined with context, officer training, and location.</td>
+                      <td><a href="" target="_blank">View</a></td>
                     </tr>
                   </tbody>
                 </table>
+
 
                 
 
