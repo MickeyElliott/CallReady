@@ -195,7 +195,57 @@ const pages = [
               </div>
 
               
-              
+              <div class="card border-primary-subtle mb-5">
+                <div class="card-header d-flex justify-content-between align-items-center bg-primary-subtle">
+                  <div>
+                    <h4 class="mb-0">
+                      Terry v. Ohio <small class="text-muted">392 U.S. 1 (1968)</small>
+                    </h4>
+                    <span class="badge bg-warning text-dark mt-2">Stop & Frisk / Investigative Detention</span>
+                  </div>
+                  <a href="https://supreme.justia.com/cases/federal/us/392/1/" target="_blank" class="btn btn-primary btn-sm">
+                    Full Case
+                  </a>
+                </div>
+
+                <div class="card-body">
+                  <div class="row">
+                    <!-- LEFT: Summary Sections -->
+                    <div class="col-md-8">
+                      <h5 class="">Legal Issue</h5>
+                      <p class="text-muted mb-4">
+                        Can a police officer stop and frisk a person without a warrant or probable cause, based solely on the officer&apos;s reasonable suspicion that the individual is involved in criminal activity and may be armed?
+                      </p>
+
+                      <h5 class="">Facts</h5>
+                      <ul class="text-muted mb-4">
+                        <li>An officer observed suspicious behavior by two men repeatedly walking past a storefront, appearing to case it.</li>
+                        <li>The officer stopped and questioned them, then conducted a pat-down for weapons based on concern for his safety.</li>
+                        <li>The officer recovered firearms and arrested the suspects for carrying concealed weapons.</li>
+                      </ul>
+
+                      <h5 class="">Ruling</h5>
+                      <p class="text-muted mb-4">
+                        The U.S. Supreme Court ruled the stop and frisk was reasonable under the Fourth Amendment. Officers may briefly detain a person based on reasonable suspicion of criminal activity and conduct a limited pat-down if they reasonably believe the person may be armed and dangerous. This established the legal standard for Terry stops and protective frisks.
+                      </p>
+                    </div>
+
+                    <!-- RIGHT: Officer Takeaway -->
+                    <div class="col-md-4">
+                      <div class="border border-secondary-subtle rounded p-4 h-100">
+                        <h5 class="mb-2">Officer Takeaway</h5>
+                        <hr>
+                        <ul class="mb-0">
+                          <li><span class="text-primary">May stop individuals based on reasonable suspicion of criminal activity.</span></li>
+                          <li><span class="text-primary">May frisk outer clothing if you reasonably suspect they are armed and dangerous.</span></li>
+                          <li><span class="text-danger">Do not conduct a full search or go beyond a weapons pat-down without probable cause or consent.</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
 
 
             <div class="card border-primary-subtle mb-5">
