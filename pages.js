@@ -356,6 +356,57 @@ const pages = [
 
 
 
+            <div class="card border-primary-subtle mb-5">
+              <div class="card-header d-flex justify-content-between align-items-center bg-primary-subtle">
+                <div>
+                  <h4 class="mb-0">
+                    State v. Ferrier <small class="text-muted">136 Wn.2d 103 (1998)</small>
+                  </h4>
+                  <span class="badge bg-warning text-dark mt-2">Consent Search / Knock & Talk</span>
+                </div>
+                <a href="https://law.justia.com/cases/washington/supreme-court/1998/64930-8-1.html" target="_blank" class="btn btn-primary btn-sm">
+                  Full Case
+                </a>
+              </div>
+
+              <div class="card-body">
+                <div class="row">
+                  <!-- LEFT: Summary Sections -->
+                  <div class="col-md-8">
+                    <h5 class="">Legal Issue</h5>
+                    <p class="text-muted mb-4">
+                      Does an officer violate Article I, Section 7 of the WA Constitution by failing to inform a resident of their right to refuse, revoke, or limit consent during a knock and talk request to search their home?
+                    </p>
+
+                    <h5 class="">Facts</h5>
+                    <ul class="text-muted mb-4">
+                      <li>Officers conducted a &quot;knock and talk&quot; at Ferrier&apos;s home based on unverified information from her detained son.</li>
+                      <li>They were armed, wore raid jackets, and positioned officers around the home before knocking.</li>
+                      <li>Ferrier let them inside. Officers asked to search her home and presented a consent form without informing her of any rights.</li>
+                      <li>Ferrier signed under perceived pressure, later saying she feared her grandchildren would be taken if she refused.</li>
+                    </ul>
+
+                    <h5 class="">Ruling</h5>
+                    <p class="text-muted mb-4">
+                      The WA Supreme Court ruled the search was unconstitutional. When conducting a knock and talk at a private residence, officers <strong>must inform the occupant</strong> they have the right to refuse consent, limit the scope, or revoke consent at any time. Because Ferrier was not advised of these rights, her consent was invalid and the search unlawful.
+                    </p>
+                  </div>
+
+                  <!-- RIGHT: Officer Takeaway -->
+                  <div class="col-md-4">
+                    <div class="border border-secondary-subtle rounded p-4 h-100">
+                      <h5 class="mb-2">Officer Takeaway</h5>
+                      <hr>
+                      <ul class="mb-0">
+                        <li><span class="text-danger">Do not conduct knock and talk searches without first giving Ferrier warnings.</span></li>
+                        <li><span class="text-primary">Must clearly inform residents they may refuse, revoke, or limit consent before entering or searching.</span></li>
+                        <li><span class="text-danger">Consent without these warnings will be considered involuntary under WA law.</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
 
 
