@@ -151,21 +151,21 @@ const pages = [
         "content":`
             <div class=\"row\">
               <div class=\"col\">
-                
-              
+
+              <div class="card mb-4">
+                <div class="card-header">
+                  <strong>Stop & Detain</strong>
+                </div>
                 <table class="table table-bordered table-hover table-striped">
                   <thead class="thead-dark">
                     <tr>
-                      <th>Category</th>
                       <th>Case</th>
                       <th>What It Allows Officers to Do</th>
                       <th>Link</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <!-- STOP & DETAIN / TERRY STOPS -->
                     <tr>
-                      <td rowspan="5"><strong>Stop & Detain</strong></td>
                       <td>Terry v. Ohio (1968)</td>
                       <td>Allows officers to stop and frisk a person based on reasonable suspicion that they&apos;re involved in criminal activity and may be armed.</td>
                       <td><a href="" target="_blank">View</a></td>
@@ -190,10 +190,24 @@ const pages = [
                       <td>Allows a stop when gunshots are heard nearby and circumstances link a person to the incident.</td>
                       <td><a href="" target="_blank">View</a></td>
                     </tr>
+                  </tbody>
+                </table>
+              </div>
 
-                    <!-- SEARCH & SEIZURE -->
+              <div class="card mb-4">
+                <div class="card-header">
+                  <strong>Search & Seizure</strong>
+                </div>
+                <table class="table table-bordered table-hover table-striped">
+                  <thead class="thead-dark">
                     <tr>
-                      <td rowspan="5"><strong>Search & Seizure</strong></td>
+                      <th>Case</th>
+                      <th>What It Allows Officers to Do</th>
+                      <th>Link</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
                       <td>Arizona v. Gant (2009)</td>
                       <td>Limits vehicle searches incident to arrest; allows only if arrestee can access vehicle or evidence is reasonably believed to be inside.</td>
                       <td><a href="" target="_blank">View</a></td>
@@ -218,10 +232,24 @@ const pages = [
                       <td>Allows entry without a warrant to prevent imminent destruction of evidence if based on articulable facts.</td>
                       <td><a href="" target="_blank">View</a></td>
                     </tr>
+                  </tbody>
+                </table>
+              </div>
 
-                    <!-- PLAIN VIEW -->
+              <div class="card mb-4">
+                <div class="card-header">
+                  <strong>Plain View / Open View</strong>
+                </div>
+                <table class="table table-bordered table-hover table-striped">
+                  <thead class="thead-dark">
                     <tr>
-                      <td rowspan="2"><strong>Plain View / Open View</strong></td>
+                      <th>Case</th>
+                      <th>What It Allows Officers to Do</th>
+                      <th>Link</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
                       <td>Horton v. California (1990)</td>
                       <td>Allows seizure of evidence in plain view if legally present and its criminal nature is immediately apparent.</td>
                       <td><a href="" target="_blank">View</a></td>
@@ -231,10 +259,24 @@ const pages = [
                       <td>Allows observation and action on contraband visible from a lawful location (e.g., sidewalk, porch).</td>
                       <td><a href="" target="_blank">View</a></td>
                     </tr>
+                  </tbody>
+                </table>
+              </div>
 
-                    <!-- COMMUNITY CARETAKING -->
+              <div class="card mb-4">
+                <div class="card-header">
+                  <strong>Community Caretaking</strong>
+                </div>
+                <table class="table table-bordered table-hover table-striped">
+                  <thead class="thead-dark">
                     <tr>
-                      <td rowspan="4"><strong>Community Caretaking</strong></td>
+                      <th>Case</th>
+                      <th>What It Allows Officers to Do</th>
+                      <th>Link</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
                       <td>Cady v. Dombrowski (1973)</td>
                       <td>Allows entry/search when acting to protect public safety (e.g., securing weapon in a vehicle), not for criminal evidence.</td>
                       <td><a href="" target="_blank">View</a></td>
@@ -254,10 +296,24 @@ const pages = [
                       <td>Allows warrantless home entry under caretaking when there&apos;s a legitimate concern for safety or medical emergency.</td>
                       <td><a href="" target="_blank">View</a></td>
                     </tr>
+                  </tbody>
+                </table>
+              </div>
 
-                    <!-- USE OF FORCE -->
+              <div class="card mb-4">
+                <div class="card-header">
+                  <strong>Use of Force</strong>
+                </div>
+                <table class="table table-bordered table-hover table-striped">
+                  <thead class="thead-dark">
                     <tr>
-                      <td rowspan="2"><strong>Use of Force</strong></td>
+                      <th>Case</th>
+                      <th>What It Allows Officers to Do</th>
+                      <th>Link</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
                       <td>Graham v. Connor (1989)</td>
                       <td>Establishes that force must be objectively reasonable based on totality of the circumstances, judged from the officer&apos;s POV at the time.</td>
                       <td><a href="" target="_blank">View</a></td>
@@ -267,10 +323,24 @@ const pages = [
                       <td>Allows deadly force on a fleeing suspect only if they pose an immediate threat of death or serious injury to others.</td>
                       <td><a href="" target="_blank">View</a></td>
                     </tr>
+                  </tbody>
+                </table>
+              </div>
 
-                    <!-- INVENTORY SEARCH -->
+              <div class="card mb-4">
+                <div class="card-header">
+                  <strong>Inventory / Impound</strong>
+                </div>
+                <table class="table table-bordered table-hover table-striped">
+                  <thead class="thead-dark">
                     <tr>
-                      <td rowspan="2"><strong>Inventory / Impound</strong></td>
+                      <th>Case</th>
+                      <th>What It Allows Officers to Do</th>
+                      <th>Link</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
                       <td>South Dakota v. Opperman (1976)</td>
                       <td>Allows inventory search of lawfully impounded vehicles if done per policy and not as a pretext for investigation.</td>
                       <td><a href="" target="_blank">View</a></td>
@@ -280,10 +350,24 @@ const pages = [
                       <td>Allows inventory searches in WA only if conducted under written department policy without investigatory motive.</td>
                       <td><a href="" target="_blank">View</a></td>
                     </tr>
+                  </tbody>
+                </table>
+              </div>
 
-                    <!-- MIRANDA -->
+              <div class="card mb-4">
+                <div class="card-header">
+                  <strong>Miranda / Custody</strong>
+                </div>
+                <table class="table table-bordered table-hover table-striped">
+                  <thead class="thead-dark">
                     <tr>
-                      <td rowspan="2"><strong>Miranda / Custody</strong></td>
+                      <th>Case</th>
+                      <th>What It Allows Officers to Do</th>
+                      <th>Link</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
                       <td>Miranda v. Arizona (1966)</td>
                       <td>Requires officers to give Miranda warnings before custodial interrogation; otherwise, statements are inadmissible.</td>
                       <td><a href="" target="_blank">View</a></td>
@@ -293,19 +377,32 @@ const pages = [
                       <td>Requires Miranda for juveniles when in custody as judged from a juvenile&apos;s perspective; more protective standard than adults.</td>
                       <td><a href="" target="_blank">View</a></td>
                     </tr>
+                  </tbody>
+                </table>
+              </div>
 
-                    <!-- SENSORY-BASED PC -->
+              <div class="card mb-4">
+                <div class="card-header">
+                  <strong>Sensory-Based PC</strong>
+                </div>
+                <table class="table table-bordered table-hover table-striped">
+                  <thead class="thead-dark">
                     <tr>
-                      <td><strong>Sensory-Based PC</strong></td>
+                      <th>Case</th>
+                      <th>What It Allows Officers to Do</th>
+                      <th>Link</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
                       <td>State v. Grande (2008)</td>
                       <td>Allows probable cause based on strong odor of marijuana when combined with context, officer training, and location.</td>
                       <td><a href="" target="_blank">View</a></td>
                     </tr>
                   </tbody>
                 </table>
+              </div>
 
-
-                
 
 
 
