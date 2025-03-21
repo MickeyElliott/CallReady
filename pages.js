@@ -168,12 +168,12 @@ const pages = [
                     <tr>
                       <td><strong>Terry v. Ohio (1968)</strong></td>
                       <td>Allows officers to stop and frisk a person based on reasonable suspicion that they&apos;re involved in criminal activity and may be armed.</td>
-                      <td><a class="btn btn-primary text-nowrap" href="#" target="_blank">View Case</a></td>
+                      <td><a class="btn btn-primary text-nowrap" href="https://supreme.justia.com/cases/federal/us/392/1/#tab-opinion-1947459" target="_blank">View Case</a></td>
                     </tr>
                     <tr>
                       <td><strong>State v. Arreola (2012)</strong></td>
-                      <td>Allows brief detention for investigation; continued detention must be supported by developing reasonable suspicion.</td>
-                      <td><a class="btn btn-primary text-nowrap" href="#" target="_blank">View Case</a></td>
+                      <td>Allows a traffic stop if you observe a legitimate infraction (e.g., loud exhaust) - even if you&apos;re also investigating something else like DUI or drugs.</td>
+                      <td><a class="btn btn-primary text-nowrap" href="https://law.justia.com/cases/washington/supreme-court/2012/86610-4-0.html" target="_blank">View Case</a></td>
                     </tr>
                     <tr>
                       <td><strong>State v. Doughty (2010)</strong></td>
@@ -193,6 +193,41 @@ const pages = [
                   </tbody>
                 </table>
               </div>
+
+              <div class="card mb-4">
+                <div class="card-header bg-dark text-white">
+                  <strong>State v. Doughty</strong> - 170 Wn.2d 57 (2010)
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Legal Issue</h5>
+                  <p class="card-text">
+                    Whether a brief late-night stop at a suspected drug house, with no other observed activity, provides reasonable suspicion to justify a Terry stop under Article I, Section 7 of the Washington Constitution.
+                  </p>
+
+                  <h5 class="card-title">Facts</h5>
+                  <ul>
+                    <li>Officer observed Doughty stop at a suspected drug house at 3:20 a.m. for approximately 2 minutes.</li>
+                    <li>Based solely on the location and time, the officer conducted a traffic stop.</li>
+                    <li>Discovery of a suspended license and meth occurred after arrest and search.</li>
+                  </ul>
+
+                  <h5 class="card-title">Ruling</h5>
+                  <p class="card-text">
+                    The Washington Supreme Court held the stop was unconstitutional. A brief visit to a suspected drug house without more does not establish reasonable suspicion. The resulting search and seizure were suppressed.
+                  </p>
+
+                  <h5 class="card-title">Officer Takeaway</h5>
+                  <ul>
+                    <li>Cannot stop someone based only on a quick visit to a known drug location, even late at night.</li>
+                    <li>Must have additional specific and articulable facts (e.g., observed exchanges, known drug users, furtive behavior).</li>
+                  </ul>
+
+                  <a href="https://law.justia.com/cases/washington/supreme-court/2010/828521-opn.html" target="_blank" class="btn btn-primary mt-3">
+                    View Full Case on Justia
+                  </a>
+                </div>
+              </div>
+
 
               <div class="card mb-4">
                 <div class="card-header">
