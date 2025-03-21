@@ -152,47 +152,7 @@ const pages = [
             <div class=\"row\">
               <div class=\"col\">
 
-              <div class="card mb-4">
-                <div class="card-header">
-                  <strong>Stop & Detain</strong>
-                </div>
-                <table class="table table-hover table-striped">
-                  <thead class="thead-dark">
-                    <tr>
-                      <th>Case</th>
-                      <th>What It Allows Officers to Do</th>
-                      <th>Link</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td><strong>Terry v. Ohio (1968)</strong></td>
-                      <td>Allows officers to stop and frisk a person based on reasonable suspicion that they&apos;re involved in criminal activity and may be armed.</td>
-                      <td><a class="btn btn-primary text-nowrap" href="https://supreme.justia.com/cases/federal/us/392/1/#tab-opinion-1947459" target="_blank">View Case</a></td>
-                    </tr>
-                    <tr>
-                      <td><strong>State v. Arreola (2012)</strong></td>
-                      <td>Allows a traffic stop if you observe a legitimate infraction (e.g., loud exhaust) - even if you&apos;re also investigating something else like DUI or drugs.</td>
-                      <td><a class="btn btn-primary text-nowrap" href="https://law.justia.com/cases/washington/supreme-court/2012/86610-4-0.html" target="_blank">View Case</a></td>
-                    </tr>
-                    <tr>
-                      <td><strong>State v. Doughty (2010)</strong></td>
-                      <td>Disallows Terry stops based solely on anonymous tips unless the tip is corroborated with observed facts.</td>
-                      <td><a class="btn btn-primary text-nowrap" href="#" target="_blank">View Case</a></td>
-                    </tr>
-                    <tr>
-                      <td><strong>State v. Glossbrener (2008)</strong></td>
-                      <td>Allows a frisk if the officer can articulate specific reasons the suspect may be armed and presently dangerous.</td>
-                      <td><a class="btn btn-primary text-nowrap" href="#" target="_blank">View Case</a></td>
-                    </tr>
-                    <tr>
-                      <td><strong>State v. Goucher (2004)</strong></td>
-                      <td>Allows a stop when gunshots are heard nearby and circumstances link a person to the incident.</td>
-                      <td><a class="btn btn-primary text-nowrap" href="#" target="_blank">View Case</a></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+              
 
               
               <div class="card border-primary-subtle mb-5">
@@ -466,7 +426,165 @@ const pages = [
 
 
 
+<div class="card border-primary-subtle mb-5">
+  <div class="card-header d-flex justify-content-between align-items-center bg-primary-subtle">
+    <div>
+      <h4 class="mb-0">
+        Graham v. Connor <small class="text-muted">490 U.S. 386 (1989)</small>
+      </h4>
+      <span class="badge bg-warning text-dark mt-2">Use of Force / Objective Reasonableness</span>
+    </div>
+    <a href="https://supreme.justia.com/cases/federal/us/490/386/" target="_blank" class="btn btn-primary btn-sm">
+      Full Case
+    </a>
+  </div>
 
+  <div class="card-body">
+    <div class="row">
+      <!-- LEFT: Summary Sections -->
+      <div class="col-md-8">
+        <h5>Legal Issue</h5>
+        <p class="text-muted mb-4">
+          What legal standard should apply when evaluating whether law enforcement used excessive force during a stop, arrest, or other seizure under the Constitution?
+        </p>
+
+        <h5>Facts</h5>
+        <ul class="text-muted mb-4">
+          <li>Graham, a diabetic, asked a friend to drive him for orange juice during a medical episode.</li>
+          <li>After briefly entering and exiting a store, a responding officer believed the behavior was suspicious and stopped their car.</li>
+          <li>Backup officers handcuffed Graham and ignored his medical condition, causing him injury.</li>
+          <li>He was released once officers learned no crime had occurred, but he later sued under 42 U.S.C. - 1983 for excessive force.</li>
+        </ul>
+
+        <h5>Ruling</h5>
+        <p class="text-muted mb-4">
+          The U.S. Supreme Court ruled that all claims of excessive force by officers must be evaluated under the Fourth Amendment&apos;s standard of <strong>objective reasonableness</strong>. Officers&apos; intent or motivation is irrelevant — the focus must be on whether the force used was reasonable given the facts and circumstances at the time of the seizure.
+        </p>
+      </div>
+
+      <!-- RIGHT: Officer Takeaway -->
+      <div class="col-md-4">
+        <div class="border border-secondary-subtle rounded p-4 h-100">
+          <h5 class="mb-2">Officer Takeaway</h5>
+          <hr>
+          <ul class="mb-0">
+            <li><span class="text-primary">Must evaluate force based on what a reasonable officer would do under the same circumstances.</span></li>
+            <li><span class="text-primary">May use force that is objectively reasonable - even in tense, split-second decisions.</span></li>
+            <li><span class="text-danger">Do not rely on good intentions or personal justifications - reasonableness is judged by facts, not motives.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="card border-primary-subtle mb-5">
+  <div class="card-header d-flex justify-content-between align-items-center bg-primary-subtle">
+    <div>
+      <h4 class="mb-0">
+        Tennessee v. Garner <small class="text-muted">471 U.S. 1 (1985)</small>
+      </h4>
+      <span class="badge bg-warning text-dark mt-2">Use of Force / Deadly Force</span>
+    </div>
+    <a href="https://supreme.justia.com/cases/federal/us/471/1/" target="_blank" class="btn btn-primary btn-sm">
+      Full Case
+    </a>
+  </div>
+
+  <div class="card-body">
+    <div class="row">
+      <!-- LEFT: Summary Sections -->
+      <div class="col-md-8">
+        <h5>Legal Issue</h5>
+        <p class="text-muted mb-4">
+          Can police constitutionally use deadly force to stop a fleeing felony suspect who appears unarmed and poses no immediate threat to others?
+        </p>
+
+        <h5>Facts</h5>
+        <ul class="text-muted mb-4">
+          <li>Memphis police responded to a burglary call and saw a suspect, Garner, fleeing from the scene.</li>
+          <li>Officer ordered him to stop; Garner attempted to climb a fence to escape.</li>
+          <li>Believing Garner was unarmed and not an immediate threat, the officer shot and killed him to prevent escape.</li>
+          <li>The officer acted under a Tennessee law allowing deadly force against any fleeing felon.</li>
+        </ul>
+
+        <h5>Ruling</h5>
+        <p class="text-muted mb-4">
+          The U.S. Supreme Court ruled the use of deadly force was unconstitutional under the Fourth Amendment. Deadly force may only be used to prevent escape if the officer has <strong>probable cause to believe the suspect poses a significant threat of death or serious physical injury</strong> to the officer or others.
+        </p>
+      </div>
+
+      <!-- RIGHT: Officer Takeaway -->
+      <div class="col-md-4">
+        <div class="border border-secondary-subtle rounded p-4 h-100">
+          <h5 class="mb-2">Officer Takeaway</h5>
+          <hr>
+          <ul class="mb-0">
+            <li><span class="text-danger">Do not use deadly force solely to stop a fleeing felon unless they pose a threat.</span></li>
+            <li><span class="text-primary">Must have probable cause that the suspect poses a significant threat of serious injury or death.</span></li>
+            <li><span class="text-primary">May only use deadly force when necessary and proportionate to the risk presented at the moment.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="card border-primary-subtle mb-5">
+  <div class="card-header d-flex justify-content-between align-items-center bg-primary-subtle">
+    <div>
+      <h4 class="mb-0">
+        State v. White <small class="text-muted">135 Wn.2d 761 (1998)</small>
+      </h4>
+      <span class="badge bg-warning text-dark mt-2">Inventory Search / Vehicle Impound</span>
+    </div>
+    <a href="https://law.justia.com/cases/washington/supreme-court/1998/64973-1-1.html" target="_blank" class="btn btn-primary btn-sm">
+      Full Case
+    </a>
+  </div>
+
+  <div class="card-body">
+    <div class="row">
+      <!-- LEFT: Summary Sections -->
+      <div class="col-md-8">
+        <h5>Legal Issue</h5>
+        <p class="text-muted mb-4">
+          Does an inventory search of a locked trunk during a lawful impound violate Article I, Section 7 of the WA Constitution when there is no manifest necessity to open it?
+        </p>
+
+        <h5>Facts</h5>
+        <ul class="text-muted mb-4">
+          <li>White was stopped for a traffic infraction and arrested after giving a false name and being found to have multiple warrants.</li>
+          <li>The vehicle was impounded and searched per department policy, which allowed searching trunks if accessible via latch or key.</li>
+          <li>Officers found a trunk release inside the glove box and opened the locked trunk, discovering drugs and paraphernalia.</li>
+        </ul>
+
+        <h5>Ruling</h5>
+        <p class="text-muted mb-4">
+          The WA Supreme Court ruled that the search of the locked trunk was unconstitutional. Article I, Section 7 of the WA Constitution prohibits the warrantless search of a locked trunk during an inventory unless there is a <strong>manifest necessity</strong>. The presence of a release latch did not justify the intrusion.
+        </p>
+      </div>
+
+      <!-- RIGHT: Officer Takeaway -->
+      <div class="col-md-4">
+        <div class="border border-secondary-subtle rounded p-4 h-100">
+          <h5 class="mb-2">Officer Takeaway</h5>
+          <hr>
+          <ul class="mb-0">
+            <li><span class="text-danger">Do not open locked trunks during inventory searches unless a manifest necessity exists.</span></li>
+            <li><span class="text-primary">Must follow written department policy strictly, and ensure scope remains limited to safeguarding property.</span></li>
+            <li><span class="text-danger">Trunk access via glove box release does not justify warrantless trunk entry without a clear safety or ownership need.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
