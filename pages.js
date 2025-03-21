@@ -198,59 +198,110 @@ const pages = [
               
 
 
+            <div class="card border-primary-subtle mb-5">
+              <div class="card-header d-flex justify-content-between align-items-center bg-primary-subtle">
+                <div>
+                  <h4 class="mb-0">
+                    State v. Arreola <small class="text-muted">176 Wn.2d 284 (2012)</small>
+                  </h4>
+                  <span class="badge bg-warning text-dark mt-2">Pretext / Stop Authority</span>
+                </div>
+                <a href="https://law.justia.com/cases/washington/supreme-court/2012/86610-4-0.html" target="_blank" class="btn btn-primary btn-sm">
+                  Full Case
+                </a>
+              </div>
+
+              <div class="card-body">
+                <div class="row">
+                  <!-- LEFT: Summary Sections -->
+                  <div class="col-md-8">
+                    <h5 class="">Legal Issue</h5>
+                    <p class="text-muted mb-4">
+                      Is a traffic stop unconstitutional under Article I, Section 7 of the WA Constitution if an officer is primarily motivated by an uncorroborated DUI report but also independently observes a traffic infraction?
+                    </p>
+
+                    <h5 class="">Facts</h5>
+                    <ul class="text-muted mb-4">
+                      <li>Officer responded to a DUI report and followed a matching vehicle.</li>
+                      <li>Observed no signs of DUI, but did observe a muffler violation.</li>
+                      <li>Admitted his primary interest was investigating the DUI, but testified he routinely stops cars for loud exhaust and would have done so regardless of the report.</li>
+                      <li>Upon contact, observed open containers, odor of alcohol, and arrested the driver based on warrants.</li>
+                    </ul>
+
+                    <h5 class="">Ruling</h5>
+                    <p class="text-muted mb-4">
+                      The WA Supreme Court ruled the stop was <strong>not pretextual</strong>. A stop motivated by multiple reasons is lawful if one of them is an actual, conscious, and independent basis supported by reasonable suspicion. As long as the traffic violation would have prompted the stop anyway, it is constitutionally valid.
+                    </p>
+                  </div>
+
+                  <!-- RIGHT: Officer Takeaway -->
+                  <div class="col-md-4">
+                    <div class="border border-secondary-subtle rounded p-4 h-100">
+                      <h5 class="mb-2">Officer Takeaway</h5>
+                      <hr>
+                      <ul class="mb-0">
+                        <li><span class="text-danger">Do not rely solely on uncorroborated tips (e.g., anonymous DUI calls) to justify stops.</span></li>
+                        <li><span class="text-primary">Must independently observe and consciously act on a valid reason for the stop (e.g., traffic infraction).</span></li>
+                        <li><span class="text-primary">May stop a vehicle for a legitimate infraction even if you are also hoping to investigate something else.</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
 
 
             <div class="card border-primary-subtle mb-5">
-  <div class="card-header d-flex justify-content-between align-items-center bg-primary-subtle">
-    <div>
-      <h4 class="mb-0">
-        State v. Doughty <small class="text-muted">170 Wn.2d 57 (2010)</small>
-      </h4>
-      <span class="badge bg-warning text-dark mt-2">Stop & Detain / Terry Stop</span>
-    </div>
-    <a href="https://law.justia.com/cases/washington/supreme-court/2010/828521-opn.html" target="_blank" class="btn btn-primary btn-sm">
-      Full Case
-    </a>
-  </div>
+              <div class="card-header d-flex justify-content-between align-items-center bg-primary-subtle">
+                <div>
+                  <h4 class="mb-0">
+                    State v. Doughty <small class="text-muted">170 Wn.2d 57 (2010)</small>
+                  </h4>
+                  <span class="badge bg-warning text-dark mt-2">Stop & Detain / Terry Stop</span>
+                </div>
+                <a href="https://law.justia.com/cases/washington/supreme-court/2010/828521-opn.html" target="_blank" class="btn btn-primary btn-sm">
+                  Full Case
+                </a>
+              </div>
 
-  <div class="card-body">
-    <div class="row">
-      <!-- LEFT: Summary Sections -->
-      <div class="col-md-8">
-        <h5 class="">Legal Issue</h5>
-        <p class="text-muted mb-4">
-          Can an officer legally stop a vehicle solely based on a brief late-night visit to a suspected drug house without other corroborating factors?
-        </p>
+              <div class="card-body">
+                <div class="row">
+                  <!-- LEFT: Summary Sections -->
+                  <div class="col-md-8">
+                    <h5 class="">Legal Issue</h5>
+                    <p class="text-muted mb-4">
+                      Can an officer legally stop a vehicle solely based on a brief late-night visit to a suspected drug house without other corroborating factors?
+                    </p>
 
-        <h5 class="">Facts</h5>
-        <ul class="text-muted mb-4">
-          <li>Driver briefly stopped at a known drug house around 3:20 AM.</li>
-          <li>No observed hand-to-hand exchange or suspicious behavior.</li>
-          <li>Officer initiated a stop based only on time, location, and the duration of the visit.</li>
-        </ul>
+                    <h5 class="">Facts</h5>
+                    <ul class="text-muted mb-4">
+                      <li>Driver briefly stopped at a known drug house around 3:20 AM.</li>
+                      <li>No observed hand-to-hand exchange or suspicious behavior.</li>
+                      <li>Officer initiated a stop based only on time, location, and the duration of the visit.</li>
+                    </ul>
 
-        <h5 class="">Ruling</h5>
-        <p class="text-muted mb-4">
-          The WA Supreme Court ruled the stop violated Article I, Section 7 of the WA Constitution. A short visit to a suspected location, even at night, does not justify a Terry stop without further articulable facts establishing reasonable suspicion.
-        </p>
-      </div>
+                    <h5 class="">Ruling</h5>
+                    <p class="text-muted mb-4">
+                      The WA Supreme Court ruled the stop violated Article I, Section 7 of the WA Constitution. A short visit to a suspected location, even at night, does not justify a Terry stop without further articulable facts establishing reasonable suspicion.
+                    </p>
+                  </div>
 
-      <!-- RIGHT: Officer Takeaway -->
-      <div class="col-md-4">
-        <div class="border border-secondary-subtle rounded p-4 h-100">
-          <h5 class="mb-2">Officer Takeaway</h5>
-          <hr>
-          <ul class="mb-0">
-            <li><span class="text-danger">Do NOT stop solely for short visits to known drug houses.</span></li>
-            <li><span class="text-primary">Must have more: visible transactions, evasive behavior, known suspects, etc.</span></li>
-            <li><span class="text-primary">Court requires specific and articulable suspicion &mdash; not a hunch.</span></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+                  <!-- RIGHT: Officer Takeaway -->
+                  <div class="col-md-4">
+                    <div class="border border-secondary-subtle rounded p-4 h-100">
+                      <h5 class="mb-2">Officer Takeaway</h5>
+                      <hr>
+                      <ul class="mb-0">
+                        <li><span class="text-danger">Do NOT stop solely for short visits to known drug houses.</span></li>
+                        <li><span class="text-primary">Must have more: visible transactions, evasive behavior, known suspects, etc.</span></li>
+                        <li><span class="text-primary">Court requires specific and articulable suspicion &mdash; not a hunch.</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
 
 
