@@ -141,11 +141,62 @@ const pages = [
   },
   {
     "id":"3.0",
+    "title": "Case Rulings",
+    "description":"This page serves as a quick referance of important cases police use for policies.",
+    "cards": [
+      { 
+        "id":"3.0.1", 
+        "title": "Case Rulings", 
+        "description": "Work in progress.",
+        "content":`
+            <div class=\"row\">
+              <div class=\"col\">
+                
+              
+
+
+                <div class="row">
+                  <div class="col-4">
+                    <div id="list-example" class="list-group">
+                      <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+                      <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+                      <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+                      <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+                    </div>
+                  </div>
+                  <div class="col-8">
+                    <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+                      <h4 id="list-item-1">Item 1</h4>
+                      <p>... test asd asda slkdjaskldj lkajsldk jaskl jdaklsj dlkajs lkdjaslk jdlaksj dlka sjlkads</p>
+                      <h4 id="list-item-2">Item 2</h4>
+                      <p>... test asd asda slkdjaskldj lkajsldk jaskl jdaklsj dlkajs lkdjaslk jdlaksj dlka sjlkads</p>
+                      <h4 id="list-item-3">Item 3</h4>
+                      <p>... test asd asda slkdjaskldj lkajsldk jaskl jdaklsj dlkajs lkdjaslk jdlaksj dlka sjlkads</p>
+                      <h4 id="list-item-4">Item 4</h4>
+                      <p>... test asd asda slkdjaskldj lkajsldk jaskl jdaklsj dlkajs lkdjaslk jdlaksj dlka sjlkads</p>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+
+              </div>
+        
+        </div>
+        `,
+        "data":"{}"
+       }
+    ]
+  },
+  {
+    "id":"4.0",
     "title": "GPS Road",
     "description":"This page serves as a quick referance of your current heading and location.",
     "cards": [
       { 
-        "id":"3.0.1", 
+        "id":"4.0.1", 
         "title": "GPS Road", 
         "description": "GPS is buggy. Refresh page after use.",
         "content":`
