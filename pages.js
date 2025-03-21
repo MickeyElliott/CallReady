@@ -246,6 +246,58 @@ const pages = [
                 </div>
               </div>
 
+              <div class="card border-primary-subtle mb-5">
+                <div class="card-header d-flex justify-content-between align-items-center bg-primary-subtle">
+                  <div>
+                    <h4 class="mb-0">
+                      State v. Doughty <small class="text-muted">170 Wn.2d 57 (2010)</small>
+                    </h4>
+                    <span class="badge bg-warning text-dark mt-2">Stop & Detain / Terry Stop</span>
+                  </div>
+                  <a href="https://law.justia.com/cases/washington/supreme-court/2010/828521-opn.html" target="_blank" class="btn btn-primary btn-sm">
+                    Full Case
+                  </a>
+                </div>
+
+                <div class="card-body">
+                  <div class="row">
+                    <!-- LEFT: Summary Sections -->
+                    <div class="col-md-8">
+                      <h5 class="">Legal Issue</h5>
+                      <p class="text-muted mb-4">
+                        Can an officer legally stop a vehicle solely based on a brief late-night visit to a suspected drug house without other corroborating factors?
+                      </p>
+
+                      <h5 class="">Facts</h5>
+                      <ul class="text-muted mb-4">
+                        <li>Driver briefly stopped at a known drug house around 3:20 AM.</li>
+                        <li>No observed hand-to-hand exchange or suspicious behavior.</li>
+                        <li>Officer initiated a stop based only on time, location, and the duration of the visit.</li>
+                      </ul>
+
+                      <h5 class="">Ruling</h5>
+                      <p class="text-muted mb-4">
+                        The WA Supreme Court ruled the stop violated Article I, Section 7 of the WA Constitution. A short visit to a suspected location, even at night, does not justify a Terry stop without further articulable facts establishing reasonable suspicion.
+                      </p>
+                    </div>
+
+                    <!-- RIGHT: Officer Takeaway -->
+                    <div class="col-md-4">
+                      <div class="border border-secondary-subtle rounded p-4 h-100 bg-white">
+                        <h6 class="text-uppercase mb-2">Officer Takeaway</h6>
+                        <hr>
+                        <ul class="mb-0">
+                          <li>Do NOT stop solely for short visits to known drug houses.</li>
+                          <li>Must have more: visible transactions, evasive behavior, known suspects, etc.</li>
+                          <li>Courts require specific and articulable suspicion - not a hunch.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
 
 
               <div class="card mb-4">
