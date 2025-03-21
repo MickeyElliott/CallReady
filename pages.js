@@ -410,6 +410,68 @@ const pages = [
 
 
 
+            <div class="card border-primary-subtle mb-5">
+              <div class="card-header d-flex justify-content-between align-items-center bg-primary-subtle">
+                <div>
+                  <h4 class="mb-0">
+                    State v. Leffler <small class="text-muted">142 Wn. App. 175 (2007)</small>
+                  </h4>
+                  <span class="badge bg-warning text-dark mt-2">Exigent Circumstances / Warrantless Search</span>
+                </div>
+                <a href="https://case-law.vlex.com/vid/state-v-leffler-no-889749633" target="_blank" class="btn btn-primary btn-sm">
+                  Full Case
+                </a>
+              </div>
+
+              <div class="card-body">
+                <div class="row">
+                  <!-- LEFT: Summary Sections -->
+                  <div class="col-md-8">
+                    <h5>Legal Issue</h5>
+                    <p class="text-muted mb-4">
+                      Does the presence of chemical odors and materials associated with methamphetamine production justify a warrantless search under the emergency exception to the warrant requirement?
+                    </p>
+
+                    <h5>Facts</h5>
+                    <ul class="text-muted mb-4">
+                      <li>Deputies responded to an anonymous tip about strong chemical smells from Leffler&apos;s property.</li>
+                      <li>Upon arrival, they detected a harsh chemical odor near a fifth-wheel trailer.</li>
+                      <li>Leffler had an outstanding felony escape warrant and was arrested.</li>
+                      <li>He informed deputies about hazardous materials inside the trailer but did not consent to a search.</li>
+                      <li>The Clandestine Lab Team conducted a warrantless safety assessment, finding evidence of methamphetamine manufacturing.</li>
+                    </ul>
+
+                    <h5>Ruling</h5>
+                    <p class="text-muted mb-4">
+                      The Washington Court of Appeals ruled the search unconstitutional. The emergency exception to the warrant requirement does not apply without an imminent threat of substantial harm to persons or property. Mere presence of hazardous materials without immediate danger does not justify a warrantless search.
+                    </p>
+                  </div>
+
+                  <!-- RIGHT: Officer Takeaway -->
+                  <div class="col-md-4">
+                    <div class="border border-secondary-subtle rounded p-4 h-100">
+                      <h5 class="mb-2">Officer Takeaway</h5>
+                      <hr>
+                      <ul class="mb-0">
+                        <li><span class="text-danger">Do not conduct warrantless searches based solely on the presence of hazardous materials without immediate threat.</span></li>
+                        <li><span class="text-primary">Must obtain a warrant unless there is an imminent threat of substantial harm.</span></li>
+                        <li><span class="text-primary">Ensure clear documentation of any perceived immediate dangers when considering exigent circumstances.</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
 
               <div class="card mb-4">
                 <div class="card-header">
