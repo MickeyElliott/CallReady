@@ -194,39 +194,58 @@ const pages = [
                 </table>
               </div>
 
-              <div class="card mb-4">
-                <div class="card-header bg-dark text-white">
-                  <strong>State v. Doughty</strong> - 170 Wn.2d 57 (2010)
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">Legal Issue</h5>
-                  <p class="card-text">
-                    Whether a brief late-night stop at a suspected drug house, with no other observed activity, provides reasonable suspicion to justify a Terry stop under Article I, Section 7 of the Washington Constitution.
-                  </p>
-
-                  <h5 class="card-title">Facts</h5>
-                  <ul>
-                    <li>Officer observed Doughty stop at a suspected drug house at 3:20 a.m. for approximately 2 minutes.</li>
-                    <li>Based solely on the location and time, the officer conducted a traffic stop.</li>
-                    <li>Discovery of a suspended license and meth occurred after arrest and search.</li>
-                  </ul>
-
-                  <h5 class="card-title">Ruling</h5>
-                  <p class="card-text">
-                    The Washington Supreme Court held the stop was unconstitutional. A brief visit to a suspected drug house without more does not establish reasonable suspicion. The resulting search and seizure were suppressed.
-                  </p>
-
-                  <h5 class="card-title">Officer Takeaway</h5>
-                  <ul>
-                    <li>Cannot stop someone based only on a quick visit to a known drug location, even late at night.</li>
-                    <li>Must have additional specific and articulable facts (e.g., observed exchanges, known drug users, furtive behavior).</li>
-                  </ul>
-
-                  <a href="https://law.justia.com/cases/washington/supreme-court/2010/828521-opn.html" target="_blank" class="btn btn-primary mt-3">
-                    View Full Case on Justia
+              <div class="card shadow-sm border-0 mb-5">
+                <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                  <div>
+                    <h5 class="mb-0">State v. Doughty <small class="text-light">170 Wn.2d 57 (2010)</small></h5>
+                    <span class="badge bg-warning text-dark mt-1">Stop & Detain / Terry Stop</span>
+                  </div>
+                  <a href="https://law.justia.com/cases/washington/supreme-court/2010/828521-opn.html" target="_blank" class="btn btn-outline-light btn-sm">
+                    Full Case
                   </a>
                 </div>
+
+                <div class="card-body bg-light">
+                  <div class="row">
+                    <!-- LEFT: Summary Sections -->
+                    <div class="col-md-8">
+                      <h6 class="text-uppercase text-muted">Legal Issue</h6>
+                      <p class="mb-3">
+                        Can an officer legally stop a vehicle solely based on a brief late-night visit to a suspected drug house without other corroborating factors?
+                      </p>
+
+                      <h6 class="text-uppercase text-muted">Facts</h6>
+                      <ul class="mb-3">
+                        <li>Driver briefly stopped at a known drug house at ~3:20 AM.</li>
+                        <li>No observed drug transaction or suspicious behavior.</li>
+                        <li>Officer stopped vehicle based only on time, location, and visit duration.</li>
+                      </ul>
+
+                      <h6 class="text-uppercase text-muted">Ruling</h6>
+                      <p class="mb-3">
+                        The WA Supreme Court ruled the stop violated Article I, Section 7. A short visit to a suspected location, even late at night, doesn\'t justify a Terry stop without further articulable facts.
+                      </p>
+                    </div>
+
+                    <!-- RIGHT: Officer Takeaway -->
+                    <div class="col-md-4">
+                      <div class="bg-white border rounded p-3 h-100">
+                        <h6 class="text-uppercase text-muted mb-2">Officer Takeaway</h6>
+                        <ul class="mb-0">
+                          <li>Do NOT stop solely for short visits to suspected locations.</li>
+                          <li>Must have more: hand-to-hand exchanges, furtive movements, known associates, etc.</li>
+                          <li>Courts demand specific, articulable suspicion - not just \"gut feeling.\"</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-footer bg-white text-end text-muted small">
+                  Last reviewed: <span class="fw-semibold">2025-03-20</span>
+                </div>
               </div>
+
 
 
               <div class="card mb-4">
