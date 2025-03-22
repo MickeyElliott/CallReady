@@ -587,6 +587,57 @@ const pages = [
 </div>
 
 
+<div class="card border-primary-subtle mb-5">
+  <div class="card-header d-flex justify-content-between align-items-center bg-primary-subtle">
+    <div>
+      <h4 class="mb-0">
+        Chinaryan v. City of Los Angeles <small class="text-muted">9th Cir. 2024</small>
+      </h4>
+      <span class="badge bg-warning text-dark mt-2">Use of Force / High-Risk Stop</span>
+    </div>
+    <a href="https://law.justia.com/cases/federal/appellate-courts/ca9/21-56237/21-56237-2024-08-14.html" target="_blank" class="btn btn-primary btn-sm">
+      Full Case
+    </a>
+  </div>
+
+  <div class="card-body">
+    <div class="row">
+      <!-- LEFT: Summary Sections -->
+      <div class="col-md-8">
+        <h5>Legal Issue</h5>
+        <p class="text-muted mb-4">
+          Can officers conduct a high-risk (felony) stop based solely on reasonable suspicion that a vehicle is stolen, without violating the Fourth Amendment or triggering civil liability?
+        </p>
+
+        <h5>Facts</h5>
+        <ul class="text-muted mb-4">
+          <li>Chinaryan was stopped in a high-risk felony stop after a DMV plate error caused her car to be mistakenly flagged as stolen.</li>
+          <li>Officers conducted a guns-drawn stop, ordered occupants to the ground, and handcuffed them.</li>
+          <li>The stop was based on reasonable suspicion alone, with no confirmation of stolen status.</li>
+          <li>Plaintiffs sued under - 1983 and California&apos;s Bane Act, alleging excessive force and unlawful seizure.</li>
+        </ul>
+
+        <h5>Ruling</h5>
+        <p class="text-muted mb-4">
+          The Ninth Circuit reversed summary judgment for the officers. The court held that it was <strong>clearly established</strong> under existing precedent (Washington v. Lambert and Green v. San Francisco) that officers <strong>may not conduct a high-risk stop based solely on reasonable suspicion of a stolen vehicle</strong>. The officers were not entitled to qualified immunity, and the case was remanded for trial.
+        </p>
+      </div>
+
+      <!-- RIGHT: Officer Takeaway -->
+      <div class="col-md-4">
+        <div class="border border-secondary-subtle rounded p-4 h-100">
+          <h5 class="mb-2">Officer Takeaway</h5>
+          <hr>
+          <ul class="mb-0">
+            <li><span class="text-danger">Do not initiate a high-risk stop unless you have confirmation or probable cause the vehicle is actually stolen.</span></li>
+            <li><span class="text-primary">May detain based on reasonable suspicion, but escalation to felony stop tactics requires more.</span></li>
+            <li><span class="text-danger">Overusing force or intimidation on lawful civilians based on weak information exposes you to civil liability.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
