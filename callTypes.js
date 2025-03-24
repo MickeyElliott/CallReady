@@ -188,75 +188,11 @@ var callTypeData = {
       },
       {
         id: "3.0",
-        title: "Vehicles",
-        description: "Procedures for stolen and recovered vehicles.",
+        title: "Traffic/Vehicles",
+        description: "Procedures for traffic stops and vehicles.",
         items: [
           {
             id: "3.0.1", // Unique identifier for the procedure
-            title: "Recover Stolen Vehicle", // Title of the procedure
-            description: "Steps for recovering and processing a stolen vehicle, including cases with impound waivers.",
-            definition: [
-              {
-                index: "1",
-                main: "Confirm the vehicle is stolen by matching plate and VIN.",
-                subSections: [
-                  "Authorize \"Consent to Search\" with records department.",
-                  "Search the vehicle for evidence or contraband."
-                ]
-              },
-              {
-                index: "2",
-                main: "Attempt to contact the registered owner (RO)."
-              },
-              {
-                index: "3",
-                main: "Notify the RO of the vehicle&apos;s location and drivability."
-              },
-              {
-                index: "4",
-                main: "Provide the RO a reasonable amount of time to recover the vehicle (typically ~30 minutes), unless:",
-                subSections: [
-                  "The vehicle is in a hazardous location (travel portion of a roadway), in which case the vehicle should be immediately impounded."
-                ]
-              },
-              {
-                index: "5",
-                main: "If the RO or a responsible party cannot respond in a reasonable time, impound the vehicle per RCW 46.55.113(2,e)."
-              },
-              {
-                index: "6",
-                main: "Document efforts to contact the RO in the report."
-              },
-              {
-                index: "7",
-                main: "Avoid surveillance of the stolen vehicle, unless:",
-                subSections: [
-                  "The vehicle was reportedly involved in a serious felony crime in addition to being stolen."
-                ]
-              },
-              {
-                index: "8",
-                main: "Remove the vehicle from the stolen vehicle list upon recovery."
-              }
-            ],
-            link: "https://app.leg.wa.gov/RCW/default.aspx?cite=46.55.113", // Relevant RCW link
-            offense: "Stolen Vehicle Recovery", // Related offense
-            elementsOfPC: [], // Elements necessary for probable cause
-            questions: [
-              "Have you confirmed the plate and VIN match the stolen vehicle report?",
-              "Did you attempt to contact the registered owner?",
-              "Is the vehicle in a hazardous location requiring immediate impound?",
-              "Was the vehicle involved in a serious felony crime?",
-              "Did the R.O. indicate they could retrieve the vehicle within a reasonable time?"
-            ], // Key investigative questions
-            relatedCodes: [
-              "46.55.113(2,e)" // Relevant RCW for impound authority
-            ], // Related statutes or codes
-            relatedProcedures: [
-            ] // Related procedures
-          },            
-          {
-            id: "3.0.2", // Unique identifier for the procedure
             title: "Stolen Vehicle (High-Risk)", // Title of the procedure
             description: "High-risk protocol for handling occupied or unoccupied stolen vehicles.",
             definition: [
@@ -320,27 +256,74 @@ var callTypeData = {
             ], // Related statutes or codes
             relatedProcedures: [
             ] // Related procedures
-          },          
+          }, 
+          {
+            id: "3.0.2", // Unique identifier for the procedure
+            title: "Recover Stolen Vehicle", // Title of the procedure
+            description: "Steps for recovering and processing a stolen vehicle, including cases with impound waivers.",
+            definition: [
+              {
+                index: "1",
+                main: "Confirm the vehicle is stolen by matching plate and VIN.",
+                subSections: [
+                  "Authorize \"Consent to Search\" with records department.",
+                  "Search the vehicle for evidence or contraband."
+                ]
+              },
+              {
+                index: "2",
+                main: "Attempt to contact the registered owner (RO)."
+              },
+              {
+                index: "3",
+                main: "Notify the RO of the vehicle&apos;s location and drivability."
+              },
+              {
+                index: "4",
+                main: "Provide the RO a reasonable amount of time to recover the vehicle (typically ~30 minutes), unless:",
+                subSections: [
+                  "The vehicle is in a hazardous location (travel portion of a roadway), in which case the vehicle should be immediately impounded."
+                ]
+              },
+              {
+                index: "5",
+                main: "If the RO or a responsible party cannot respond in a reasonable time, impound the vehicle per RCW 46.55.113(2,e)."
+              },
+              {
+                index: "6",
+                main: "Document efforts to contact the RO in the report."
+              },
+              {
+                index: "7",
+                main: "Avoid surveillance of the stolen vehicle, unless:",
+                subSections: [
+                  "The vehicle was reportedly involved in a serious felony crime in addition to being stolen."
+                ]
+              },
+              {
+                index: "8",
+                main: "Remove the vehicle from the stolen vehicle list upon recovery."
+              }
+            ],
+            link: "https://app.leg.wa.gov/RCW/default.aspx?cite=46.55.113", // Relevant RCW link
+            offense: "Stolen Vehicle Recovery", // Related offense
+            elementsOfPC: [], // Elements necessary for probable cause
+            questions: [
+              "Have you confirmed the plate and VIN match the stolen vehicle report?",
+              "Did you attempt to contact the registered owner?",
+              "Is the vehicle in a hazardous location requiring immediate impound?",
+              "Was the vehicle involved in a serious felony crime?",
+              "Did the R.O. indicate they could retrieve the vehicle within a reasonable time?"
+            ], // Key investigative questions
+            relatedCodes: [
+              "46.55.113(2,e)" // Relevant RCW for impound authority
+            ], // Related statutes or codes
+            relatedProcedures: [
+            ] // Related procedures
+          },            
+                   
           {
             id: "3.0.3",
-            title: "OSA Occupied Stolen",
-            description: "Minimize reporting as this is another agency&apos;s case.",
-            definition: [
-              { index: "1", main: "Conduct high-risk stop if time allows." },
-              { index: "2", main: "Identify suspect via DOL photo before arriving." },
-              { index: "3", main: "Confirm stolen status and any PC." },
-              { index: "4", main: "Request FW records to update &apos;Locate&apos; status in DB." },
-              { index: "5", main: "Log case number and clear as &apos;Referred to another agency&apos;." }
-            ],
-            link: "",
-            offense: "",
-            elementsOfPC: [],
-            questions: [],
-            relatedCodes: [],
-            relatedProcedures: []
-          },
-          {
-            id: "3.0.4",
             title: "Investigative Towing and Evidence Search",
             description: "Steps for towing a vehicle for evidence search and ensuring proper documentation.",
             definition: [
@@ -362,7 +345,7 @@ var callTypeData = {
             relatedProcedures: []
           },
           {
-            id: "3.0.5",
+            id: "3.0.4",
             title: "Suspicious Vehicle",
             description: "Steps for evaluating and documenting a suspicious vehicle.",
             definition: [
@@ -377,6 +360,90 @@ var callTypeData = {
             questions: [],
             relatedCodes: [],
             relatedProcedures: []
+          },
+          {
+            id: "3.0.5", // Unique identifier for the call type
+            title: "DUI", // Title of the call type
+            description: "Driving Under the Influence (DUI) incidents.",
+            definition: [
+              {
+                index: "1",
+                main: "PC DUI indicators:",
+                subSections: [
+                  "(a) Erratic driving behavior (swerving, speeding, failure to stop).",
+                  "(b) Physical signs of impairment (odor of alcohol, slurred speech, red eyes).",
+                  "(c) Eluding with suspicion of DUI can be a valid reason for pursuit."
+                ]
+              },
+              {
+                index: "2",
+                main: "Conduct Field Sobriety Tests (SFSTs):",
+                subSections: [
+                  "<strong>Note:</strong> Read from Department Issued Card.",
+                  "Horizontal Gaze Nystagmus (HGN): Look for involuntary eye movements at maximum deviation or before 45 degrees.",
+                  "Walk and Turn: Observe for balance issues, inability to follow instructions, or stepping off the line.",
+                  "One Leg Stand: Look for swaying, use of arms for balance, hopping, or putting the foot down."
+                ]
+              },
+              {
+                index: "3",
+                main: "If PC established: Arrest, Miranda, Search, and Transport to station for <strong>Dreger</strong>."
+              },
+              {
+                index: "4",
+                main: "Perform a \"III\" (Criminal History Check) if the DUI is a felony."
+              },{
+                index: "5",
+                main: "Create citation if Gross Misdemaenor. If Felony Spillman Facepage gets forwarded to CIS."
+              },
+              {
+                index: "6",
+                main: "Dreagor and DUI Packet",
+                subSections: [
+                  "(a) Start 15 minute observation period.",
+                  "(b) Do DUI Questionaire first.",
+                  "(c) Read Constitutional Rights.",
+                  "(d) Read Implied Consent.",
+                  "(e) Perform blow tests and print. (A copy goes with suspect)"
+                ]
+              },
+              {
+                index: "<i class=\"bi bi-info-circle-fill text-info fs-4\"></i>",
+                main: "<span class=\"text-info\">ORI/Local Agency Code: WA0173600</span>"
+              },
+              {
+                index: "7",
+                main: "Warrants",
+                subSections: [
+                  "Sometimes a blood warrant is required. Details soon. ",
+                  "Sometimes there&apos;s evidence insid a vehicle. You can do an evidence tow and create a search warrant to strengthen your PC on additional charges."
+                ]
+              }
+            ],
+            link: "", // Placeholder for potential reference links
+            offense: "Gross Misdemeanor", // Offense classification
+            elementsOfPC: [
+              "Impaired driving behavior",
+              "Failed sobriety tests",
+              "Breath or blood test results over legal limit"
+            ], // Required elements for probable cause
+            questions: [
+              "What driving behavior indicated impairment?",
+              "What physical signs of impairment were observed?",
+              "What were the results of the field sobriety tests?",
+              "Did the suspect consent to a breath or blood test?",
+              "What were the final test results?"
+            ], // Key questions for investigation
+            relatedCodes: [
+              "RCW 46.61.502 Driving under the influence",
+              "RCW 46.61.504 Physical control of a vehicle under the influence"
+            ], // Related RCWs
+            relatedProcedures: [
+              "SFST",
+              "BloodWarrant",
+              "EvidenceTow",
+              "IIICheck"
+            ] // Related procedures
           },
           {
             id: "3.0.6",
@@ -419,6 +486,115 @@ var callTypeData = {
           },
           {
             id: "3.0.7",
+            title: "Traffic Stop",
+            description: "Call out traffic stop prior. Eliminate multi-tasking.",
+            definition: [
+              { 
+                index: "1", 
+                main: "Pre-Arrival Checklist", 
+                type: "pre-arrival",
+                subSections: [
+                  "Backup: Optional",
+                  "Vehicle History: Run the license plate to see if stolen.",
+                  "Occupant Check: Registered owner have outstanding warrants or criminal history.",
+                  "Positioning: Plan the positioning of your patrol vehicle for cover and safety.",
+                  "Approach Path: Plan the safest approach to the vehicle."
+                ]
+              },
+              { index: "1", main: "Notify Dispatch of the traffic stop." },
+              { index: "2", main: "Activate lights to signal driver." },
+              { 
+                index: "3", 
+                main: "Read the plate and provide location to Dispatch.",
+                subSections: [
+                  "(a) Stolen/Mismatched Plate:",
+                  "(i) Double check no clerical error.",
+                  "(ii) <strong>Verify VIN.</strong> The vehicle could have been purchased/transferred and not registered yet."
+                ]
+              },
+              {
+                index: "<i class=\"bi bi-link-45deg\"></i>",
+                href: "#li-3.0.2",
+                main: "Stolen Vehicle (High-Risk)"
+              },
+              { index: "4", main: "Approach and inform driver of body cam and reason for stop." },
+              { index: "5", main: "Request license, registration, and insurance." },
+              { index: "6", main: "Run driver&apos;s name through DOL and NCIC." },
+              { index: "7", main: "Issue a Sector Citation or Warning as appropriate.", subSections: [
+                "(a) If citation is criminal, add case# to SECTOR. "
+              ] }
+            ],
+            link: "",
+            offense: "Traffic Infraction / Criminal Offense (if applicable)",
+            elementsOfPC: [
+              "Observed traffic violation or suspicious activity",
+              "Vehicle registration check",
+              "Driver identification and verification",
+              "Suspicious behavior during stop"
+            ],
+            questions: [
+              "What prompted the stop?",
+              "Was the vehicle&apos;s plate run prior to the stop?",
+              "Did the driver provide valid documentation?",
+              "Were there any signs of impairment or suspicious behavior?",
+              "Was backup needed for safety?"
+            ],
+            relatedCodes: [
+              "RCW 46.20.342 Driving While Suspended",
+              "RCW 46.61.400 Speeding",
+              "RCW 46.61.688 Seat Belt Use"
+            ],
+            relatedProcedures: [
+              "Code4",
+              "HighRiskStop"
+            ]
+          },          
+          {
+            id: "3.0.8",
+            title: "Traffic Collision",
+            description: "Steps for ensuring safety and collecting information at a traffic accident scene.",
+            definition: [
+              { index: "1", main: "Scene Safety: Divert traffic",
+                subSections: [
+                  "Flares & Cones",
+                  "Additional Units",
+                  "<strong>Clear Roadway</strong>",
+                  "Request Tow"
+                ]
+               },
+               
+               { index: "2", main: "Provide Aid: Fire or First Aid"
+                },
+                {
+                  index: "3", main: "Exchange of Info",
+                  subSections: [
+                    "<strong>Run Names & Plates</strong> ",
+                    "Get <strong>Phone numbers</strong>, ID&apos;s, Registration, Insurance of parties involved.",
+                    "Photograph Injuries and Damage"
+                  ]
+                },
+                {
+                  index: "<i class=\"bi bi-info-circle-fill text-primary fs-4\"></i>",
+                  main: "<span class=\"text-primary\">Spillman face page only if felony related crime. Else handle in Sector.</span>"
+                },
+              { index: "4", main: "At Fault Party",
+                subSections:[
+                  "Case number",
+                  "Interview involved parties.",
+                  "Check Safe City Cameras",
+                  "Citation if PC is found."
+                ]
+               }
+            ],
+            link: "",
+            offense: "",
+            elementsOfPC: [],
+            questions: [],
+            relatedCodes: [],
+            relatedProcedures: []
+          },
+          {
+            id: "3.0.9",
             title: "Blocking Disabled",
             description: "Steps for towing a vehicle.",
             definition: [
@@ -442,6 +618,7 @@ var callTypeData = {
             relatedCodes: [],
             relatedProcedures: []
           }
+          
         ]
       },
       
@@ -701,229 +878,14 @@ var callTypeData = {
           }
         ]
       },
+      
       {
         id: "6.0",
-        title: "Traffic",
-        description: "Procedures for conducting traffic stops safely and effectively.",
-        items: [
-          {
-            id: "6.0.1",
-            title: "Traffic Stop",
-            description: "Call out traffic stop prior. Eliminate multi-tasking.",
-            definition: [
-              { 
-                index: "1", 
-                main: "Pre-Arrival Checklist", 
-                type: "pre-arrival",
-                subSections: [
-                  "Backup: Optional",
-                  "Vehicle History: Run the license plate to see if stolen.",
-                  "Occupant Check: Registered owner have outstanding warrants or criminal history.",
-                  "Positioning: Plan the positioning of your patrol vehicle for cover and safety.",
-                  "Approach Path: Plan the safest approach to the vehicle."
-                ]
-              },
-              { index: "1", main: "Notify Dispatch of the traffic stop." },
-              { index: "2", main: "Activate lights to signal driver." },
-              { 
-                index: "3", 
-                main: "Read the plate and provide location to Dispatch.",
-                subSections: [
-                  "(a) Stolen/Mismatched Plate:",
-                  "(i) Double check no clerical error.",
-                  "(ii) <strong>Verify VIN.</strong> The vehicle could have been purchased/transferred and not registered yet."
-                ]
-              },
-              {
-                index: "<i class=\"bi bi-link-45deg\"></i>",
-                href: "#li-3.0.2",
-                main: "Stolen Vehicle (High-Risk)"
-              },
-              { index: "4", main: "Approach and inform driver of body cam and reason for stop." },
-              { index: "5", main: "Request license, registration, and insurance." },
-              { index: "6", main: "Run driver&apos;s name through DOL and NCIC." },
-              { index: "7", main: "Issue a Sector Citation or Warning as appropriate.", subSections: [
-                "(a) If citation is criminal, add case# to SECTOR. "
-              ] }
-            ],
-            link: "",
-            offense: "Traffic Infraction / Criminal Offense (if applicable)",
-            elementsOfPC: [
-              "Observed traffic violation or suspicious activity",
-              "Vehicle registration check",
-              "Driver identification and verification",
-              "Suspicious behavior during stop"
-            ],
-            questions: [
-              "What prompted the stop?",
-              "Was the vehicle&apos;s plate run prior to the stop?",
-              "Did the driver provide valid documentation?",
-              "Were there any signs of impairment or suspicious behavior?",
-              "Was backup needed for safety?"
-            ],
-            relatedCodes: [
-              "RCW 46.20.342 Driving While Suspended",
-              "RCW 46.61.400 Speeding",
-              "RCW 46.61.688 Seat Belt Use"
-            ],
-            relatedProcedures: [
-              "Code4",
-              "HighRiskStop"
-            ]
-          },          
-          {
-            id: "6.0.2",
-            title: "Traffic Collision",
-            description: "Steps for ensuring safety and collecting information at a traffic accident scene.",
-            definition: [
-              { index: "1", main: "Scene Safety: Divert traffic",
-                subSections: [
-                  "Flares & Cones",
-                  "Additional Units",
-                  "<strong>Clear Roadway</strong>",
-                  "Request Tow"
-                ]
-               },
-               
-               { index: "2", main: "Provide Aid: Fire or First Aid"
-                },
-                {
-                  index: "3", main: "Exchange of Info",
-                  subSections: [
-                    "<strong>Run Names & Plates</strong> ",
-                    "Get <strong>Phone numbers</strong>, ID&apos;s, Registration, Insurance of parties involved.",
-                    "Photograph Injuries and Damage"
-                  ]
-                },
-                {
-                  index: "<i class=\"bi bi-info-circle-fill text-primary fs-4\"></i>",
-                  main: "<span class=\"text-primary\">Spillman face page only if felony related crime. Else handle in Sector.</span>"
-                },
-              { index: "4", main: "At Fault Party",
-                subSections:[
-                  "Case number",
-                  "Interview involved parties.",
-                  "Check Safe City Cameras",
-                  "Citation if PC is found."
-                ]
-               }
-            ],
-            link: "",
-            offense: "",
-            elementsOfPC: [],
-            questions: [],
-            relatedCodes: [],
-            relatedProcedures: []
-          },
-          {
-            id: "6.0.3",
-            title: "Blocking Disabled",
-            description: "Steps for assisting a disabled vehicle while ensuring officer safety.",
-            definition: [
-              { index: "1", main: "Treat this as a traffic stop; maintain awareness." },
-              { index: "2", main: "Run the vehicle&apos;s plate and check for registered owner wants." },
-              { index: "3", main: "Request identification for any occupants." }
-            ],
-            link: "",
-            offense: "",
-            elementsOfPC: [],
-            questions: [],
-            relatedCodes: [],
-            relatedProcedures: []
-          },
-          {
-            id: "6.0.4", // Unique identifier for the call type
-            title: "DUI", // Title of the call type
-            description: "Driving Under the Influence (DUI) incidents.",
-            definition: [
-              {
-                index: "1",
-                main: "PC DUI indicators:",
-                subSections: [
-                  "(a) Erratic driving behavior (swerving, speeding, failure to stop).",
-                  "(b) Physical signs of impairment (odor of alcohol, slurred speech, red eyes).",
-                  "(c) Eluding with suspicion of DUI can be a valid reason for pursuit."
-                ]
-              },
-              {
-                index: "2",
-                main: "Conduct Field Sobriety Tests (SFSTs):",
-                subSections: [
-                  "<strong>Note:</strong> Read from Department Issued Card.",
-                  "Horizontal Gaze Nystagmus (HGN): Look for involuntary eye movements at maximum deviation or before 45 degrees.",
-                  "Walk and Turn: Observe for balance issues, inability to follow instructions, or stepping off the line.",
-                  "One Leg Stand: Look for swaying, use of arms for balance, hopping, or putting the foot down."
-                ]
-              },
-              {
-                index: "3",
-                main: "If PC established: Arrest, Miranda, Search, and Transport to station for <strong>Dreger</strong>."
-              },
-              {
-                index: "4",
-                main: "Perform a \"III\" (Criminal History Check) if the DUI is a felony."
-              },{
-                index: "5",
-                main: "Create citation if Gross Misdemaenor. If Felony Spillman Facepage gets forwarded to CIS."
-              },
-              {
-                index: "6",
-                main: "Dreagor and DUI Packet",
-                subSections: [
-                  "(a) Start 15 minute observation period.",
-                  "(b) Do DUI Questionaire first.",
-                  "(c) Read Constitutional Rights.",
-                  "(d) Read Implied Consent.",
-                  "(e) Perform blow tests and print. (A copy goes with suspect)"
-                ]
-              },
-              {
-                index: "<i class=\"bi bi-info-circle-fill text-info fs-4\"></i>",
-                main: "<span class=\"text-info\">ORI/LOCAL AGENCY CODE: WA0173600</span>"
-              },
-              {
-                index: "7",
-                main: "Warrants",
-                subSections: [
-                  "Sometimes a blood warrant is required. Details soon. ",
-                  "Sometimes there&apos;s evidence insid a vehicle. You can do an evidence tow and create a search warrant to strengthen your PC on additional charges."
-                ]
-              }
-            ],
-            link: "", // Placeholder for potential reference links
-            offense: "Gross Misdemeanor", // Offense classification
-            elementsOfPC: [
-              "Impaired driving behavior",
-              "Failed sobriety tests",
-              "Breath or blood test results over legal limit"
-            ], // Required elements for probable cause
-            questions: [
-              "What driving behavior indicated impairment?",
-              "What physical signs of impairment were observed?",
-              "What were the results of the field sobriety tests?",
-              "Did the suspect consent to a breath or blood test?",
-              "What were the final test results?"
-            ], // Key questions for investigation
-            relatedCodes: [
-              "RCW 46.61.502 Driving under the influence",
-              "RCW 46.61.504 Physical control of a vehicle under the influence"
-            ], // Related RCWs
-            relatedProcedures: [
-              "SFST",
-              "BloodWarrant",
-              "EvidenceTow",
-              "IIICheck"
-            ] // Related procedures
-          }          
-        ]
-      },
-      {
-        id: "7.0",
         title: "DOA",
         description: "Procedures for handling a scene involving a deceased individual.",
         items: [
           {
-            id: "7.0.1", 
+            id: "6.0.1", 
             title: "DOA Scene Management", 
             description: "Quick steps for managing and documenting a DOA (Dead on Arrival) scene.",
             definition: [
@@ -998,12 +960,12 @@ var callTypeData = {
         ]
       },
       {
-        id: "8.0",
+        id: "7.0",
         title: "Arrest & Transporting",
         description: "Procedures for handling arrests and transporting people.",
         items: [
           {
-            id: "8.0.1",
+            id: "7.0.1",
             title: "Arresting",
             description: "Steps for arresting after confirming probable cause.",
             definition: [
@@ -1025,7 +987,7 @@ var callTypeData = {
             relatedProcedures: []
           },
           {
-            id: "8.0.2",
+            id: "7.0.2",
             title: "Booking",
             description: "Steps for Transporting suspects.",
             definition: [
@@ -1058,12 +1020,12 @@ var callTypeData = {
         ]
       },
       {
-        id: "9.0",
+        id: "8.0",
         title: "Robbery & Thefts",
         description: "Procedures for handling robberies and thefts.",
         items: [
           {
-            id: "9.0.1",
+            id: "8.0.1",
             title: "Retail Theft",
             description: "Retail theft businesses usually have their own process for trespassing and prosecuting. If the business (like walmart) doesn&apos;t have a hard ID to identify a suspect they&apos;ve detained, they will call us to do it. ",
             definition: [
@@ -1081,7 +1043,7 @@ var callTypeData = {
             relatedProcedures: []
           },
           {
-            id: "9.0.2",
+            id: "8.0.2",
             title: "Robbery",
             description: "Procedures for responding to and investigating robbery incidents.",
             definition: [
@@ -1150,12 +1112,12 @@ var callTypeData = {
         ]
       },
       {
-        id: "10.0",
+        id: "9.0",
         title: "Sus Subjects",
         description: "Guidelines for suspicious subjects.",
         items: [
           {
-            id: "10.0.1",
+            id: "9.0.1",
             title: "Move Along & Tresspass",
             description: "Business owners will often times find transients on property and want them gone.",
             definition: [
@@ -1202,7 +1164,7 @@ var callTypeData = {
             ]
           },
           {
-            id: "10.0.3", // Unique identifier for the call type
+            id: "9.0.2", // Unique identifier for the call type
             title: "Sex Offender", // Title of the call type
             description: "Guidelines for interacting with sex offenders.", // Brief description
             definition: [
@@ -1265,12 +1227,12 @@ var callTypeData = {
         ]
       },
       {
-        id: "11.0",
+        id: "10.0",
         title: "Sus Circumstances",
         description: "Guidelines for suspicious circumstances.",
         items: [
           {
-            id: "11.0.1", // Unique identifier for the call type
+            id: "10.0.1", // Unique identifier for the call type
             title: "Drive By Shooting", // Title of the call type
             description: "Steps for responding to and investigating a drive-by shooting incident.", // Brief description
             definition: [
@@ -1346,12 +1308,12 @@ var callTypeData = {
         ]
       },  
       {
-        id: "12.0",
+        id: "11.0",
         title: "CPS & Juvenile",
         description: "Guidelines for investigating referrals child related calls.",
         items: [
           {
-            id: "12.0.1",
+            id: "11.0.1",
             title: "CPS Referral Investigation",
             description: "Guidelines for investigating referrals received from Child Protective Services (CPS) regarding potential child abuse, neglect, or endangerment.",
             definition: [
@@ -1378,7 +1340,7 @@ var callTypeData = {
             ]
           },
           {
-            id: "12.0.2",
+            id: "11.0.2",
             title: "Juvenile Runaway",
             description: "Guidelines for investigating a juvenile runaway.",
             definition: [
@@ -1404,12 +1366,12 @@ var callTypeData = {
         ]
       },
       {
-        id: "13.0",
+        id: "12.0",
         title: "Domestic Violance",
         description: "Guidelines for handling domestic violance.",
         items: [
           {
-            id: "13.0.1",
+            id: "12.0.1",
             title: "Physical Domestic",
             description: "Domestic Violance is a lable that can be added to most crimes given the criteria (10.99.020) is met.",
             definition: [
@@ -1470,12 +1432,12 @@ var callTypeData = {
         ]
       },
       {
-        id: "14.0",
+        id: "13.0",
         title: "Incident Command",
         description: "Guidelines for joining an incident command team.",
         items: [
           {
-            id: "14.0.1",
+            id: "13.0.1",
             title: "Incident Command Areas",
             description: "C2 architecture is the temporary, ad hoc organizational structure of response personnel, showing their tasks.  ",
             definition: [
@@ -1497,7 +1459,7 @@ var callTypeData = {
             ]
           },
           {
-            id: "14.0.2",
+            id: "13.0.2",
             title: "K9 Calls",
             description: "Working with K9 officers requires some key details and responsibilities from you to keep them safe.",
             definition: [
@@ -1536,12 +1498,12 @@ var callTypeData = {
         ]
       },
       {
-        id: "15.0",
+        id: "14.0",
         title: "Extra Duty",
         description: "Out Car types refer to Out of Service duties. Everything from Lunch to Off-Duty Work",
         items: [
           {
-            id: "15.0.1",
+            id: "14.0.1",
             title: "Off Duty - Transit Center",
             description: "Transit Center ",
             definition: [
@@ -1559,7 +1521,7 @@ var callTypeData = {
             ]
           },
           {
-            id: "15.0.2", // Unique identifier for the call type
+            id: "14.0.2", // Unique identifier for the call type
             title: "Walmart Security", // Title of the call type
             description: "Procedures for extra duty security assignments at Walmart.", // Brief description
             definition: [
