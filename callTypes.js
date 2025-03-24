@@ -857,11 +857,11 @@ var callTypeData = {
               },
               {
                 index: "3",
-                main: "If PC established: Arrest, Miranda, Search, and Transport to station for <strong>Dreager</strong>."
+                main: "If PC established: Arrest, Miranda, Search, and Transport to station for <strong>Dreger</strong>."
               },
               {
                 index: "4",
-                main: "Perform a \"III\" to check if the DUI is a felony."
+                main: "Perform a \"III\" (Criminal History Check) if the DUI is a felony."
               },{
                 index: "5",
                 main: "Create citation if Gross Misdemaenor. If Felony Spillman Facepage gets forwarded to CIS."
@@ -876,6 +876,10 @@ var callTypeData = {
                   "(d) Read Implied Consent.",
                   "(e) Perform blow tests and print. (A copy goes with suspect)"
                 ]
+              },
+              {
+                index: "<i class=\"bi bi-info-circle-fill text-info fs-4\"></i>",
+                main: "<span class=\"text-info\">ORI/LOCAL AGENCY CODE: WA0173600</span>"
               },
               {
                 index: "7",
