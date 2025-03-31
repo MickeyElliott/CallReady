@@ -910,9 +910,9 @@ const pages = [
         <div class="text-primary fs-3"><i class="bi bi-arrow-down-circle"></i></div>
         <div class="p-3 mb-2 bg-info border border-info rounded">Run Names</div>
         <div class="text-primary fs-3"><i class="bi bi-arrow-down-circle"></i></div>
-        <div class="p-3 mb-2 bg-light border border-secondary rounded">Arrest</div>
+        <div class="p-3 mb-2 bg-success border border-success rounded">Arrest</div>
         <div class="text-primary fs-3"><i class="bi bi-arrow-down-circle"></i></div>
-        <div class="p-3 mb-2 bg-light border border-secondary rounded">Book into Jail</div>
+        <div class="p-3 mb-2 bg-success border border-success rounded">Book into Jail</div>
       </div>
     </div>
   </div>
