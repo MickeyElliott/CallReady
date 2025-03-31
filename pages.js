@@ -937,9 +937,9 @@ const pages = [
   <h2 class="text-center mb-4">Warrant Confirmation</h2>
 
   <!-- MANDATORY BOOKING -->
-  <div class="bg-dark p-3 rounded mb-4">
+  <div class="bg-light-subtle p-3 rounded mb-4">
     <div class="p-3 mb-3 bg-white text-center rounded fw-bold">
-      DV, DUI, or PHYSICAL CONTROL — MANDATORY BOOK
+      DV or DUI is MANDATORY BOOK
     </div>
     <div class="row gx-3 gy-3 text-center">
       <div class="col-md-2">
@@ -976,8 +976,8 @@ const pages = [
   </div>
 
   <!-- $2,001+ -->
-  <div class="bg-dark p-3 rounded mb-4">
-    <div class="p-3 mb-3 bg-white text-center rounded fw-bold">
+  <div class="bg-light-subtle p-3 rounded mb-4">
+    <div class="p-3 mb-3 text-center rounded fw-bold">
       Warrant Amount: $2,001 or More
     </div>
     <div class="row gx-3 gy-3 text-center">
@@ -1015,8 +1015,8 @@ const pages = [
   </div>
 
   <!-- $2,000 or Less -->
-  <div class="bg-dark p-3 rounded mb-4">
-    <div class="p-3 mb-3 bg-white text-center rounded fw-bold text-danger">
+  <div class="bg-light-subtle p-3 rounded mb-4">
+    <div class="p-3 mb-3 text-center rounded fw-bold text-danger">
       Warrant Amount: $2,000 or Less
     </div>
     <div class="row gx-3 gy-3 text-center">
