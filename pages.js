@@ -872,7 +872,7 @@ const pages = [
   },
   {
     "id":"4.0",
-    "title": "Flow Chart",
+    "title": "Chart: PC Steps",
     "description":"This page serves as a quick referance for investigative steps.",
     "cards": [
       { 
@@ -897,10 +897,10 @@ const pages = [
 
               <div class="row">
                 <div class="col-6">
-                  <div class="p-3 mb-2 text-danger border border-danger rounded">No<br /> Document (FI or Trespass)</div>
+                  <div class="p-3 mb-2 text-danger border border-danger rounded"><span class="text-strong">No</span> Document (FI or Trespass)</div>
                 </div>
                 <div class="col-6">
-                  <div class="p-3 mb-2 text-info border border-info rounded">Yes<br /> Continue to PC Path</div>
+                  <div class="p-3 mb-2 text-info border border-info rounded"><span class="text-strong">Yes</span> Goto to PC <div class="fs-3"><i class="bi bi-arrow-right"></i></div></div>
                 </div>
               </div>
             </div>
