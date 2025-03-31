@@ -921,7 +921,76 @@ const pages = [
        }
     ]
   },
-  
+  {
+    "id":"5.0",
+    "title": "Chart: Confirming Warrants",
+    "description":"This page serves as a quick referance for confirming warrants.",
+    "cards": [
+      { 
+        "id":"5.0.1", 
+        "title": "Confirming Warrants", 
+        "description": "Quick referance for confirming warrants.",
+        "content":`
+        
+        <div class="container my-4">
+          <h2 class="text-center mb-4">Warrant Confirmation</h2>
+
+          <div class="row text-center">
+            <div class="col-md-2 header-col">Warrant Type</div>
+            <div class="col-md-2 header-col">Federal Way PD</div>
+            <div class="col-md-2 header-col">Other PDs</div>
+            <div class="col-md-2 header-col">Our Jails<br><small>(SCORE, Kent, etc.)</small></div>
+            <div class="col-md-2 header-col">Pierce County Jail</div>
+            <div class="col-md-2 header-col">Other Jails<br><small>(King or Pierce only)</small></div>
+          </div>
+
+          <!-- Row 1 -->
+          <div class="row text-center">
+            <div class="col-md-2 border p-2 cell bg-dark text-white">
+              DV, DUI, or PHYSICAL CONTROL<br><strong>MANDATORY BOOK</strong>
+            </div>
+            <div class="col-md-2 border p-2 cell bg-info">Confirm for Booking</div>
+            <div class="col-md-2 border p-2 cell bg-info">Confirm for Booking<br><small>Book direct or transfer</small></div>
+            <div class="col-md-2 border p-2 cell bg-info">Confirm for Booking</div>
+            <div class="col-md-2 border p-2 cell bg-info">Confirm for Booking<br><small>Transfer to dispatch</small></div>
+            <div class="col-md-2 border p-2 cell bg-info">Confirm for Booking<br><small>Transfer to dispatch</small></div>
+          </div>
+
+          <!-- Row 2 -->
+          <div class="row text-center">
+            <div class="col-md-2 border p-2 cell bg-primary text-white">$2,001+</div>
+            <div class="col-md-2 border p-2 cell bg-info">Confirm for Booking</div>
+            <div class="col-md-2 border p-2 cell bg-info">Confirm for Booking</div>
+            <div class="col-md-2 border p-2 cell bg-info">Confirm for Booking</div>
+            <div class="col-md-2 border p-2 cell bg-info">Confirm for Booking</div>
+            <div class="col-md-2 border p-2 cell bg-info">Confirm for Booking</div>
+          </div>
+
+          <!-- Row 3 -->
+          <div class="row text-center">
+            <div class="col-md-2 border p-2 cell bg-secondary text-white">$2,000 or less</div>
+            <div class="col-md-2 border p-2 cell bg-warning">Promise to Appear Paperwork</div>
+            <div class="col-md-2 border p-2 cell bg-danger text-white">Advise and Release</div>
+            <div class="col-md-2 border p-2 cell">
+              <div class="mb-1">Already there: <strong>Book</strong></div>
+              <div>Getting out: <strong>Promise to Appear</strong></div>
+            </div>
+            <div class="col-md-2 border p-2 cell bg-danger text-white">Advise and Release</div>
+            <div class="col-md-2 border p-2 cell bg-danger text-white">Advise and Release</div>
+          </div>
+
+          <div class="mt-4">
+            <p><strong>Note:</strong> Any exceptions must be approved by a Lieutenant or Jail Transport (document who approved it).</p>
+            <p><em>Other agencies willing to direct-book can book into ANY of our jails (likely whichever is closest to them).</em></p>
+          </div>
+        </div>
+
+
+        `,
+        "data":"{}"
+       }
+    ]
+  },
 
   
   
