@@ -885,15 +885,15 @@ const pages = [
     <div class="p-3 mb-2 bg-primary bg-opacity-10 border border-primary rounded text-center">Interview</div>
     <div class="text-center fs-3 text-primary"><i class="bi bi-arrow-down-circle"></i></div>
 
-    <div class="p-3 mb-2 bg-danger bg-opacity-25 border border-danger rounded text-center">Do you have PC?</div>
+    <div class="p-3 mb-2 bg-info-subtle bg-opacity-25 border border-info rounded text-center">Do you have PC?</div>
 
     <div class="row">
       <div class="col-md-6 text-center">
-        <div class="p-3 mb-2 bg-warning border border-warning rounded">No PC</div>
+        <div class="p-3 mb-2 border border-warning rounded">No PC</div>
         <div class="text-primary fs-3"><i class="bi bi-arrow-down-circle"></i></div>
         <div class="p-3 mb-2 bg-info border border-info rounded">Run Names</div>
         <div class="text-primary fs-3"><i class="bi bi-arrow-down-circle"></i></div>
-        <div class="p-3 mb-2 bg-warning bg-opacity-25 border border-warning rounded">PC Now?</div>
+        <div class="p-3 mb-2 bg-info-subtle bg-opacity-25 border border-warning rounded">PC Now?</div>
 
         <div class="row">
           <div class="col-6">
