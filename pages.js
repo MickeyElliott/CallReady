@@ -933,57 +933,62 @@ const pages = [
         "content":`
         
         <div class="container my-4">
-          <h2 class="text-center mb-4">Warrant Confirmation</h2>
 
-          <div class="row text-center">
-            <div class="col-md-2 header-col">Warrant Type</div>
-            <div class="col-md-2 header-col">Federal Way PD</div>
-            <div class="col-md-2 header-col">Other PDs</div>
-            <div class="col-md-2 header-col">Our Jails<br><small>(SCORE, Kent, etc.)</small></div>
-            <div class="col-md-2 header-col">Pierce County Jail</div>
-            <div class="col-md-2 header-col">Other Jails<br><small>(King or Pierce only)</small></div>
-          </div>
+    <h2 class="text-center mb-4">Warrant Confirmation</h2>
 
-          <!-- Row 1 -->
-          <div class="row text-center">
-            <div class="col-md-2 border p-2 cell bg-dark text-white">
-              DV, DUI, or PHYSICAL CONTROL<br><strong>MANDATORY BOOK</strong>
-            </div>
-            <div class="col-md-2 border p-2 cell bg-info">Confirm for Booking</div>
-            <div class="col-md-2 border p-2 cell bg-info">Confirm for Booking<br><small>Book direct or transfer</small></div>
-            <div class="col-md-2 border p-2 cell bg-info">Confirm for Booking</div>
-            <div class="col-md-2 border p-2 cell bg-info">Confirm for Booking<br><small>Transfer to dispatch</small></div>
-            <div class="col-md-2 border p-2 cell bg-info">Confirm for Booking<br><small>Transfer to dispatch</small></div>
-          </div>
+    <!-- WARRANT TYPE: DV / DUI / PHYSICAL CONTROL -->
+    <div class="p-3 mb-2 bg-dark text-white rounded text-center">
+      DV, DUI, or PHYSICAL CONTROL<br><strong>MANDATORY BOOK</strong>
+    </div>
+    <div class="text-center fs-3 text-primary"><i class="bi bi-arrow-down"></i></div>
 
-          <!-- Row 2 -->
-          <div class="row text-center">
-            <div class="col-md-2 border p-2 cell bg-primary text-white">$2,001+</div>
-            <div class="col-md-2 border p-2 cell bg-info">Confirm for Booking</div>
-            <div class="col-md-2 border p-2 cell bg-info">Confirm for Booking</div>
-            <div class="col-md-2 border p-2 cell bg-info">Confirm for Booking</div>
-            <div class="col-md-2 border p-2 cell bg-info">Confirm for Booking</div>
-            <div class="col-md-2 border p-2 cell bg-info">Confirm for Booking</div>
-          </div>
+    <div class="row text-center">
+      <div class="col-md-2 p-3 mb-2 border border-primary rounded">Federal Way PD<br><strong>Confirm for Booking</strong></div>
+      <div class="col-md-2 p-3 mb-2 border border-primary rounded">Other PDs<br><strong>Confirm for Booking</strong><br><small>Book direct or meet</small></div>
+      <div class="col-md-2 p-3 mb-2 border border-primary rounded">Our Jails<br><strong>Confirm for Booking</strong></div>
+      <div class="col-md-3 p-3 mb-2 border border-primary rounded">Pierce County Jail<br><strong>Confirm for Booking</strong><br><small>Transfer to dispatch</small></div>
+      <div class="col-md-3 p-3 mb-2 border border-primary rounded">Other Jails (King/Pierce)<br><strong>Confirm for Booking</strong><br><small>Transfer to dispatch</small></div>
+    </div>
 
-          <!-- Row 3 -->
-          <div class="row text-center">
-            <div class="col-md-2 border p-2 cell bg-secondary text-white">$2,000 or less</div>
-            <div class="col-md-2 border p-2 cell bg-warning">Promise to Appear Paperwork</div>
-            <div class="col-md-2 border p-2 cell bg-danger text-white">Advise and Release</div>
-            <div class="col-md-2 border p-2 cell">
-              <div class="mb-1">Already there: <strong>Book</strong></div>
-              <div>Getting out: <strong>Promise to Appear</strong></div>
-            </div>
-            <div class="col-md-2 border p-2 cell bg-danger text-white">Advise and Release</div>
-            <div class="col-md-2 border p-2 cell bg-danger text-white">Advise and Release</div>
-          </div>
+    <!-- WARRANT TYPE: $2,001+ -->
+    <div class="p-3 mb-2 bg-info bg-opacity-25 border border-info rounded text-center">
+      $2,001+
+    </div>
+    <div class="text-center fs-3 text-info"><i class="bi bi-arrow-down"></i></div>
 
-          <div class="mt-4">
-            <p><strong>Note:</strong> Any exceptions must be approved by a Lieutenant or Jail Transport (document who approved it).</p>
-            <p><em>Other agencies willing to direct-book can book into ANY of our jails (likely whichever is closest to them).</em></p>
-          </div>
-        </div>
+    <div class="row text-center">
+      <div class="col-md-2 p-3 mb-2 border border-info rounded">Federal Way PD<br><strong>Confirm for Booking</strong></div>
+      <div class="col-md-2 p-3 mb-2 border border-info rounded">Other PDs<br><strong>Confirm for Booking</strong></div>
+      <div class="col-md-2 p-3 mb-2 border border-info rounded">Our Jails<br><strong>Confirm for Booking</strong></div>
+      <div class="col-md-3 p-3 mb-2 border border-info rounded">Pierce County Jail<br><strong>Confirm for Booking</strong></div>
+      <div class="col-md-3 p-3 mb-2 border border-info rounded">Other Jails<br><strong>Confirm for Booking</strong></div>
+    </div>
+
+    <!-- WARRANT TYPE: $2,000 or Less -->
+    <div class="p-3 mb-2 bg-danger bg-opacity-25 border border-danger rounded text-center">
+      $2,000 or Less
+    </div>
+    <div class="text-center fs-3 text-danger"><i class="bi bi-arrow-down"></i></div>
+
+    <div class="row text-center">
+      <div class="col-md-2 p-3 mb-2 border border-warning rounded">Federal Way PD<br><strong>Promise to Appear</strong></div>
+      <div class="col-md-2 p-3 mb-2 border border-danger rounded text-danger">Other PDs<br><strong>Advise & Release</strong></div>
+      <div class="col-md-2 p-3 mb-2 border border-secondary rounded">
+        Our Jails<br>
+        <div><strong>Already there:</strong> Book</div>
+        <div><strong>Getting out:</strong> Promise to Appear</div>
+      </div>
+      <div class="col-md-3 p-3 mb-2 border border-danger rounded text-danger">Pierce County Jail<br><strong>Advise & Release</strong></div>
+      <div class="col-md-3 p-3 mb-2 border border-danger rounded text-danger">Other Jails<br><strong>Advise & Release</strong></div>
+    </div>
+
+    <!-- Notes -->
+    <div class="mt-4">
+      <p><strong>Note:</strong> Any exceptions must be approved by a Lieutenant or Jail Transport (document who approved it).</p>
+      <p><em>Other agencies willing to direct-book can book into ANY of our jails (likely whichever is closest).</em></p>
+    </div>
+
+  </div>
 
 
         `,
