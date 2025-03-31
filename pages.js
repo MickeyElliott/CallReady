@@ -878,7 +878,7 @@ const pages = [
       { 
         "id":"4.0.1", 
         "title": "Officer Investigative Steps", 
-        "description": "",
+        "description": "Quick referance for investigative steps.",
         "content":`
         <div class="container my-4">
 
