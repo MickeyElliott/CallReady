@@ -944,7 +944,7 @@ const pages = [
     <div class="row gx-3 gy-3 text-center">
       <div class="col-md-2">
         <div class="card h-100 border-primary">
-          <div class="card-header">Federal Way PD</div>
+          <div class="card-header">FWPD</div>
           <div class="card-body">Confirm for Booking</div>
         </div>
       </div>
@@ -983,7 +983,7 @@ const pages = [
     <div class="row gx-3 gy-3 text-center">
       <div class="col-md-2">
         <div class="card h-100 border-primary">
-          <div class="card-header">Federal Way PD</div>
+          <div class="card-header">FWPD</div>
           <div class="card-body">Confirm for Booking</div>
         </div>
       </div>
@@ -1022,7 +1022,7 @@ const pages = [
     <div class="row gx-3 gy-3 text-center">
       <div class="col-md-2">
         <div class="card h-100 border-warning">
-          <div class="card-header">Federal Way PD</div>
+          <div class="card-header">FWPD</div>
           <div class="card-body">Promise to Appear Paperwork</div>
         </div>
       </div>
