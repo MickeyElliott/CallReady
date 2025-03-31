@@ -933,8 +933,6 @@ const pages = [
         "content":`
         
         
-        <div class="container my-4">
-  <h2 class="text-center mb-4">Warrant Confirmation</h2>
 
   <!-- MANDATORY BOOKING -->
   <div class="bg-light-subtle p-3 rounded mb-4">
@@ -1063,7 +1061,7 @@ const pages = [
     <p><strong>Judge Contact:</strong> Contact Federal Way sitting judge first. Only contact backup judges if both are unavailable.</p>
     <p class="text-muted"><small>Email: primary@cityoffederalway.com, backup@desmoineswa.gov</small></p>
   </div>
-</div>
+
 
 
         `,
