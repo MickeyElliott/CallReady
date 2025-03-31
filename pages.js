@@ -882,40 +882,40 @@ const pages = [
         "content":`
         <div class="container my-4">
 
-    <div class="p-3 mb-2 bg-primary bg-opacity-10 border border-primary rounded text-center">Interview</div>
-    <div class="text-center fs-3 text-primary"><i class="bi bi-arrow-down-circle"></i></div>
+          <div class="p-3 mb-2 bg-primary bg-opacity-10 border border-primary rounded text-center">Interview</div>
+          <div class="text-center fs-3 text-primary"><i class="bi bi-arrow-down"></i></div>
 
-    <div class="p-3 mb-2 border border-secondary rounded text-center">Do you have PC?</div>
+          <div class="p-3 mb-2 text-center">Do you have PC?</div>
 
-    <div class="row">
-      <div class="col-md-6 text-center">
-        <div class="p-3 mb-2 border border-danger text-danger rounded">No PC</div>
-        <div class="text-primary fs-3"><i class="bi bi-arrow-down-circle"></i></div>
-        <div class="p-3 mb-2 border border-secondary rounded">Run Names</div>
-        <div class="text-primary fs-3"><i class="bi bi-arrow-down-circle"></i></div>
-        <div class="p-3 mb-2 bg-opacity-25 border border-secondary rounded">PC Now?</div>
+          <div class="row">
+            <div class="col-md-6 text-center">
+              <div class="p-3 mb-2 border border-danger text-danger rounded">No PC</div>
+              <div class="fs-3"><i class="bi bi-arrow-down"></i></div>
+              <div class="p-3 mb-2 border border-secondary rounded">Run Names</div>
+              <div class="fs-3"><i class="bi bi-arrow-down"></i></div>
+              <div class="p-3 mb-2">PC Now?</div>
 
-        <div class="row">
-          <div class="col-6">
-            <div class="p-3 mb-2 bg-danger border border-danger rounded">No <i class="bi bi-arrow-right-circle"></i> Document<br>(FI or Trespass)</div>
-          </div>
-          <div class="col-6">
-            <div class="p-3 mb-2 bg-success border border-success rounded">Yes <i class="bi bi-arrow-right-circle"></i> Continue to PC Path</div>
+              <div class="row">
+                <div class="col-6">
+                  <div class="p-3 mb-2 bg-danger border border-danger rounded">No <i class="bi bi-arrow-right-circle"></i> Document<br>(FI or Trespass)</div>
+                </div>
+                <div class="col-6">
+                  <div class="p-3 mb-2 bg-success border border-success rounded">Yes <i class="bi bi-arrow-right-circle"></i> Continue to PC Path</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 text-center">
+              <div class="p-3 mb-2 border border-info rounded">PC</div>
+              <div class="text-primary fs-3"><i class="bi bi-arrow-down-circle"></i></div>
+              <div class="p-3 mb-2 border border-secondary rounded">Run Names</div>
+              <div class="text-primary fs-3"><i class="bi bi-arrow-down-circle"></i></div>
+              <div class="p-3 mb-2 bg-info-subtle border border-info rounded">Arrest</div>
+              <div class="text-primary fs-3"><i class="bi bi-arrow-down-circle"></i></div>
+              <div class="p-3 mb-2 bg-info-subtle border border-info rounded">Book into Jail</div>
+            </div>
           </div>
         </div>
-      </div>
-
-      <div class="col-md-6 text-center">
-        <div class="p-3 mb-2 border border-info rounded">PC</div>
-        <div class="text-primary fs-3"><i class="bi bi-arrow-down-circle"></i></div>
-        <div class="p-3 mb-2 border border-secondary rounded">Run Names</div>
-        <div class="text-primary fs-3"><i class="bi bi-arrow-down-circle"></i></div>
-        <div class="p-3 mb-2 bg-info-subtle border border-info rounded">Arrest</div>
-        <div class="text-primary fs-3"><i class="bi bi-arrow-down-circle"></i></div>
-        <div class="p-3 mb-2 bg-info-subtle border border-info rounded">Book into Jail</div>
-      </div>
-    </div>
-  </div>
         `,
         "data":"{}"
        }
