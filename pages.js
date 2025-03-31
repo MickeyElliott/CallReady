@@ -938,7 +938,7 @@ const pages = [
 
   <!-- MANDATORY BOOKING -->
   <div class="bg-light-subtle p-3 rounded mb-4">
-    <div class="p-3 mb-3 text-center rounded fw-bold">
+    <div class="p-3 mb-3 text-center rounded fw-bold fs-5">
       DV or DUI is Mandatory Book
     </div>
     <div class="row gx-3 gy-3 text-center">
@@ -949,7 +949,7 @@ const pages = [
         </div>
       </div>
       <div class="col-md-2">
-        <div class="card h-100 border-primary">
+        <div class="card h-100 border-info">
           <div class="card-header">Other PDs</div>
           <div class="card-body">Confirm for Booking<br><small>Book direct or transfer to dispatch</small></div>
         </div>
@@ -961,13 +961,13 @@ const pages = [
         </div>
       </div>
       <div class="col-md-3">
-        <div class="card h-100 border-primary">
+        <div class="card h-100 border-secondary">
           <div class="card-header">Pierce County Jail</div>
           <div class="card-body">Confirm for Booking<br><small>Transfer to dispatch</small></div>
         </div>
       </div>
       <div class="col-md-3">
-        <div class="card h-100 border-primary">
+        <div class="card h-100 border-secondary">
           <div class="card-header">Other Jails<br><small>(King/Pierce)</small></div>
           <div class="card-body">Confirm for Booking<br><small>Transfer to dispatch</small></div>
         </div>
@@ -977,7 +977,7 @@ const pages = [
 
   <!-- $2,001+ -->
   <div class="bg-light-subtle p-3 rounded mb-4">
-    <div class="p-3 mb-3 text-center rounded fw-bold">
+    <div class="p-3 mb-3 text-center rounded fw-bold fs-5">
       Warrant Amount: $2,001 or More
     </div>
     <div class="row gx-3 gy-3 text-center">
@@ -988,7 +988,7 @@ const pages = [
         </div>
       </div>
       <div class="col-md-2">
-        <div class="card h-100 border-primary">
+        <div class="card h-100 border-info">
           <div class="card-header">Other PDs</div>
           <div class="card-body">Confirm for Booking</div>
         </div>
@@ -1000,13 +1000,13 @@ const pages = [
         </div>
       </div>
       <div class="col-md-3">
-        <div class="card h-100 border-primary">
+        <div class="card h-100 border-secondary">
           <div class="card-header">Pierce County Jail</div>
           <div class="card-body">Confirm for Booking</div>
         </div>
       </div>
       <div class="col-md-3">
-        <div class="card h-100 border-primary">
+        <div class="card h-100 border-secondary">
           <div class="card-header">Other Jails</div>
           <div class="card-body">Confirm for Booking</div>
         </div>
@@ -1016,7 +1016,7 @@ const pages = [
 
   <!-- $2,000 or Less -->
   <div class="bg-light-subtle p-3 rounded mb-4">
-    <div class="p-3 mb-3 text-center rounded fw-bold">
+    <div class="p-3 mb-3 text-center rounded fw-bold fs-5">
       Warrant Amount: $2,000 or Less
     </div>
     <div class="row gx-3 gy-3 text-center">
@@ -1027,7 +1027,7 @@ const pages = [
         </div>
       </div>
       <div class="col-md-2">
-        <div class="card h-100 border-danger text-danger">
+        <div class="card h-100 border-info">
           <div class="card-header">Other PDs</div>
           <div class="card-body">Advise & Release</div>
         </div>
@@ -1042,13 +1042,13 @@ const pages = [
         </div>
       </div>
       <div class="col-md-3">
-        <div class="card h-100 border-danger text-danger">
+        <div class="card h-100 border-secondary">
           <div class="card-header">Pierce County Jail</div>
           <div class="card-body">Advise & Release</div>
         </div>
       </div>
       <div class="col-md-3">
-        <div class="card h-100 border-danger text-danger">
+        <div class="card h-100 border-secondary">
           <div class="card-header">Other Jails</div>
           <div class="card-body">Advise & Release</div>
         </div>
