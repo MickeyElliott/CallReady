@@ -944,72 +944,72 @@ const pages = [
 
     <!-- ROW 1: Mandatory Book -->
     <div class="row gx-3 gy-3 text-center">
-      <div class="col-md-2">
-        <div class="border border-dark text-dark fw-bold rounded p-2">
+      <div class="col-md-2 d-flex align-items-stretch">
+        <div class="border border-dark text-dark fw-bold rounded p-2 flex-fill">
           DV, DUI,<br>PHYSICAL CONTROL<br><small>(Mandatory Book)</small>
         </div>
       </div>
-      <div class="col-md-2">
-        <div class="border border-primary rounded p-2">Confirm for Booking</div>
+      <div class="col-md-2 d-flex align-items-stretch">
+        <div class="border border-primary rounded p-2 flex-fill">Confirm for Booking</div>
       </div>
-      <div class="col-md-2">
-        <div class="border border-primary rounded p-2">Confirm for Booking<br><small>Book direct or meet</small></div>
+      <div class="col-md-2 d-flex align-items-stretch">
+        <div class="border border-primary rounded p-2 flex-fill">Confirm for Booking<br><small>Book direct or meet</small></div>
       </div>
-      <div class="col-md-2">
-        <div class="border border-primary rounded p-2">Confirm for Booking</div>
+      <div class="col-md-2 d-flex align-items-stretch">
+        <div class="border border-primary rounded p-2 flex-fill">Confirm for Booking</div>
       </div>
-      <div class="col-md-2">
-        <div class="border border-primary rounded p-2">Confirm for Booking<br><small>Transfer to dispatch</small></div>
+      <div class="col-md-2 d-flex align-items-stretch">
+        <div class="border border-primary rounded p-2 flex-fill">Confirm for Booking<br><small>Transfer to dispatch</small></div>
       </div>
-      <div class="col-md-2">
-        <div class="border border-primary rounded p-2">Confirm for Booking<br><small>Transfer to dispatch</small></div>
+      <div class="col-md-2 d-flex align-items-stretch">
+        <div class="border border-primary rounded p-2 flex-fill">Confirm for Booking<br><small>Transfer to dispatch</small></div>
       </div>
     </div>
 
     <!-- ROW 2: $2,001+ -->
     <div class="row gx-3 gy-3 text-center">
-      <div class="col-md-2">
-        <div class="border border-info fw-semibold rounded p-2">$2,001+</div>
+      <div class="col-md-2 d-flex align-items-stretch">
+        <div class="border border-info fw-semibold rounded p-2 flex-fill">$2,001+</div>
       </div>
-      <div class="col-md-2">
-        <div class="border border-primary rounded p-2">Confirm for Booking</div>
+      <div class="col-md-2 d-flex align-items-stretch">
+        <div class="border border-primary rounded p-2 flex-fill">Confirm for Booking</div>
       </div>
-      <div class="col-md-2">
-        <div class="border border-primary rounded p-2">Confirm for Booking</div>
+      <div class="col-md-2 d-flex align-items-stretch">
+        <div class="border border-primary rounded p-2 flex-fill">Confirm for Booking</div>
       </div>
-      <div class="col-md-2">
-        <div class="border border-primary rounded p-2">Confirm for Booking</div>
+      <div class="col-md-2 d-flex align-items-stretch">
+        <div class="border border-primary rounded p-2 flex-fill">Confirm for Booking</div>
       </div>
-      <div class="col-md-2">
-        <div class="border border-primary rounded p-2">Confirm for Booking</div>
+      <div class="col-md-2 d-flex align-items-stretch">
+        <div class="border border-primary rounded p-2 flex-fill">Confirm for Booking</div>
       </div>
-      <div class="col-md-2">
-        <div class="border border-primary rounded p-2">Confirm for Booking</div>
+      <div class="col-md-2 d-flex align-items-stretch">
+        <div class="border border-primary rounded p-2 flex-fill">Confirm for Booking</div>
       </div>
     </div>
 
     <!-- ROW 3: $2,000 or Less -->
     <div class="row gx-3 gy-3 text-center">
-      <div class="col-md-2">
-        <div class="border border-danger fw-semibold text-danger rounded p-2">$2,000 or Less</div>
+      <div class="col-md-2 d-flex align-items-stretch">
+        <div class="border border-danger fw-semibold text-danger rounded p-2 flex-fill">$2,000 or Less</div>
       </div>
-      <div class="col-md-2">
-        <div class="border border-warning rounded p-2">Promise to Appear</div>
+      <div class="col-md-2 d-flex align-items-stretch">
+        <div class="border border-warning rounded p-2 flex-fill">Promise to Appear</div>
       </div>
-      <div class="col-md-2">
-        <div class="border border-danger text-danger rounded p-2">Advise & Release</div>
+      <div class="col-md-2 d-flex align-items-stretch">
+        <div class="border border-danger text-danger rounded p-2 flex-fill">Advise & Release</div>
       </div>
-      <div class="col-md-2">
-        <div class="border border-secondary rounded p-2">
+      <div class="col-md-2 d-flex align-items-stretch">
+        <div class="border border-secondary rounded p-2 flex-fill">
           <div>Already there: <strong>Book</strong></div>
           <div>Getting out: <strong>Promise to Appear</strong></div>
         </div>
       </div>
-      <div class="col-md-2">
-        <div class="border border-danger text-danger rounded p-2">Advise & Release</div>
+      <div class="col-md-2 d-flex align-items-stretch">
+        <div class="border border-danger text-danger rounded p-2 flex-fill">Advise & Release</div>
       </div>
-      <div class="col-md-2">
-        <div class="border border-danger text-danger rounded p-2">Advise & Release</div>
+      <div class="col-md-2 d-flex align-items-stretch">
+        <div class="border border-danger text-danger rounded p-2 flex-fill">Advise & Release</div>
       </div>
     </div>
 
