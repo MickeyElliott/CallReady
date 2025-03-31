@@ -872,30 +872,68 @@ const pages = [
   },
   {
     "id":"4.0",
-    "title": "GPS Road",
-    "description":"This page serves as a quick referance of your current heading and location.",
+    "title": "Flow Chart",
+    "description":"This page serves as a quick referance for investigative steps.",
     "cards": [
       { 
         "id":"4.0.1", 
-        "title": "GPS Road", 
-        "description": "GPS is buggy. Refresh page after use.",
+        "title": "Investigations", 
+        "description": "",
         "content":`
-            <div class=\"row\">
-              <div class=\"col\">
-              <div class="alert alert-warning" role="alert">
-  This tool is discontinued. GPS accuracy is BAD in desktop browsers. Only works well on mobile devices.
-</div>
-                <div data-trigger=\"refreshGPSRoad-FALSE\">
-                  <div class=\"spinner-border text-secondary d-none position-absolute\" role=\"status\" id=\"spinner\"></div>
-                  <h1 id=\"direction\" class=\"fw-bold mt-1 text-center"\" style=\"font-size: 10vw !important; line-height:1; \"></h1>
-                  <p id=\"road\" class=\"fw-light mt-2 text-center"\" style=\"font-size: 2vw !important;\"></p>
-                    <div id=\"nearby\" class=\"mt-2 d-flex justify-content-center\"></div>
-                  <button id=\"refreshButton\" class=\"btn btn-outline-secondary mt-3 px-4 py-2\"><i class=\"bi bi-repeat\"></i></button>
-                  <div id=\"map\" class=\"d-none\"></div>
-                </div>
-              </div>
-        
+        <style>
+    .step {
+      border: 2px solid #007bff;
+      border-radius: 8px;
+      padding: 15px;
+      margin: 10px 0;
+      text-align: center;
+      background-color: #e9f5ff;
+    }
+    .arrow {
+      font-size: 24px;
+      color: #007bff;
+    }
+    .decision {
+      background-color: #fff3cd;
+      border-color: #ffc107;
+    }
+  </style>
+            <div class="container my-4">
+    <h2 class="text-center mb-4">Officer Investigative Steps</h2>
+
+    <div class="step">Interview</div>
+    <div class="arrow text-center"><i class="bi bi-arrow-down-circle"></i></div>
+
+    <div class="step decision">Do you have PC?</div>
+
+    <div class="row">
+      <div class="col-md-6 text-center">
+        <div class="step">No PC</div>
+        <div class="arrow"><i class="bi bi-arrow-down-circle"></i></div>
+        <div class="step">Run Names</div>
+        <div class="arrow"><i class="bi bi-arrow-down-circle"></i></div>
+        <div class="step decision">PC Now?</div>
+        <div class="row">
+          <div class="col-6">
+            <div class="step">No → Document (FI or Trespass)</div>
+          </div>
+          <div class="col-6">
+            <div class="step">Yes → Continue to PC Path</div>
+          </div>
         </div>
+      </div>
+
+      <div class="col-md-6 text-center">
+        <div class="step">PC</div>
+        <div class="arrow"><i class="bi bi-arrow-down-circle"></i></div>
+        <div class="step">Run Names</div>
+        <div class="arrow"><i class="bi bi-arrow-down-circle"></i></div>
+        <div class="step">Arrest</div>
+        <div class="arrow"><i class="bi bi-arrow-down-circle"></i></div>
+        <div class="step">Book into Jail</div>
+      </div>
+    </div>
+  </div>
         `,
         "data":"{}"
        }
