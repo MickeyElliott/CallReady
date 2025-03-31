@@ -897,10 +897,10 @@ const pages = [
 
               <div class="row">
                 <div class="col-6">
-                  <div class="p-3 mb-2 bg-danger border border-danger rounded">No <i class="bi bi-arrow-right-circle"></i> Document<br>(FI or Trespass)</div>
+                  <div class="p-3 mb-2 text-danger border border-danger rounded">No<br /> Document (FI or Trespass)</div>
                 </div>
                 <div class="col-6">
-                  <div class="p-3 mb-2 bg-success border border-success rounded">Yes <i class="bi bi-arrow-right-circle"></i> Continue to PC Path</div>
+                  <div class="p-3 mb-2 text-info border border-info rounded">Yes<br /> Continue to PC Path</div>
                 </div>
               </div>
             </div>
