@@ -932,53 +932,85 @@ const pages = [
         "description": "Quick referance for confirming warrants.",
         "content":`
         
-        <div class="container my-4">
-
-    <h2 class="text-center mb-4">Warrant Confirmation</h2>
-
-    <!-- HEADER -->
-    <div class="row gx-2 gy-3 text-center fw-bold">
-      <div class="col-md-2">Warrant Type</div>
-      <div class="col-md-2">Federal Way PD</div>
-      <div class="col-md-2">Other PDs</div>
-      <div class="col-md-2">Our Jails</div>
-      <div class="col-md-2">Pierce County Jail</div>
-      <div class="col-md-2">Other Jails<br><small>(King or Pierce only)</small></div>
+        <!-- HEADER -->
+    <div class="row gx-3 gy-3 text-center fw-bold">
+      <div class="col-md-2"><div>Warrant Type</div></div>
+      <div class="col-md-2"><div>Federal Way PD</div></div>
+      <div class="col-md-2"><div>Other PDs</div></div>
+      <div class="col-md-2"><div>Our Jails</div></div>
+      <div class="col-md-2"><div>Pierce County Jail</div></div>
+      <div class="col-md-2"><div>Other Jails<br><small>(King or Pierce only)</small></div></div>
     </div>
 
     <!-- ROW 1: Mandatory Book -->
-    <div class="row gx-2 gy-3 text-center">
-      <div class="col-md-2 p-2 border border-dark text-dark fw-bold rounded">
-        DV, DUI,<br>PHYSICAL CONTROL<br><small>(Mandatory Book)</small>
+    <div class="row gx-3 gy-3 text-center">
+      <div class="col-md-2">
+        <div class="border border-dark text-dark fw-bold rounded p-2">
+          DV, DUI,<br>PHYSICAL CONTROL<br><small>(Mandatory Book)</small>
+        </div>
       </div>
-      <div class="col-md-2 p-2 border border-primary rounded">Confirm for Booking</div>
-      <div class="col-md-2 p-2 border border-primary rounded">Confirm for Booking<br><small>Book direct or meet</small></div>
-      <div class="col-md-2 p-2 border border-primary rounded">Confirm for Booking</div>
-      <div class="col-md-2 p-2 border border-primary rounded">Confirm for Booking<br><small>Transfer to dispatch</small></div>
-      <div class="col-md-2 p-2 border border-primary rounded">Confirm for Booking<br><small>Transfer to dispatch</small></div>
+      <div class="col-md-2">
+        <div class="border border-primary rounded p-2">Confirm for Booking</div>
+      </div>
+      <div class="col-md-2">
+        <div class="border border-primary rounded p-2">Confirm for Booking<br><small>Book direct or meet</small></div>
+      </div>
+      <div class="col-md-2">
+        <div class="border border-primary rounded p-2">Confirm for Booking</div>
+      </div>
+      <div class="col-md-2">
+        <div class="border border-primary rounded p-2">Confirm for Booking<br><small>Transfer to dispatch</small></div>
+      </div>
+      <div class="col-md-2">
+        <div class="border border-primary rounded p-2">Confirm for Booking<br><small>Transfer to dispatch</small></div>
+      </div>
     </div>
 
     <!-- ROW 2: $2,001+ -->
-    <div class="row gx-2 gy-3 text-center">
-      <div class="col-md-2 p-2 border border-info fw-semibold rounded">$2,001+</div>
-      <div class="col-md-2 p-2 border border-primary rounded">Confirm for Booking</div>
-      <div class="col-md-2 p-2 border border-primary rounded">Confirm for Booking</div>
-      <div class="col-md-2 p-2 border border-primary rounded">Confirm for Booking</div>
-      <div class="col-md-2 p-2 border border-primary rounded">Confirm for Booking</div>
-      <div class="col-md-2 p-2 border border-primary rounded">Confirm for Booking</div>
+    <div class="row gx-3 gy-3 text-center">
+      <div class="col-md-2">
+        <div class="border border-info fw-semibold rounded p-2">$2,001+</div>
+      </div>
+      <div class="col-md-2">
+        <div class="border border-primary rounded p-2">Confirm for Booking</div>
+      </div>
+      <div class="col-md-2">
+        <div class="border border-primary rounded p-2">Confirm for Booking</div>
+      </div>
+      <div class="col-md-2">
+        <div class="border border-primary rounded p-2">Confirm for Booking</div>
+      </div>
+      <div class="col-md-2">
+        <div class="border border-primary rounded p-2">Confirm for Booking</div>
+      </div>
+      <div class="col-md-2">
+        <div class="border border-primary rounded p-2">Confirm for Booking</div>
+      </div>
     </div>
 
     <!-- ROW 3: $2,000 or Less -->
-    <div class="row gx-2 gy-3 text-center">
-      <div class="col-md-2 p-2 border border-danger fw-semibold text-danger rounded">$2,000 or Less</div>
-      <div class="col-md-2 p-2 border border-warning rounded">Promise to Appear</div>
-      <div class="col-md-2 p-2 border border-danger text-danger rounded">Advise & Release</div>
-      <div class="col-md-2 p-2 border border-secondary rounded">
-        <div>Already there: <strong>Book</strong></div>
-        <div>Getting out: <strong>Promise to Appear</strong></div>
+    <div class="row gx-3 gy-3 text-center">
+      <div class="col-md-2">
+        <div class="border border-danger fw-semibold text-danger rounded p-2">$2,000 or Less</div>
       </div>
-      <div class="col-md-2 p-2 border border-danger text-danger rounded">Advise & Release</div>
-      <div class="col-md-2 p-2 border border-danger text-danger rounded">Advise & Release</div>
+      <div class="col-md-2">
+        <div class="border border-warning rounded p-2">Promise to Appear</div>
+      </div>
+      <div class="col-md-2">
+        <div class="border border-danger text-danger rounded p-2">Advise & Release</div>
+      </div>
+      <div class="col-md-2">
+        <div class="border border-secondary rounded p-2">
+          <div>Already there: <strong>Book</strong></div>
+          <div>Getting out: <strong>Promise to Appear</strong></div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="border border-danger text-danger rounded p-2">Advise & Release</div>
+      </div>
+      <div class="col-md-2">
+        <div class="border border-danger text-danger rounded p-2">Advise & Release</div>
+      </div>
     </div>
 
     <!-- NOTES -->
@@ -986,7 +1018,6 @@ const pages = [
       <p><strong>Note:</strong> Any exceptions must be approved by a Lieutenant or Jail Transport (document who approved it).</p>
       <p><em>Other agencies willing to direct-book can book into ANY of our jails (likely whichever is closest).</em></p>
     </div>
-
   </div>
 
 
