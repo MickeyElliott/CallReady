@@ -907,12 +907,12 @@ const pages = [
 
             <div class="col-md-6 text-center">
               <div class="p-3 mb-2 border border-info rounded">PC</div>
-              <div class="text-primary fs-3"><i class="bi bi-arrow-down-circle"></i></div>
+              <div class="fs-3"><i class="bi bi-arrow-down"></i></div>
               <div class="p-3 mb-2 border border-secondary rounded">Run Names</div>
-              <div class="text-primary fs-3"><i class="bi bi-arrow-down-circle"></i></div>
-              <div class="p-3 mb-2 bg-info-subtle border border-info rounded">Arrest</div>
-              <div class="text-primary fs-3"><i class="bi bi-arrow-down-circle"></i></div>
-              <div class="p-3 mb-2 bg-info-subtle border border-info rounded">Book into Jail</div>
+              <div class="fs-3"><i class="bi bi-arrow-down"></i></div>
+              <div class="p-3 mb-2 border border-info rounded">Arrest</div>
+              <div class="fs-3"><i class="bi bi-arrow-down"></i></div>
+              <div class="p-3 mb-2 border border-info rounded">Book into Jail</div>
             </div>
           </div>
         </div>
