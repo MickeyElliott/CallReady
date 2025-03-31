@@ -932,72 +932,91 @@ const pages = [
         "description": "Quick referance for confirming warrants.",
         "content":`
         
-        <!-- SECTION 1: MANDATORY BOOK -->
-    <div class="p-3 mb-2 bg-dark text-white rounded text-center">
-      DV, DUI, or PHYSICAL CONTROL <strong>(MANDATORY BOOK)</strong>
-    </div>
-    <div class="text-center fs-3 text-light"><i class="bi bi-arrow-down"></i></div>
+       <!-- Title -->
+  <h2 class="text-center mb-4">Warrant Confirmation</h2>
 
-    <div class="row text-center">
-      <div class="col-md-6 p-3 mb-2 border border-primary rounded">
-        <strong>All Agencies</strong><br>
-        Confirm for Booking<br>
-        Book direct to our jail or transfer to dispatch for meet
-      </div>
-      <div class="col-md-6 p-3 mb-2 border border-info rounded">
-        <strong>All Jails</strong><br>
-        Acceptable for Booking<br>
-        Transfer if needed
+  <!-- Section: Mandatory Book -->
+  <div class="p-3 mb-2 border border-dark rounded text-center fw-bold">
+    DV, DUI, or PHYSICAL CONTROL — MANDATORY BOOK
+  </div>
+  <div class="text-center fs-3"><i class="bi bi-arrow-down"></i></div>
+
+  <div class="row text-center gx-3 gy-3">
+    <div class="col-md-2">
+      <div class="border border-primary rounded p-2">Federal Way PD<br><strong>Confirm for Booking</strong></div>
+    </div>
+    <div class="col-md-2">
+      <div class="border border-primary rounded p-2">Other PDs<br><strong>Confirm for Booking</strong><br><small>Book direct or transfer to dispatch</small></div>
+    </div>
+    <div class="col-md-2">
+      <div class="border border-primary rounded p-2">Our Jails<br><strong>Confirm for Booking</strong></div>
+    </div>
+    <div class="col-md-3">
+      <div class="border border-primary rounded p-2">Pierce County Jail<br><strong>Confirm for Booking</strong><br><small>Transfer to dispatch</small></div>
+    </div>
+    <div class="col-md-3">
+      <div class="border border-primary rounded p-2">Other Jails (King or Pierce)<br><strong>Confirm for Booking</strong><br><small>Transfer to dispatch</small></div>
+    </div>
+  </div>
+
+  <!-- Section: $2,001+ -->
+  <div class="p-3 mt-4 mb-2 border border-info rounded text-center fw-bold">
+    Warrant Amount: $2,001 or More
+  </div>
+  <div class="text-center fs-3"><i class="bi bi-arrow-down"></i></div>
+
+  <div class="row text-center gx-3 gy-3">
+    <div class="col-md-2">
+      <div class="border border-primary rounded p-2">Federal Way PD<br><strong>Confirm for Booking</strong></div>
+    </div>
+    <div class="col-md-2">
+      <div class="border border-primary rounded p-2">Other PDs<br><strong>Confirm for Booking</strong></div>
+    </div>
+    <div class="col-md-2">
+      <div class="border border-primary rounded p-2">Our Jails<br><strong>Confirm for Booking</strong></div>
+    </div>
+    <div class="col-md-3">
+      <div class="border border-primary rounded p-2">Pierce County Jail<br><strong>Confirm for Booking</strong></div>
+    </div>
+    <div class="col-md-3">
+      <div class="border border-primary rounded p-2">Other Jails<br><strong>Confirm for Booking</strong></div>
+    </div>
+  </div>
+
+  <!-- Section: $2,000 or Less -->
+  <div class="p-3 mt-4 mb-2 border border-danger rounded text-center fw-bold text-danger">
+    Warrant Amount: $2,000 or Less
+  </div>
+  <div class="text-center fs-3 text-danger"><i class="bi bi-arrow-down"></i></div>
+
+  <div class="row text-center gx-3 gy-3">
+    <div class="col-md-2">
+      <div class="border border-warning rounded p-2">Federal Way PD<br><strong>Promise to Appear Paperwork</strong></div>
+    </div>
+    <div class="col-md-2">
+      <div class="border border-danger text-danger rounded p-2">Other PDs<br><strong>Advise & Release</strong></div>
+    </div>
+    <div class="col-md-2">
+      <div class="border border-secondary rounded p-2">
+        Our Jails<br>
+        <div>Already there: <strong>Book</strong></div>
+        <div>Getting out: <strong>Promise to Appear</strong></div>
       </div>
     </div>
-
-    <!-- SECTION 2: WARRANT AMOUNT $2001+ -->
-    <div class="p-3 mb-2 bg-info bg-opacity-25 border border-info rounded text-center">
-      Warrant Amount: <strong>$2,001 or More</strong>
+    <div class="col-md-3">
+      <div class="border border-danger text-danger rounded p-2">Pierce County Jail<br><strong>Advise & Release</strong></div>
     </div>
-    <div class="text-center fs-3 text-info"><i class="bi bi-arrow-down"></i></div>
-
-    <div class="row text-center">
-      <div class="col-md-6 p-3 mb-2 border border-primary rounded">
-        <strong>Agencies</strong><br>
-        Federal Way PD, Other PDs<br>
-        Confirm for Booking
-      </div>
-      <div class="col-md-6 p-3 mb-2 border border-primary rounded">
-        <strong>Jail Options</strong><br>
-        Our Jails, Pierce Co, King Co<br>
-        Confirm for Booking
-      </div>
+    <div class="col-md-3">
+      <div class="border border-danger text-danger rounded p-2">Other Jails<br><strong>Advise & Release</strong></div>
     </div>
+  </div>
 
-    <!-- SECTION 3: WARRANT AMOUNT $2000 OR LESS -->
-    <div class="p-3 mb-2 bg-danger bg-opacity-25 border border-danger rounded text-center">
-      Warrant Amount: <strong>$2,000 or Less</strong>
-    </div>
-    <div class="text-center fs-3 text-danger"><i class="bi bi-arrow-down"></i></div>
-
-    <div class="row text-center">
-      <div class="col-md-4 p-3 mb-2 border border-warning rounded">
-        <strong>Federal Way PD</strong><br>
-        Promise to Appear Paperwork
-      </div>
-      <div class="col-md-4 p-3 mb-2 border border-danger text-danger rounded">
-        <strong>Other PDs, Pierce/King County Jails</strong><br>
-        Advise and Release
-      </div>
-      <div class="col-md-4 p-3 mb-2 border border-secondary rounded">
-        <strong>Our Jails</strong><br>
-        <div>Already in jail: <strong>Book</strong></div>
-        <div>Releasing: <strong>Promise to Appear</strong></div>
-      </div>
-    </div>
-
-    <!-- NOTES -->
-    <div class="mt-4">
-      <p><strong>Note:</strong> Any exceptions must be approved by a Lieutenant or Jail Transport (document who approved it).</p>
-      <p><em>Other agencies willing to direct-book can book into ANY of our jails (likely whichever is closest).</em></p>
-    </div>
-
+  <!-- Notes -->
+  <div class="mt-4">
+    <p><strong>Note:</strong> Any exceptions must be approved by a Lieutenant or Jail Transport (document who approved it).</p>
+    <p><em>Other agencies willing to direct-book can book into ANY of our jails (likely whichever is closest).</em></p>
+    <p><strong>Judge Contact:</strong> Contact Federal Way sitting judge first. Only contact backup judges if both are unavailable.</p>
+    <p class="text-muted"><small>Email chains for warrant confirmations: primary@cityoffederalway.com, backup@desmoineswa.gov</small></p>
   </div>
 
 
