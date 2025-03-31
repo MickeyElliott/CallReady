@@ -880,57 +880,40 @@ const pages = [
         "title": "Investigations", 
         "description": "",
         "content":`
-        <style>
-    .step {
-      border: 2px solid #007bff;
-      border-radius: 8px;
-      padding: 15px;
-      margin: 10px 0;
-      text-align: center;
-      background-color: #e9f5ff;
-    }
-    .arrow {
-      font-size: 24px;
-      color: #007bff;
-    }
-    .decision {
-      background-color: #fff3cd;
-      border-color: #ffc107;
-    }
-  </style>
-            <div class="container my-4">
+        <div class="container my-4">
     <h2 class="text-center mb-4">Officer Investigative Steps</h2>
 
-    <div class="step">Interview</div>
-    <div class="arrow text-center"><i class="bi bi-arrow-down-circle"></i></div>
+    <div class="p-3 mb-2 bg-primary bg-opacity-10 border border-primary rounded text-center">Interview</div>
+    <div class="text-center fs-3 text-primary"><i class="bi bi-arrow-down-circle"></i></div>
 
-    <div class="step decision">Do you have PC?</div>
+    <div class="p-3 mb-2 bg-warning bg-opacity-25 border border-warning rounded text-center">Do you have PC?</div>
 
     <div class="row">
       <div class="col-md-6 text-center">
-        <div class="step">No PC</div>
-        <div class="arrow"><i class="bi bi-arrow-down-circle"></i></div>
-        <div class="step">Run Names</div>
-        <div class="arrow"><i class="bi bi-arrow-down-circle"></i></div>
-        <div class="step decision">PC Now?</div>
+        <div class="p-3 mb-2 bg-light border border-secondary rounded">No PC</div>
+        <div class="text-primary fs-3"><i class="bi bi-arrow-down-circle"></i></div>
+        <div class="p-3 mb-2 bg-light border border-secondary rounded">Run Names</div>
+        <div class="text-primary fs-3"><i class="bi bi-arrow-down-circle"></i></div>
+        <div class="p-3 mb-2 bg-warning bg-opacity-25 border border-warning rounded">PC Now?</div>
+
         <div class="row">
           <div class="col-6">
-            <div class="step">No → Document (FI or Trespass)</div>
+            <div class="p-3 mb-2 bg-light border border-secondary rounded">No <i class="bi bi-arrow-right-circle"></i> Document<br>(FI or Trespass)</div>
           </div>
           <div class="col-6">
-            <div class="step">Yes → Continue to PC Path</div>
+            <div class="p-3 mb-2 bg-light border border-secondary rounded">Yes <i class="bi bi-arrow-right-circle"></i> Continue to PC Path</div>
           </div>
         </div>
       </div>
 
       <div class="col-md-6 text-center">
-        <div class="step">PC</div>
-        <div class="arrow"><i class="bi bi-arrow-down-circle"></i></div>
-        <div class="step">Run Names</div>
-        <div class="arrow"><i class="bi bi-arrow-down-circle"></i></div>
-        <div class="step">Arrest</div>
-        <div class="arrow"><i class="bi bi-arrow-down-circle"></i></div>
-        <div class="step">Book into Jail</div>
+        <div class="p-3 mb-2 bg-light border border-secondary rounded">PC</div>
+        <div class="text-primary fs-3"><i class="bi bi-arrow-down-circle"></i></div>
+        <div class="p-3 mb-2 bg-light border border-secondary rounded">Run Names</div>
+        <div class="text-primary fs-3"><i class="bi bi-arrow-down-circle"></i></div>
+        <div class="p-3 mb-2 bg-light border border-secondary rounded">Arrest</div>
+        <div class="text-primary fs-3"><i class="bi bi-arrow-down-circle"></i></div>
+        <div class="p-3 mb-2 bg-light border border-secondary rounded">Book into Jail</div>
       </div>
     </div>
   </div>
