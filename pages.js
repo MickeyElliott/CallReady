@@ -877,39 +877,38 @@ const pages = [
     "cards": [
       { 
         "id":"4.0.1", 
-        "title": "Investigations", 
+        "title": "Officer Investigative Steps", 
         "description": "",
         "content":`
         <div class="container my-4">
-    <h2 class="text-center mb-4">Officer Investigative Steps</h2>
 
     <div class="p-3 mb-2 bg-primary bg-opacity-10 border border-primary rounded text-center">Interview</div>
     <div class="text-center fs-3 text-primary"><i class="bi bi-arrow-down-circle"></i></div>
 
-    <div class="p-3 mb-2 bg-warning bg-opacity-25 border border-warning rounded text-center">Do you have PC?</div>
+    <div class="p-3 mb-2 bg-danger bg-opacity-25 border border-danger rounded text-center">Do you have PC?</div>
 
     <div class="row">
       <div class="col-md-6 text-center">
-        <div class="p-3 mb-2 bg-light border border-secondary rounded">No PC</div>
+        <div class="p-3 mb-2 bg-warning border border-warning rounded">No PC</div>
         <div class="text-primary fs-3"><i class="bi bi-arrow-down-circle"></i></div>
-        <div class="p-3 mb-2 bg-light border border-secondary rounded">Run Names</div>
+        <div class="p-3 mb-2 bg-info border border-info rounded">Run Names</div>
         <div class="text-primary fs-3"><i class="bi bi-arrow-down-circle"></i></div>
         <div class="p-3 mb-2 bg-warning bg-opacity-25 border border-warning rounded">PC Now?</div>
 
         <div class="row">
           <div class="col-6">
-            <div class="p-3 mb-2 bg-light border border-secondary rounded">No <i class="bi bi-arrow-right-circle"></i> Document<br>(FI or Trespass)</div>
+            <div class="p-3 mb-2 bg-danger border border-danger rounded">No <i class="bi bi-arrow-right-circle"></i> Document<br>(FI or Trespass)</div>
           </div>
           <div class="col-6">
-            <div class="p-3 mb-2 bg-light border border-secondary rounded">Yes <i class="bi bi-arrow-right-circle"></i> Continue to PC Path</div>
+            <div class="p-3 mb-2 bg-success border border-success rounded">Yes <i class="bi bi-arrow-right-circle"></i> Continue to PC Path</div>
           </div>
         </div>
       </div>
 
       <div class="col-md-6 text-center">
-        <div class="p-3 mb-2 bg-light border border-secondary rounded">PC</div>
+        <div class="p-3 mb-2 bg-success border border-success rounded">PC</div>
         <div class="text-primary fs-3"><i class="bi bi-arrow-down-circle"></i></div>
-        <div class="p-3 mb-2 bg-light border border-secondary rounded">Run Names</div>
+        <div class="p-3 mb-2 bg-info border border-info rounded">Run Names</div>
         <div class="text-primary fs-3"><i class="bi bi-arrow-down-circle"></i></div>
         <div class="p-3 mb-2 bg-light border border-secondary rounded">Arrest</div>
         <div class="text-primary fs-3"><i class="bi bi-arrow-down-circle"></i></div>
