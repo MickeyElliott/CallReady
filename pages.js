@@ -938,8 +938,8 @@ const pages = [
 
   <!-- MANDATORY BOOKING -->
   <div class="bg-light-subtle p-3 rounded mb-4">
-    <div class="p-3 mb-3 bg-white text-center rounded fw-bold">
-      DV or DUI is MANDATORY BOOK
+    <div class="p-3 mb-3 text-center rounded fw-bold">
+      DV or DUI is Mandatory Book
     </div>
     <div class="row gx-3 gy-3 text-center">
       <div class="col-md-2">
@@ -1016,12 +1016,12 @@ const pages = [
 
   <!-- $2,000 or Less -->
   <div class="bg-light-subtle p-3 rounded mb-4">
-    <div class="p-3 mb-3 text-center rounded fw-bold text-danger">
+    <div class="p-3 mb-3 text-center rounded fw-bold">
       Warrant Amount: $2,000 or Less
     </div>
     <div class="row gx-3 gy-3 text-center">
       <div class="col-md-2">
-        <div class="card h-100 border-warning">
+        <div class="card h-100 border-primary">
           <div class="card-header">FWPD</div>
           <div class="card-body">Promise to Appear Paperwork</div>
         </div>
