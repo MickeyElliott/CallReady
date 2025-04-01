@@ -1031,7 +1031,7 @@ const pages = [
         </div>
       </div>
       <div class="col-md-2">
-        <div class="card h-100 border-secondary">
+        <div class="card h-100 border-primary">
           <div class="card-header">Our Jails</div>
           <div class="card-body">
             Already there: <strong>Book</strong><br>
@@ -1056,6 +1056,7 @@ const pages = [
 
   <!-- Notes -->
   <div class="mt-4">
+    <p><strong>Our Jails:</strong> SCORE, Kent, Puyallup, KCJ, RJC, Issaquah, Nisqually</p>
     <p><strong>Note:</strong> Any exceptions must be approved by a Lieutenant or Jail Transport (document who approved it).</p>
     <p><em>Other agencies willing to direct-book can book into ANY of our jails (likely whichever is closest).</em></p>
     <p><strong>Judge Contact:</strong> Contact Federal Way sitting judge first. Only contact backup judges if both are unavailable.</p>
