@@ -2550,13 +2550,13 @@ var codes = {
         },
         {
           id: "9.41",
-          title: "Firearms & Weapons",
-          description:"Firearms & Weapons",
+          title: "Firearms/Weapons",
+          description:"Firearms/Weapons",
           link:"https://app.leg.wa.gov/rcw/default.aspx?cite=9.41",
           items: [
             {
               id: "9.41.040",
-              title: "Unlawful Possession of Firearms",
+              title: "Unlawful Possession",
               description: "Defines circumstances under which a person is prohibited from possessing firearms, with penalties based on prior convictions or conditions.",
               definition: [
                 {
@@ -2587,7 +2587,7 @@ var codes = {
                 },
                 {
                   index: "5",
-                  main: "Youth possession may result in license revocation unless it's a first offense and no firearm or drug history exists."
+                  main: "Youth possession may result in license revocation unless it&apos;s a first offense and no firearm or drug history exists."
                 },
                 {
                   index: "6",
