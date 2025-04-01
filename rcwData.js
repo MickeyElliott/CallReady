@@ -2564,7 +2564,7 @@ var codes = {
                   main: "Unlawful possession in the first degree:",
                   subSections: [
                     "(a) A person is guilty if they possess a firearm after being convicted or found not guilty by reason of insanity of any serious offense.",
-                    "(b) Classified as a class B felony."
+                    "(b) Classified as a <span class=\"text-danger\">class B felony</span>."
                   ]
                 },
                 {
@@ -2574,7 +2574,7 @@ var codes = {
                     "(a) Applies to those not covered by subsection (1) but who have prior convictions for certain crimes including misdemeanors involving domestic violence, harassment, and protection order violations.",
                     "(b) Includes those involuntarily committed or found incompetent under mental health statutes.",
                     "(c) Includes juveniles and individuals pending trial for serious offenses.",
-                    "(d) Classified as a class C felony."
+                    "(d) Classified as a <span class=\"text-danger\">class C felony</span>."
                   ]
                 },
                 {
@@ -2597,7 +2597,7 @@ var codes = {
                   index: "7",
                   main: "Voluntary waiver of firearm rights:",
                   subSections: [
-                    "(a) Possession after filing voluntary waiver is a civil infraction.",
+                    "(a) Possession after filing voluntary waiver is a <span class=\"text-warning\">civil infraction</span>.",
                     "(b) Each firearm possessed is a separate infraction.",
                     "(c) Court may substitute up to 2 hours of community restitution."
                   ]
