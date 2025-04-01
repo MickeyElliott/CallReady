@@ -2549,6 +2549,92 @@ var codes = {
             ]
         },
         {
+          "id": "9.41.040",
+          "title": "Unlawful Possession of Firearms",
+          "description": "Prohibits firearm possession based on prior offenses, court orders, mental health adjudications, or voluntary waivers.",
+          "definition": [
+            {
+              "index": "1",
+              "main": "Unlawful Possession in the First Degree:",
+              "subSections": [
+                "(a) Possession after conviction or NGI finding for any serious offense.",
+                "(b) Classified as a Class B felony."
+              ]
+            },
+            {
+              "index": "2",
+              "main": "Unlawful Possession in the Second Degree:",
+              "subSections": [
+                "(a) Applies to various felony or misdemeanor convictions not listed in subsection (1).",
+                "(b) Applies to protection order violations, involuntary commitments, minors, or those pending trial for serious offenses.",
+                "(c) Classified as a Class C felony."
+              ]
+            },
+            {
+              "index": "3",
+              "main": "Restoration of Rights:",
+              "subSections": [
+                "(a) A pardon or similar relief may restore rights.",
+                "(b) Certain probation dismissals may allow possession."
+              ]
+            },
+            {
+              "index": "4",
+              "main": "Juvenile Provisions:",
+              "subSections": [
+                "(a) Courts must notify DOL if a juvenile possessed a firearm in a vehicle or committed a firearm offense involving a vehicle."
+              ]
+            },
+            {
+              "index": "5",
+              "main": "Consecutive Sentences:",
+              "subSections": [
+                "(a) Convictions for both unlawful possession and theft/possession of a stolen firearm require consecutive sentencing."
+              ]
+            },
+            {
+              "index": "6",
+              "main": "Civil Infraction:",
+              "subSections": [
+                "(a) Possession after a voluntary waiver is a Class 4 civil infraction.",
+                "(b) Each firearm is a separate infraction.",
+                "(c) Up to two hours of community restitution may be ordered in lieu of monetary penalty."
+              ]
+            },
+            {
+              "index": "7",
+              "main": "Each firearm unlawfully possessed is a separate offense."
+            },
+            {
+              "index": "8",
+              "main": "Restoration of rights can be petitioned under RCW 9.41.041."
+            }
+          ],
+          "link": "https://app.leg.wa.gov/RCW/default.aspx?cite=9.41.040",
+          "offense": "Class B Felony (First Degree) / Class C Felony (Second Degree) / Civil Infraction (Voluntary Waiver)",
+          "elementsOfPC": [
+            "Possession of a firearm",
+            "Prior disqualifying conviction, court order, or adjudication",
+            "Firearm not surrendered despite legal prohibition"
+          ],
+          "questions": [
+            "Is the subject a convicted felon or previously found NGI?",
+            "Is there a current protective order against the subject?",
+            "Has the subject been involuntarily committed or found incompetent to stand trial?",
+            "Is the subject under 18 or pending trial for a serious offense?"
+          ],
+          "relatedCodes": [
+            "9.41.047 Restoration Process",
+            "9.41.800 Order to Surrender Weapons",
+            "9.41.010 Definitions"
+          ],
+          "relatedProcedures": [
+            "Firearm Surrender Procedure",
+            "Protection Order Enforcement",
+            "Mental Health Commitment Reporting"
+          ]
+        },        
+        {
           id: "9.91",
           title: "Miscelleneous Crimes",
           description: "Crimes that don&apos;t fit in other chapters.",
