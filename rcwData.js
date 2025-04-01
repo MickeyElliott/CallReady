@@ -2550,7 +2550,7 @@ var codes = {
         },
         {
           id: "9.41",
-          title: "Firearms/Weapons",
+          title: "Firearms & Weapons",
           description:"Firearms/Weapons",
           link:"https://app.leg.wa.gov/rcw/default.aspx?cite=9.41",
           items: [
