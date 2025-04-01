@@ -2549,81 +2549,90 @@ var codes = {
             ]
         },
         {
-          id: "9.41.040",
-          title: "Unlawful Possession of Firearms",
-          description: "Defines circumstances under which a person is prohibited from possessing firearms, with penalties based on prior convictions or conditions.",
-          definition: [
+          id: "9.41",
+          title: "Firearms & Weapons",
+          description:"Firearms & Weapons",
+          link:"https://app.leg.wa.gov/rcw/default.aspx?cite=9.41",
+          items: [
             {
-              index: "1",
-              main: "Unlawful possession in the first degree:",
-              subSections: [
-                "(a) A person is guilty if they possess a firearm after being convicted or found not guilty by reason of insanity of any serious offense.",
-                "(b) Classified as a class B felony."
-              ]
-            },
-            {
-              index: "2",
-              main: "Unlawful possession in the second degree:",
-              subSections: [
-                "(a) Applies to those not covered by subsection (1) but who have prior convictions for certain crimes including misdemeanors involving domestic violence, harassment, and protection order violations.",
-                "(b) Includes those involuntarily committed or found incompetent under mental health statutes.",
-                "(c) Includes juveniles and individuals pending trial for serious offenses.",
-                "(d) Classified as a class C felony."
-              ]
-            },
-            {
-              index: "3",
-              main: "Firearm rights not affected if conviction was pardoned or annulled based on innocence or rehabilitation."
-            },
-            {
-              index: "4",
-              main: "Probationary exceptions: Certain prior convictions with dismissal may not preclude firearm possession."
-            },
-            {
-              index: "5",
-              main: "Youth possession may result in license revocation unless it's a first offense and no firearm or drug history exists."
-            },
-            {
-              index: "6",
-              main: "Does not prevent additional convictions for theft or possession of a stolen firearm. Sentences may be consecutive."
-            },
-            {
-              index: "7",
-              main: "Voluntary waiver of firearm rights:",
-              subSections: [
-                "(a) Possession after filing voluntary waiver is a civil infraction.",
-                "(b) Each firearm possessed is a separate infraction.",
-                "(c) Court may substitute up to 2 hours of community restitution."
-              ]
-            },
-            {
-              index: "8",
-              main: "Each firearm unlawfully possessed is a separate offense."
-            },
-            {
-              index: "9",
-              main: "Firearm rights may be restored under RCW 9.41.041."
-            }
-          ],
-          link: "https://app.leg.wa.gov/RCW/default.aspx?cite=9.41.040",
-          offense: "Class B Felony (1st Degree) / Class C Felony (2nd Degree) / Civil Infraction (Voluntary Waiver)",
-          elementsOfPC: [
-            "Person has prior felony or DV-related conviction",
-            "Person possesses, accesses, or controls a firearm",
-            "No restoration of rights documented"
-          ],
-          questions: [
-            "Does the person have a disqualifying conviction?",
-            "Is the firearm in their possession or control?",
-            "Has the person had their rights restored?"
-          ],
-          relatedCodes: [
-            "9.41.010 Definitions",
-            "9.41.047 Restoration of Rights",
-            "9.41.800 Court Orders to Surrender Firearms"
-          ],
-          relatedProcedures: []
-        },        
+              id: "9.41.040",
+              title: "Unlawful Possession of Firearms",
+              description: "Defines circumstances under which a person is prohibited from possessing firearms, with penalties based on prior convictions or conditions.",
+              definition: [
+                {
+                  index: "1",
+                  main: "Unlawful possession in the first degree:",
+                  subSections: [
+                    "(a) A person is guilty if they possess a firearm after being convicted or found not guilty by reason of insanity of any serious offense.",
+                    "(b) Classified as a class B felony."
+                  ]
+                },
+                {
+                  index: "2",
+                  main: "Unlawful possession in the second degree:",
+                  subSections: [
+                    "(a) Applies to those not covered by subsection (1) but who have prior convictions for certain crimes including misdemeanors involving domestic violence, harassment, and protection order violations.",
+                    "(b) Includes those involuntarily committed or found incompetent under mental health statutes.",
+                    "(c) Includes juveniles and individuals pending trial for serious offenses.",
+                    "(d) Classified as a class C felony."
+                  ]
+                },
+                {
+                  index: "3",
+                  main: "Firearm rights not affected if conviction was pardoned or annulled based on innocence or rehabilitation."
+                },
+                {
+                  index: "4",
+                  main: "Probationary exceptions: Certain prior convictions with dismissal may not preclude firearm possession."
+                },
+                {
+                  index: "5",
+                  main: "Youth possession may result in license revocation unless it's a first offense and no firearm or drug history exists."
+                },
+                {
+                  index: "6",
+                  main: "Does not prevent additional convictions for theft or possession of a stolen firearm. Sentences may be consecutive."
+                },
+                {
+                  index: "7",
+                  main: "Voluntary waiver of firearm rights:",
+                  subSections: [
+                    "(a) Possession after filing voluntary waiver is a civil infraction.",
+                    "(b) Each firearm possessed is a separate infraction.",
+                    "(c) Court may substitute up to 2 hours of community restitution."
+                  ]
+                },
+                {
+                  index: "8",
+                  main: "Each firearm unlawfully possessed is a separate offense."
+                },
+                {
+                  index: "9",
+                  main: "Firearm rights may be restored under RCW 9.41.041."
+                }
+              ],
+              link: "https://app.leg.wa.gov/RCW/default.aspx?cite=9.41.040",
+              offense: "Class B Felony (1st Degree) / Class C Felony (2nd Degree) / Civil Infraction (Voluntary Waiver)",
+              elementsOfPC: [
+                "Person has prior felony or DV-related conviction",
+                "Person possesses, accesses, or controls a firearm",
+                "No restoration of rights documented"
+              ],
+              questions: [
+                "Does the person have a disqualifying conviction?",
+                "Is the firearm in their possession or control?",
+                "Has the person had their rights restored?"
+              ],
+              relatedCodes: [
+                "9.41.010 Definitions",
+                "9.41.047 Restoration of Rights",
+                "9.41.800 Court Orders to Surrender Firearms"
+              ],
+              relatedProcedures: []
+            }, 
+          ]
+        },
+               
         {
           id: "9.91",
           title: "Miscelleneous Crimes",
