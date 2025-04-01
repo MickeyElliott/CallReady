@@ -2612,7 +2612,7 @@ var codes = {
                 }
               ],
               link: "https://app.leg.wa.gov/RCW/default.aspx?cite=9.41.040",
-              offense: "Class B Felony (1st Degree) / Class C Felony (2nd Degree) / Civil Infraction (Voluntary Waiver)",
+              offense: "Class B Felony",
               elementsOfPC: [
                 "Person has prior felony or DV-related conviction",
                 "Person possesses, accesses, or controls a firearm",
