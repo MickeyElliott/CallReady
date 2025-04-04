@@ -791,7 +791,7 @@ function generateSection(title, items, formatter, listClass = 'list-group list-g
 
 function convertRCWsToLinks(text) {
     // Only match RCWs starting with 9., 9A., or 46.
-    const rcwPattern = /\b(9A|9|46)\.\d{1,3}(?:\.\d{1,3})?\b/gi;
+    const rcwPattern = /\b(9A|9|46|10|13)\.\d{1,3}(?:\.\d{1,3})?\b/gi;
   
     return text.replace(rcwPattern, (match) => {
       const url = `https://apps.leg.wa.gov/RCW/default.aspx?cite=${match}`;
