@@ -512,7 +512,7 @@ var codes = {
                 relatedCodes: [
                   "9A.40.030 Kidnapping 2",
                   "9A.40.010 Definitions",
-                  "9A.40.060 Unlawful imprisonment",
+                  "9A.40.040 Unlawful imprisonment",
                   "9A.36.041 Assault 4"
                 ], // Related RCWs for cross-reference
                 relatedProcedures: [
@@ -563,7 +563,7 @@ var codes = {
                 ], // Key questions for investigation
                 relatedCodes: [
                   "9A.40.020 Kidnapping 1",
-                  "9A.40.060 Unlawful imprisonment",
+                  "9A.40.040 Unlawful imprisonment",
                   "9.94A.835 Sexual motivation",
                   "13.40.135 Sexual motivation findings for juveniles"
                 ], // Related RCWs for cross-reference
