@@ -727,24 +727,6 @@ var procedures = {
 
 }
 
-// function wrapAlphabeticalTags(input) {
-//     if (!input) return input; // Return unchanged if input is empty or undefined.
-
-//     return input.replace(/\((?:[a-z]+|i{1,3}|iv|v|vi{0,3}|ix|x{0,3})\)/g, function (match) {
-//         return `<strong class=\"opacity-100 text-primary float-start me-3 mb-1\">${match}</strong>`;
-//     });
-// }
-
-// function wrapAlphabeticalTags(input) {
-//     if (!input) return input; // Return unchanged if input is empty or undefined.
-
-//     return input.replace(
-//         /^(\((?:[a-z]+|i{1,3}|iv|v|vi{0,3}|ix|x{0,3})\))\s*(.*)$/i,
-//         (match, tag, text) => 
-//             `<strong class="text-primary float-start ps-2 pe-1">${tag}</strong>` +
-//             (text ? `<p class="ms-p mb-0">${text}</p>` : "")
-//     );
-// }
 
 function wrapAlphabeticalTags(input) {
     if (!input) return input; // Return unchanged if input is empty or undefined.
@@ -807,8 +789,20 @@ function generateSection(title, items, formatter, listClass = 'list-group list-g
         </ul>`;
 }
 
+function convertRCWsToLinks(text) {
+    // Only match RCWs starting with 9., 9A., or 46.
+    const rcwPattern = /\b(9A|9|46)\.\d{1,3}(?:\.\d{1,3})?\b/gi;
+  
+    return text.replace(rcwPattern, (match) => {
+      const url = `https://apps.leg.wa.gov/RCW/default.aspx?cite=${match}`;
+      return `<a href="${url}" clas="btn btn-link" target="_blank" rel="noopener noreferrer">${match}</a>`;
+    });
+  }
+  
+
 function formatListItem(item) {
-    return `<li class="list-group-item">${item}</li>`;
+    var linked = convertRCWsToLinks(item);
+    return `<li class="list-group-item">${linked}</li>`;
 }
 
 function formatProcedure(procedureId, index) {
