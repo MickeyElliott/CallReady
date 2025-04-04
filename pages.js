@@ -7,7 +7,7 @@ const pages = [
       { 
         "id":"1.0.1", 
         "title": "Welcome to CallReady", 
-        "description": "Created by M.Elliott - updated 3/31/25",
+        "description": "Created by M.Elliott - updated 4/4/25",
         "content":`
 
         <div class="row">
@@ -477,7 +477,9 @@ const pages = [
             <li><span class="text-primary">Must evaluate force based on what a reasonable officer would do under the same circumstances.</span></li>
             <li><span class="text-primary">May use force that is objectively reasonable - even in tense, split-second decisions.</span></li>
             <li><span class="text-danger">Do not rely on good intentions or personal justifications - reasonableness is judged by facts, not motives.</span></li>
-          </ul>
+            <li><span class="text-primary"><strong>Graham Factors</strong>: Immediate Threat, Active Resistance, Severity of Crime, Evading</li>
+
+            </ul>
         </div>
       </div>
     </div>
