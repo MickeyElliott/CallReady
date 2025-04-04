@@ -242,7 +242,7 @@ class DateScheduler {
     constructor() {
         this.judicialHours = {
             custody: "08:30",
-            dui: "13:15"
+            dui: "14:30"
         };
         this.timezone = "America/Los_Angeles"; // Correct IANA timezone for Pacific Time
     }
