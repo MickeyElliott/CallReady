@@ -1160,7 +1160,7 @@ document.addEventListener("DOMContentLoaded", () => {
       
                 resultsDiv.innerHTML = results.length
                   ? results.map(result => `
-                      <a href="#${result.id}" class="btn-jump list-group-item list-group-item-action">
+                      <a href="#li-${result.id}" class="btn-jump list-group-item list-group-item-action">
                         <strong>${result.title}</strong><br>
                         <small class="text-muted">${result.description}</small>
                       </a>
