@@ -372,7 +372,7 @@ document.addEventListener('change', (event) => {
         if (checkbox.classList.contains('rcw-checkbox')) {
             dataType = 'rcw';
         } else if (checkbox.classList.contains('rcwtraffic-checkbox')) {
-            dataType = 'rcw';
+            dataType = 'traffic';
         } else if (checkbox.classList.contains('fwrc-checkbox')) {
             dataType = 'fwrc';
         } else if (checkbox.classList.contains('calltype-checkbox')) {
@@ -395,6 +395,7 @@ document.addEventListener('change', (event) => {
         switch (dataType) {
             case 'rcw':
             case 'fwrc':
+            case 'traffic':
             case 'calltype':
                 checkbox.checked ? addCodeCard(data,dataType) : removeCodeCard(data.id);
                 break;
