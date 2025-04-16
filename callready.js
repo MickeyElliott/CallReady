@@ -1186,7 +1186,15 @@ document.addEventListener("DOMContentLoaded", () => {
     
         } else {
             console.warn("MiniSearch is not loaded.");
-          }
+        }
+
+        const searchModal = document.getElementById("modal-search");
+        const searchInput = document.getElementById("search-input");
+        if (searchModal && searchInput) {
+            searchModal.addEventListener("shown.bs.modal", function () {
+                setTimeout(() => searchInput.focus(), 100); // short delay for animation
+            });
+        }
           
     } catch (err) {
           console.error("MiniSearch error:", err);
