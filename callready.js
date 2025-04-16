@@ -1147,7 +1147,7 @@ document.addEventListener("DOMContentLoaded", () => {
               }
             });
       
-            miniSearch.addAll(codes.chapters);
+            miniSearch.addAll(codes.chapters.items);
 
             console.log('************* CODES **************');
             console.log(codes);
