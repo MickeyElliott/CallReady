@@ -1036,34 +1036,6 @@ function addPage(data, cardData) {
 
 }
 
-
-document.addEventListener("DOMContentLoaded", function () {
-    // Delegate click event to dynamically created buttons
-    document.body.addEventListener("click", function (event) {
-        // Find the nearest parent element with the class "btn-jump"
-        const btnJump = event.target.closest(".btn-jump");
-
-        if (btnJump) {
-            event.preventDefault(); // Prevent default anchor behavior
-
-            const targetId = btnJump.getAttribute("href").substring(1); // Get the ID from the href (without the #)
-            const targetElement = document.getElementById(targetId); // Find the element with the matching ID
-
-            console.log(`Target ID: ${targetId}`); // Log the target ID for debugging
-
-            if (targetElement) {
-                targetElement.click(); // Trigger a click on the target element
-            }
-        }
-    });
-
-    // Load the start page on page ready
-    document.querySelector('[data-page="1.0"]')?.click();
-
-
-
-});
-
 const RandomToast = {
     data: [],
 
@@ -1133,15 +1105,81 @@ const RandomToast = {
     },
 };
 
-// Example usage:
 document.addEventListener("DOMContentLoaded", () => {
-    // Initialize with data
+    // Delegate click event to dynamically created buttons
+    document.body.addEventListener("click", function (event) {
+        // Find the nearest parent element with the class "btn-jump"
+        const btnJump = event.target.closest(".btn-jump");
+
+        if (btnJump) {
+            event.preventDefault(); // Prevent default anchor behavior
+
+            const targetId = btnJump.getAttribute("href").substring(1); // Get the ID from the href (without the #)
+            const targetElement = document.getElementById(targetId); // Find the element with the matching ID
+
+            console.log(`Target ID: ${targetId}`); // Log the target ID for debugging
+
+            if (targetElement) {
+                targetElement.click(); // Trigger a click on the target element
+            }
+        }
+    });
+
+    // Load the start page on page ready
+    document.querySelector('[data-page="1.0"]')?.click();
 
     var tips = RandomToast.getTipsArray();
-    console.log(tips);
-    if (tips) {
-        RandomToast.init(tips);
-        RandomToast.showToast();
+        console.log(tips);
+        if (tips) {
+            RandomToast.init(tips);
+            RandomToast.showToast();
     }
+
 });
+
+
+
+try {
+    if (typeof MiniSearch !== "undefined") {
+
+        const miniSearch = new MiniSearch({
+          fields: ['id', 'title', 'description', 'elementsOfPC', 'questions'],
+          storeFields: ['id', 'title', 'description'],
+          searchOptions: {
+            prefix: true,
+            fuzzy: 0.2
+          }
+        });
+  
+        miniSearch.addAll(codes);
+  
+        // Safe DOM references
+        const input = document.getElementById("search-input");
+        const resultsDiv = document.getElementById("search-results");
+  
+        if (input && resultsDiv) {
+          input.addEventListener("input", () => {
+            const query = input.value.trim();
+            const results = query ? miniSearch.search(query) : [];
+  
+            resultsDiv.innerHTML = results.length
+              ? results.map(result => `
+                  <a href="#${result.id}" class="list-group-item list-group-item-action">
+                    <strong>${result.title}</strong><br>
+                    <small class="text-muted">${result.description}</small>
+                  </a>
+                `).join('')
+              : '<div class="text-muted">No results found.</div>';
+          });
+        } else {
+          console.warn("Search input or results container not found in DOM.");
+        }
+
+    } else {
+        console.warn("MiniSearch is not loaded.");
+      }
+      
+} catch (err) {
+      console.error("MiniSearch error:", err);
+}
 
