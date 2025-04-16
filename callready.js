@@ -388,8 +388,8 @@ document.addEventListener('change', (event) => {
         const data = JSON.parse(dataAttr);
 
 
-        console.log('******************** dataType');
-        console.log(dataType);
+        //console.log('******************** dataType');
+        //console.log(dataType);
 
 
         // Add or remove card based on checkbox state
