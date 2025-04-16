@@ -53,11 +53,12 @@ function getIconDivByType(type) {
     const iconMap = {
       rcw: "bi-emoji-grimace",
       fwrc: "bi-buildings",
+      traffic: "bi-stoplights",
       calltype: "bi-clipboard2-check",
       dir: "bi-journals"
     };
   
-    const iconClass = iconMap[type.toLowerCase()] || "bi-stoplights";
+    const iconClass = iconMap[type.toLowerCase()] || "bi-circle";
   
     return `<div class="position-absolute mt-2"><i class="bi ${iconClass} text-secondary fs-3 me-3"></i></div>`;
   }
