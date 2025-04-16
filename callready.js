@@ -1140,7 +1140,14 @@ document.addEventListener("DOMContentLoaded", () => {
         
         console.log('************* CODES **************');
         console.log(codes);
+
+        // Extract searchable models. 
+        function getAllModelsFromChapters(chapters) {
+            return chapters.flatMap(ch => ch.items || []);
+          }
+        const allModels = getAllModelsFromChapters(codes.chapters);
         
+
         if (typeof MiniSearch !== "undefined") {
     
             const miniSearch = new MiniSearch({
@@ -1152,7 +1159,7 @@ document.addEventListener("DOMContentLoaded", () => {
               }
             });
       
-            miniSearch.addAll(codes.chapters.items);
+            miniSearch.addAll(allModels);
 
       
             // Safe DOM references
