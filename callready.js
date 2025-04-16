@@ -435,7 +435,7 @@ trafficCodes.chapters.forEach((chapter, index) => {
             <div class="accordion-body p-0">
                 <ul class="list-group list-group-flush">
                     ${chapter.items.map(item => `
-                        <li class="list-group-item d-flex align-items-center border-0">
+                        <li id="li-${item.id}" class="list-group-item d-flex align-items-center border-0">
                             <input type="checkbox" id="${item.id}" data-rcw='${JSON.stringify(item)}' class="form-check-input me-2 rcwtraffic-checkbox" />
                             <label for="${item.id}" class="form-check-label fw-lighter">${item.title}</label>
                         </li>
@@ -464,7 +464,7 @@ fwrcData.chapters.forEach((chapter, index) => {
             <div class="accordion-body p-0">
                 <ul class="list-group list-group-flush">
                     ${chapter.items.map(item => `
-                        <li class="list-group-item d-flex align-items-center border-0">
+                        <li id="li-${item.id}" class="list-group-item d-flex align-items-center border-0">
                             <input type="checkbox" id="${item.id}" data-fwrc='${JSON.stringify(item)}' class="form-check-input me-2 fwrc-checkbox" />
                             <label for="${item.id}" class="form-check-label fw-lighter">${item.title}</label>
                         </li>
