@@ -674,8 +674,8 @@ function formatProcedure(procedureId, index) {
 
 // Function to add a card for RCW or FWRC
 function addCodeCard(data, dataType) {
-    console.log('data addCodeCard ********************************');
-    console.log(data);
+    //console.log('data addCodeCard ********************************');
+    //console.log(data);
 
     clearPages();
 
@@ -757,8 +757,8 @@ function removeCodeCard(id) {
 
 // Function to add a card for RCW or FWRC
 function addDirCard(data) {
-    console.log('data ********************************');
-    console.log(data);
+    //console.log('data ********************************');
+    //console.log(data);
 
     clearPages();
 
@@ -821,7 +821,7 @@ document.querySelectorAll('.accordion-button-page').forEach(button => {
         // Find the page by id
         const page = pages.find(p => p.id === pageid);
         if (page) {
-            console.log(page);
+            //console.log(page);
             const cardData = page.cards[0].data; // Assuming you want the `data` from the first card
             addPage(page, cardData);
         } else {
@@ -834,8 +834,8 @@ document.querySelectorAll('.accordion-button-page').forEach(button => {
 
 // Function to add a card for RCW or FWRC
 function addPage(data, cardData) {
-    console.log('cardData ********************************');
-    console.log(cardData);
+    //console.log('cardData ********************************');
+    //console.log(cardData);
 
     // Clear all cards
     document.getElementById('clearSelections').click();
@@ -963,7 +963,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const targetId = btnJump.getAttribute("href").substring(1); // Get the ID from the href (without the #)
             const targetElement = document.getElementById(targetId); // Find the element with the matching ID
 
-            console.log(`Target ID: ${targetId}`); // Log the target ID for debugging
+            //console.log(`Target ID: ${targetId}`); // Log the target ID for debugging
 
             if (targetElement) {
                 targetElement.click(); // Trigger a click on the target element
@@ -975,7 +975,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector('[data-page="1.0"]')?.click();
 
     var tips = RandomToast.getTipsArray();
-        console.log(tips);
+        //console.log(tips);
         if (tips) {
             RandomToast.init(tips);
             RandomToast.showToast();
