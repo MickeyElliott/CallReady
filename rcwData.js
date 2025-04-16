@@ -2710,7 +2710,7 @@ var codes = {
 
 var trafficCodes = {
   version: 1.0,
-  type: "rcw",
+  type: "traffic",
   chapters: [
     {
       id: "46.61",
