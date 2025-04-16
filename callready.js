@@ -280,7 +280,7 @@ trafficCodes.chapters.forEach((chapter, index) => {
                 <ul class="list-group list-group-flush">
                     ${chapter.items.map(item => `
                         <li id="li-${item.id}" class="list-group-item d-flex align-items-center border-0">
-                            <input type="checkbox" id="${item.id}" data-rcw='${JSON.stringify(item)}' class="form-check-input me-2 rcwtraffic-checkbox" />
+                            <input type="checkbox" id="${item.id}" data-traffic='${JSON.stringify(item)}' class="form-check-input me-2 rcwtraffic-checkbox" />
                             <label for="${item.id}" class="form-check-label fw-lighter">${item.title}</label>
                         </li>
                     `).join('')}
