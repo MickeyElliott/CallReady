@@ -1136,6 +1136,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     try {
+
+        
+        console.log('************* CODES **************');
+        console.log(codes);
+        
         if (typeof MiniSearch !== "undefined") {
     
             const miniSearch = new MiniSearch({
@@ -1149,8 +1154,6 @@ document.addEventListener("DOMContentLoaded", () => {
       
             miniSearch.addAll(codes.chapters.items);
 
-            console.log('************* CODES **************');
-            console.log(codes);
       
             // Safe DOM references
             const srcinput = document.getElementById("search-input");
