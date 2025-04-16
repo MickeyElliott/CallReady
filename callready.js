@@ -1162,8 +1162,8 @@ document.addEventListener("DOMContentLoaded", () => {
         
 
         const combinedData = [
-            ...normalizeItems(allCodeItems, "RCW"),
-            ...normalizeItems(allCallTypeItems, "Call")
+            ...normalizeSearchModel(allCodeItems, "RCW"),
+            ...normalizeSearchModel(allCallTypeItems, "Call")
           ];
         
 
