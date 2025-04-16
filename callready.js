@@ -1147,7 +1147,7 @@ document.addEventListener("DOMContentLoaded", () => {
               }
             });
       
-            miniSearch.addAll(codes);
+            miniSearch.addAll(codes.chapters);
       
             // Safe DOM references
             const srcinput = document.getElementById("search-input");
