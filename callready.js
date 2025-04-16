@@ -1141,25 +1141,44 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log('************* CODES **************');
         console.log(codes);
 
-        // Extract searchable models. 
+        function normalizeSearchModel(sourceArray, typeLabel) {
+            return sourceArray.map(item => ({
+              id: item.id,
+              title: item.title,
+              description: item.description,
+              elementsOfPC: item.elementsOfPC || [],
+              questions: item.questions || [],
+              type: typeLabel // "RCW" or "Call"
+            }));
+          }
+
+        // Extract searchable rcw models. 
         function getAllModelsFromChapters(chapters) {
             return chapters.flatMap(ch => ch.items || []);
           }
-        const allModels = getAllModelsFromChapters(codes.chapters);
+          const allCodeItems = getAllModelsFromChapters(codes.chapters);
+          const allCallTypeItems = getAllModelsFromChapters(callTypeData.chapters);
+
+        
+
+        const combinedData = [
+            ...normalizeItems(allCodeItems, "RCW"),
+            ...normalizeItems(allCallTypeItems, "Call")
+          ];
         
 
         if (typeof MiniSearch !== "undefined") {
     
             const miniSearch = new MiniSearch({
-              fields: ['id', 'title', 'description', 'elementsOfPC', 'questions'],
-              storeFields: ['id', 'title', 'description'],
-              searchOptions: {
-                prefix: true,
-                fuzzy: 0.2
-              }
-            });
-      
-            miniSearch.addAll(allModels);
+                fields: ['id', 'title', 'description', 'elementsOfPC', 'questions'],
+                storeFields: ['id', 'title', 'description', 'type'],
+                searchOptions: {
+                  prefix: true,
+                  fuzzy: 0.2
+                }
+              });
+              
+              miniSearch.addAll(combinedData);
 
       
             // Safe DOM references
