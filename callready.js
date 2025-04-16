@@ -1135,11 +1135,10 @@ document.addEventListener("DOMContentLoaded", () => {
             RandomToast.showToast();
     }
 
+    // Searching Model Results
     try {
 
         
-        console.log('************* CODES **************');
-        console.log(codes);
 
         function normalizeSearchModel(sourceArray, typeLabel) {
             return sourceArray.map(item => ({
@@ -1152,18 +1151,23 @@ document.addEventListener("DOMContentLoaded", () => {
             }));
           }
 
-        // Extract searchable rcw models. 
+        // Extract searchable models. 
         function getAllModelsFromChapters(chapters) {
             return chapters.flatMap(ch => ch.items || []);
           }
           const allCodeItems = getAllModelsFromChapters(codes.chapters);
           const allCallTypeItems = getAllModelsFromChapters(callTypeData.chapters);
-
+          const allTrafficCodeItems = getAllModelsFromChapters(trafficCodes.chapters);
+          const allFWRCItems = getAllModelsFromChapters(fwrcData.chapters);
+          
+          
         
 
         const combinedData = [
             ...normalizeSearchModel(allCodeItems, "RCW"),
-            ...normalizeSearchModel(allCallTypeItems, "Call")
+            ...normalizeSearchModel(allCallTypeItems, "Call"),
+            ...normalizeSearchModel(allTrafficCodeItems, "Traffic"),
+            ...normalizeSearchModel(allFWRCItems, "FWRC")
           ];
         
 
