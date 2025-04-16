@@ -396,7 +396,7 @@ document.addEventListener('change', (event) => {
             case 'rcw':
             case 'fwrc':
             case 'calltype':
-                checkbox.checked ? addCodeCard(data) : removeCodeCard(data.id);
+                checkbox.checked ? addCodeCard(data,dataType) : removeCodeCard(data.id);
                 break;
             case 'dir':
                 checkbox.checked ? addDirCard(data) : removeDirCard(data.id);
@@ -671,7 +671,7 @@ function formatProcedure(procedureId, index) {
 }
 
 // Function to add a card for RCW or FWRC
-function addCodeCard(data) {
+function addCodeCard(data, dataType) {
     console.log('data addCodeCard ********************************');
     console.log(data);
 
@@ -689,6 +689,7 @@ function addCodeCard(data) {
     cardContent += `
                         <!-- Left Column -->
                         <div class="col">
+                        ${getIconDivByType(dataType)}
                             <div class="card-body p-5">
                                 ${data.offense ? `<span class="offense-badge badge text-bg-${offenseColor(data.offense)} float-end"> ${data.offense} </span>` : ''}
                                 <h4 class="mb-3">
