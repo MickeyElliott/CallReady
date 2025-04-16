@@ -1135,51 +1135,53 @@ document.addEventListener("DOMContentLoaded", () => {
             RandomToast.showToast();
     }
 
+    try {
+        if (typeof MiniSearch !== "undefined") {
+    
+            const miniSearch = new MiniSearch({
+              fields: ['id', 'title', 'description', 'elementsOfPC', 'questions'],
+              storeFields: ['id', 'title', 'description'],
+              searchOptions: {
+                prefix: true,
+                fuzzy: 0.2
+              }
+            });
+      
+            miniSearch.addAll(codes);
+      
+            // Safe DOM references
+            const srcinput = document.getElementById("search-input");
+            const resultsDiv = document.getElementById("search-results");
+      
+            if (srcinput && resultsDiv) {
+                srcinput.addEventListener("input", () => {
+                const query = srcinput.value.trim();
+                const results = query ? miniSearch.search(query) : [];
+      
+                resultsDiv.innerHTML = results.length
+                  ? results.map(result => `
+                      <a href="#${result.id}" class="list-group-item list-group-item-action">
+                        <strong>${result.title}</strong><br>
+                        <small class="text-muted">${result.description}</small>
+                      </a>
+                    `).join('')
+                  : '<div class="text-muted">No results found.</div>';
+              });
+            } else {
+              console.warn("Search input or results container not found in DOM.");
+            }
+    
+        } else {
+            console.warn("MiniSearch is not loaded.");
+          }
+          
+    } catch (err) {
+          console.error("MiniSearch error:", err);
+    }
+
 });
 
 
 
-try {
-    if (typeof MiniSearch !== "undefined") {
 
-        const miniSearch = new MiniSearch({
-          fields: ['id', 'title', 'description', 'elementsOfPC', 'questions'],
-          storeFields: ['id', 'title', 'description'],
-          searchOptions: {
-            prefix: true,
-            fuzzy: 0.2
-          }
-        });
-  
-        miniSearch.addAll(codes);
-  
-        // Safe DOM references
-        const input = document.getElementById("search-input");
-        const resultsDiv = document.getElementById("search-results");
-  
-        if (input && resultsDiv) {
-          input.addEventListener("input", () => {
-            const query = input.value.trim();
-            const results = query ? miniSearch.search(query) : [];
-  
-            resultsDiv.innerHTML = results.length
-              ? results.map(result => `
-                  <a href="#${result.id}" class="list-group-item list-group-item-action">
-                    <strong>${result.title}</strong><br>
-                    <small class="text-muted">${result.description}</small>
-                  </a>
-                `).join('')
-              : '<div class="text-muted">No results found.</div>';
-          });
-        } else {
-          console.warn("Search input or results container not found in DOM.");
-        }
-
-    } else {
-        console.warn("MiniSearch is not loaded.");
-      }
-      
-} catch (err) {
-      console.error("MiniSearch error:", err);
-}
 
