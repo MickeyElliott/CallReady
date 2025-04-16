@@ -1193,9 +1193,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 resultsDiv.innerHTML = results.length
                   ? results.map(result => `
                       <a href="#li-${result.id}" class="btn-jump list-group-item list-group-item-action">
-                        <strong>${result.title}</strong><br>
-                        <small class="text-muted">${result.description}</small>
-                      </a>
+                            <strong>${result.title}</strong> <span class="badge bg-secondary">${result.type}</span><br>
+                            <small class="text-muted">${result.description}</small>
+                        </a>
                     `).join('')
                   : '<div class="text-muted">No results found.</div>';
               });
