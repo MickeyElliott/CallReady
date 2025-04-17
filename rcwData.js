@@ -2721,28 +2721,53 @@ var trafficCodes = {
         {
           id: "46.61.020", // Unique identifier for the RCW
           title: "Refusal to Cooperate", // Title of the RCW
-          description: "Refusal to give information to or cooperate with officer—Penalty.",
+          description: "Unlawful refusal to give information, stop, or produce documents/equipment when requested by a police officer.",
           definition: [
             {
               index: "1",
-              main: "Details coming soon.",
+              main: "It is unlawful for any person operating or in charge of a vehicle to:",
               subSections: [
-                "(a) ... ... "
-                
+                "Refuse when requested to give name and address, or the owner&apose;s name and address;",
+                "Give a false name or address;",
+                "Refuse or neglect to stop when signaled to stop;",
+                "Refuse on demand to produce registration certificate, insurance card, or driver&apose;s license;",
+                "Refuse to permit officer to take or examine any such document;",
+                "Refuse to permit examination of equipment or weighing of the vehicle;",
+                "Refuse or neglect to produce those documents when requested by any court."
               ]
+            },
+            {
+              index: "2",
+              main: "Any police officer shall, on request, produce evidence of his or her authorization as such."
+            },
+            {
+              index: "3",
+              main: "A violation of this section is a misdemeanor."
             }
-            
           ],
           link: "https://app.leg.wa.gov/RCW/default.aspx?cite=46.61.020", // Direct link to the RCW
           offense: "Misdemeanor", // Classification of the offense
           elementsOfPC: [
-            "... ... "
+            "Vehicle operator refused to provide name/address or provided false information",
+            "Operator refused or failed to stop when signaled",
+            "Operator refused to produce or allow examination of required documents or equipment"
           ], // Required elements for probable cause
           questions: [
+            "What is your name and address?",
+            "Can I see your driver&apose;s license, registration, and insurance card?",
+            "Why did you not stop when I signaled you?",
+            "Are you giving me your true name and address?",
+            "Why won&apose;t you allow me to examine your vehicle or documents?"
           ], // Key questions for investigation
           relatedCodes: [
-          ], // Related RCWs and FWRCs
+            "RCW 46.61.022 Failure to Obey Lawful Order",
+            "RCW 46.64.048 Aiding and Abetting Traffic Violations",
+            "RCW 46.61.5249 Negligent Driving-First Degree"
+          ], // Related RCWs for cross-reference
           relatedProcedures: [
+            "Traffic Stop Procedure",
+            "Vehicle Equipment Inspection",
+            "Document & Evidence Collection"
           ] // Related procedures
         },
         {
