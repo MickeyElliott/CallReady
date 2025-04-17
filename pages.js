@@ -7,7 +7,7 @@ const pages = [
       { 
         "id":"1.0.1", 
         "title": "Welcome to CallReady", 
-        "description": "Created by M.Elliott - updated 4/15/25",
+        "description": "Created by M.Elliott - updated 4/17/25",
         "content":`
 
         <div class="row">
