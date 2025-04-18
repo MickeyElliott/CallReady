@@ -2803,7 +2803,7 @@ var trafficCodes = {
         },
         {
           id: "46.20.342",
-          title: "DWLS or Revoked)",
+          title: "DWLS or Revoked",
           description: "Driving a motor vehicle while license or driving privilege is suspended or revoked.",
           definition: [
             {
@@ -2827,7 +2827,7 @@ var trafficCodes = {
             }
           ],
           link: "https://app.leg.wa.gov/RCW/default.aspx?cite=46.20.342",
-          offense: "Gross Misdemeanor (1st & 2nd) / Misdemeanor (3rd)",
+          offense: "Misdemeanor",
           elementsOfPC: [
             "Suspect operated a motor vehicle",
             "License was suspended or revoked at the time",
