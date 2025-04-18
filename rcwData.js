@@ -2713,6 +2713,58 @@ var trafficCodes = {
   type: "traffic",
   chapters: [
     {
+      id: "46.20",
+      title: "Drivers&apos; Licenses",
+      description: "Driver&apos;s License and Permit Requirements",
+      link: "https://app.leg.wa.gov/rcw/default.aspx?cite=9.20",
+      items: [
+        {
+          id: "46.20.005",
+          title: "Driving Without a License",
+          description: "Driving without a valid Washington driver&apos;s license is a misdemeanor unless exceptions apply.",
+          definition: [
+            {
+              index: "1",
+              main: "It is a misdemeanor to drive any motor vehicle on a Washington highway without a valid Washington driver&apos;s license, unless exempted."
+            },
+            {
+              index: "2",
+              main: "This section does not apply if the driver:",
+              subSections: [
+                "(a) Is not in violation of RCW 46.20.342(1) or 46.20.420; and",
+                "(b) Has an expired driver&apos;s license or valid ID under RCW 46.20.035 in their possession."
+              ]
+            },
+            {
+              index: "3",
+              main: "This offense is considered a lesser included offense of RCW 46.20.342(1) or 46.20.420."
+            }
+          ],
+          link: "https://app.leg.wa.gov/RCW/default.aspx?cite=46.20.005",
+          offense: "Misdemeanor",
+          elementsOfPC: [
+            "Driver operating motor vehicle on public roadway",
+            "No valid Washington license in possession",
+            "Not exempt under RCW"
+          ],
+          questions: [
+            "Do you have a valid Washington driver&apos;s license?",
+            "Can you show me any form of valid ID?",
+            "Do you know your license is expired?"
+          ],
+          relatedCodes: [
+            "46.20.342 Driving While License Suspended",
+            "46.20.035 ID Requirements",
+            "46.20.420 Unlawful to Operate Without Reinstatement"
+          ],
+          relatedProcedures: [
+            "Traffic Stop Procedure"
+          ]
+        }
+        
+      ]
+    },
+    {
       id: "46.61",
       title: "Rules of the Road",
       description: "Obedience to traffic laws and more.",
