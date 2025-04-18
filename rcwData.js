@@ -2720,7 +2720,7 @@ var trafficCodes = {
       items: [
         {
           id: "46.20.005",
-          title: "Driving Without a License",
+          title: "NVOL",
           description: "Driving without a valid Washington driver&apos;s license is a misdemeanor unless exceptions apply.",
           definition: [
             {
@@ -2763,7 +2763,7 @@ var trafficCodes = {
         },
         {
           id: "46.20.015",
-          title: "Driving Without License (Infraction)",
+          title: "NVOL (Infraction)",
           description: "Traffic infraction for driving without a valid license in possession under specific conditions.",
           definition: [
             {
