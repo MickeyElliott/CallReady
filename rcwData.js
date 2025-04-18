@@ -3017,8 +3017,6 @@ var trafficCodes = {
             "Equipment Violation Stop"
           ]
         }
-        
-        
       ]
     },
     {
