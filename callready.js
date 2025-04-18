@@ -65,12 +65,6 @@ function getIconDivByType(type) {
   
    
 
-// <button onclick="startApp()">Start App</button>
-// <button onclick="stopApp()">Stop App</button>
-
-
-
-
 // Target container where dynamic HTML will be added
 const rcwCards = document.getElementById('rcwCards');
 handleDynamicPageTriggers(rcwCards);
@@ -586,13 +580,6 @@ function wrapAlphabeticalTags(input) {
 
 
 
-
-
-
-
-
-
-
 function offenseColor(offense) {
     var color = 'secondary-subtle';
     switch (offense) {
@@ -806,10 +793,6 @@ themeToggle.addEventListener('change', () => {
     document.documentElement.setAttribute('data-bs-theme', newTheme);
     themeLabel.innerHTML = newTheme === 'light' ? '<i class="bi bi-moon-stars"></i>' : '<i class="bi bi-brightness-high"></i>';
 });
-
-
-
-
 
 
 document.querySelectorAll('.accordion-button-page').forEach(button => {
