@@ -2958,7 +2958,66 @@ var trafficCodes = {
             "Traffic Stop Procedure",
             "Vehicle Equipment Inspection"
           ]
+        },
+        {
+          id: "46.37.390",
+          title: "Modified Exhaust",
+          description: "Unlawful to operate a vehicle with loud exhaust, illegal modifications, or excessive smoke emissions.",
+          definition: [
+            {
+              index: "1",
+              main: "All motor vehicles must have a properly working muffler in constant operation to prevent excessive or unusual noise.",
+              subSections: [
+                "(a) Muffler cut-outs, bypasses, or similar devices are prohibited on highways."
+              ]
+            },
+            {
+              index: "2",
+              main: "Air contaminant emission standards (at elevations < 3000 ft):",
+              subSections: [
+                "(a)(i) Vehicles first sold/registered after Jan 1, 1971: No emissions darker than Ringelmann No. 1 for more than 10 seconds;",
+                "(a)(ii) Or with opacity equal to or greater than Ringelmann No. 1;",
+                "(b)(i) Vehicles before Jan 1, 1971: No emissions darker than Ringelmann No. 2 for more than 10 seconds;",
+                "(b)(ii) Or with opacity equal to or greater than Ringelmann No. 2;",
+                "(c)(i) 'Opacity' means the reduction of light visibility due to emissions;",
+                "(c)(ii) 'Ringelmann chart' is defined by U.S. Bureau of Mines (1967)."
+              ]
+            },
+            {
+              index: "3",
+              main: "It is unlawful to modify the exhaust system to increase or amplify engine noise above original factory levels.",
+              subSections: [
+                "Applies to on-highway use only;",
+                "Exceptions: Vehicles 25+ years old or used off-highway in organized racing events by a recognized sanctioning body.",
+                "A court may dismiss if there are reasonable grounds the vehicle wasn&apos;t in violation."
+              ]
+            }
+          ],
+          link: "https://app.leg.wa.gov/RCW/default.aspx?cite=46.37.390",
+          offense: "Traffic Infraction",
+          elementsOfPC: [
+            "Excessive or unusual exhaust noise",
+            "Use of muffler cut-out or bypass",
+            "Visible smoke beyond Ringelmann limits",
+            "Modified exhaust louder than factory spec"
+          ],
+          questions: [
+            "Why is your vehicle emitting excessive smoke?",
+            "Have you modified your exhaust system?",
+            "Are you aware your muffler is not functioning properly?",
+            "Was this vehicle built before 1971?",
+            "Were you driving on a public roadway or in an organized event?"
+          ],
+          relatedCodes: [
+            "46.37.020 Required Lights",
+            "46.61.500 Reckless Driving"
+          ],
+          relatedProcedures: [
+            "Traffic Stop Procedure",
+            "Equipment Violation Stop"
+          ]
         }
+        
         
       ]
     },
