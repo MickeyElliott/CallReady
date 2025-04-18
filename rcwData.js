@@ -2803,7 +2803,7 @@ var trafficCodes = {
         },
         {
           id: "46.20.342",
-          title: "Driving While License Suspended or Revoked (DWLS/R)",
+          title: "DWLS or Revoked)",
           description: "Driving a motor vehicle while license or driving privilege is suspended or revoked.",
           definition: [
             {
