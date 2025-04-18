@@ -2810,8 +2810,8 @@ var trafficCodes = {
               index: "1",
               main: "It is unlawful to drive while license or privilege is suspended or revoked. Exceptions apply if the driver has a valid WA license at the time.",
               subSections: [
-                "<span class=\"text-danger\">(a) DWLS 1st Degree: Habitual Traffic Offender under Ch. 46.65 RCW. Gross Misdemeanor. Mandatory jail time: 10 days (1st), 90 days (2nd), 180 days (3rd+).</span>",
-                "<span class=\"text-warning\">(b) DWLS 2nd Degree: License revoked for serious reasons, not eligible to reinstate. Gross Misdemeanor.</span>",
+                "(a) <span class=\"text-danger\">DWLS 1st Degree: Habitual Traffic Offender under Ch. 46.65 RCW. Gross Misdemeanor. Mandatory jail time: 10 days (1st), 90 days (2nd), 180 days (3rd+).</span>",
+                "(b) <span class=\"text-warning\">DWLS 2nd Degree: License revoked for serious reasons, not eligible to reinstate. Gross Misdemeanor.</span>",
                 "(c) DWLS 3rd Degree: License suspended for administrative or less serious issues, or eligible for reinstatement. Misdemeanor.",
                 "(d) Not eligible if the person was allowed to get an ignition interlock license and did not do so."
               ]
