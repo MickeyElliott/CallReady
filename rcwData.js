@@ -2716,7 +2716,7 @@ var trafficCodes = {
       id: "46.20",
       title: "Drivers&apos; Licenses",
       description: "Driver&apos;s License and Permit Requirements",
-      link: "https://app.leg.wa.gov/rcw/default.aspx?cite=9.20",
+      link: "https://app.leg.wa.gov/rcw/default.aspx?cite=46.20",
       items: [
         {
           id: "46.20.005",
@@ -2851,6 +2851,114 @@ var trafficCodes = {
             "License Status Query via MDC"
           ]
         }           
+        
+      ]
+    },
+    {
+      id: "46.37",
+      title: "Vehicle Equipment",
+      description: "Vehicle Lighting and other Equipment.",
+      link: "https://app.leg.wa.gov/rcw/default.aspx?cite=46.37",
+      items: [
+        {
+          id: "46.37.020",
+          title: "Headlights During Night",
+          description: "Vehicles must display required lamps and signals from dusk to dawn or when visibility is poor.",
+          definition: [
+            {
+              index: "1",
+              main: "Lights and signaling devices must be ON when:",
+              subSections: [
+                "(a) From 30 minutes after sunset to 30 minutes before sunrise;",
+                "(b) At any time when persons/vehicles are not clearly visible at 1,000 feet due to low light or weather;",
+                "(c) Required lights include headlights, stop lights, turn signals, and other vehicle-specific lights as defined elsewhere."
+              ]
+            }
+          ],
+          link: "https://app.leg.wa.gov/RCW/default.aspx?cite=46.37.020",
+          offense: "Traffic Infraction",
+          elementsOfPC: [
+            "Vehicle operated without required lights during low visibility",
+            "Failure to activate lights 30 min after sunset or before sunrise",
+            "Signal lights not functioning during required periods"
+          ],
+          questions: [
+            "What time did you start driving today?",
+            "Are you aware your lights must be on in poor visibility?",
+            "Were your headlights functioning when you left your location?",
+            "Why were your lights off in this weather?"
+          ],
+          relatedCodes: [
+            "46.37.040 Tail Lamps",
+            "46.37.200 Stop Lamps and Turn Signals"
+          ],
+          relatedProcedures: [
+            "Traffic Stop Procedure",
+            "Vehicle Equipment Inspection"
+          ]
+        },        
+        {
+          id: "46.37.200",
+          title: "Stop Lamps & Turn Signals",
+          description: "Requirements for stop lamps, electric turn signals, and center high-mounted stop lamps.",
+          definition: [
+            {
+              index: "1",
+              main: "Stop lamps (brake lights):",
+              subSections: [
+                "(a) Must display red, amber, or any color between red and amber;",
+                "(b) Visible from at least 100 ft, or 300 ft if manufactured after Jan 1, 1964;",
+                "(c) Must activate when service brake is applied;",
+                "(d) Commercial vehicles: stop lamps must be red."
+              ]
+            },
+            {
+              index: "2",
+              main: "Electric turn signals:",
+              subSections: [
+                "(a) Must flash front and rear lights on the turning side;",
+                "(b) Front lights: amber (white allowed if pre-1969);",
+                "(c) Rear lights: red, amber, or any shade between;",
+                "(d) Visible from 500 ft in normal sunlight;",
+                "(e) Front and rear signals must be mounted as widely spaced as practical."
+              ]
+            },
+            {
+              index: "3",
+              main: "Center high-mounted stop lamp:",
+              subSections: [
+                "(a) Required when applicable;",
+                "(b) Mounted on center line of the rear;",
+                "(c) Displays red light visible from 300 ft;",
+                "(d) Activates on brake application;",
+                "(e) Cannot be combined with other lamps."
+              ]
+            }
+          ],
+          link: "https://app.leg.wa.gov/RCW/default.aspx?cite=46.37.200",
+          offense: "Traffic Infraction",
+          elementsOfPC: [
+            "Brake lights not visible or incorrect color",
+            "No turn signals or incorrect light color",
+            "Improperly mounted or inoperable lights",
+            "Missing required center high-mount stop lamp"
+          ],
+          questions: [
+            "Did you notice your brake lights are out?",
+            "Do your turn signals function from the front and rear?",
+            "What year is your vehicle manufactured?",
+            "Has any lighting been modified or disabled?"
+          ],
+          relatedCodes: [
+            "46.37.070 Turn Signal Requirements",
+            "46.37.040 Tail Lamps",
+            "46.61.020 Refusal to Cooperate"
+          ],
+          relatedProcedures: [
+            "Traffic Stop Procedure",
+            "Vehicle Equipment Inspection"
+          ]
+        }
         
       ]
     },
