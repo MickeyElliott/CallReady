@@ -2760,7 +2760,97 @@ var trafficCodes = {
           relatedProcedures: [
             "Traffic Stop Procedure"
           ]
-        }
+        },
+        {
+          id: "46.20.015",
+          title: "Driving Without License (Infraction)",
+          description: "Traffic infraction for driving without a valid license in possession under specific conditions.",
+          definition: [
+            {
+              index: "1",
+              main: "It is a traffic infraction (not a misdemeanor) if the person:",
+              subSections: [
+                "(a) Drives a motor vehicle on a highway without a valid Washington driver&apos;s license in their possession;",
+                "(b) Provides expired license or valid ID under RCW 46.20.035 at the stop;",
+                "(c) Is not in violation of RCW 46.20.342(1) or 46.20.420 (DWLS)."
+              ]
+            },
+            {
+              index: "2",
+              main: "Penalty is $250, reduced to $50 if valid license is shown in person or by mail after citation."
+            }
+          ],
+          link: "https://app.leg.wa.gov/RCW/default.aspx?cite=46.20.015",
+          offense: "Traffic Infraction",
+          elementsOfPC: [
+            "Driver lacks valid license in possession",
+            "Presents expired license or valid ID",
+            "Not suspended or revoked"
+          ],
+          questions: [
+            "Do you have your license with you?",
+            "Is the license expired or valid?",
+            "Are you currently suspended or revoked?"
+          ],
+          relatedCodes: [
+            "46.20.005 Driving Without a License (Misdemeanor)",
+            "46.20.035 ID Requirements",
+            "46.20.342 Driving While License Suspended"
+          ],
+          relatedProcedures: [
+            "Traffic Stop Procedure"
+          ]
+        },
+        {
+          id: "46.20.342",
+          title: "Driving While License Suspended or Revoked (DWLS/R)",
+          description: "Driving a motor vehicle while license or driving privilege is suspended or revoked.",
+          definition: [
+            {
+              index: "1",
+              main: "It is unlawful to drive while license or privilege is suspended or revoked. Exceptions apply if the driver has a valid WA license at the time.",
+              subSections: [
+                "(a) DWLS 1st Degree: Habitual Traffic Offender under Ch. 46.65 RCW. Gross Misdemeanor. Mandatory jail time: 10 days (1st), 90 days (2nd), 180 days (3rd+).",
+                "(b) DWLS 2nd Degree: License revoked for serious reasons, not eligible to reinstate. Gross Misdemeanor.",
+                "(c) DWLS 3rd Degree: License suspended for administrative or less serious issues, or eligible for reinstatement. Misdemeanor.",
+                "(d) Not eligible if the person was allowed to get an ignition interlock license and did not do so."
+              ]
+            },
+            {
+              index: "2",
+              main: "Upon conviction, DOL extends revocation/suspension as follows:",
+              subSections: [
+                "(a) DWLS 1st Degree: +1 year license revocation extension.",
+                "(b) DWLS 2nd Degree: +1 year license suspension extension.",
+                "(c) DWLS 3rd Degree: No extension unless court recommends otherwise."
+              ]
+            }
+          ],
+          link: "https://app.leg.wa.gov/RCW/default.aspx?cite=46.20.342",
+          offense: "Gross Misdemeanor (1st & 2nd) / Misdemeanor (3rd)",
+          elementsOfPC: [
+            "Suspect operated a motor vehicle",
+            "License was suspended or revoked at the time",
+            "No valid license at time of stop",
+            "No ignition interlock license obtained (if eligible)"
+          ],
+          questions: [
+            "Do you have a valid driver&apos;s license?",
+            "Were you aware your license was suspended or revoked?",
+            "Have you been convicted of DWLS before?",
+            "Have you attempted to reinstate your license or get an ignition interlock license?"
+          ],
+          relatedCodes: [
+            "46.20.005 Driving Without License (Misdemeanor)",
+            "46.20.015 Driving Without License (Infraction)",
+            "46.20.345 Operation with Suspended License",
+            "46.65.020 Habitual Traffic Offender"
+          ],
+          relatedProcedures: [
+            "Traffic Stop Procedure",
+            "License Status Query via MDC"
+          ]
+        }           
         
       ]
     },
