@@ -2979,8 +2979,8 @@ var trafficCodes = {
                 "(a)(ii) Or with opacity equal to or greater than Ringelmann No. 1;",
                 "(b)(i) Vehicles before Jan 1, 1971: No emissions darker than Ringelmann No. 2 for more than 10 seconds;",
                 "(b)(ii) Or with opacity equal to or greater than Ringelmann No. 2;",
-                "(c)(i) 'Opacity' means the reduction of light visibility due to emissions;",
-                "(c)(ii) 'Ringelmann chart' is defined by U.S. Bureau of Mines (1967)."
+                "(c)(i) &apos;Opacity&apos; means the reduction of light visibility due to emissions;",
+                "(c)(ii) &apos;Ringelmann chart&apos; is defined by U.S. Bureau of Mines (1967)."
               ]
             },
             {
